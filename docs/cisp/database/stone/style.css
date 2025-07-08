@@ -1,3 +1,5 @@
+@import url(https://fonts.bunny.net/css?family=noto-sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
 /* Style for manual link tags */
 
 A.man {
@@ -7,10 +9,9 @@ A.man:active {
   color: green;
 }
 
-/* BODY {background: lightblue} */
-
 BODY {
   background-image: url(pergamino.jpg);
+  font-family: "Noto Sans", sans-serif;
 }
 BODY.toplevel {
   background-image: url(pergamino.jpg);
@@ -18,13 +19,13 @@ BODY.toplevel {
 
 BODY.navbar {
   background: brown;
-  font-family: helvetica;
+  font-family: "Noto Sans", sans-serif;
 }
 BODY.navbar INPUT,
 BODY.navbar SPAN {
   background: tan;
   border: 0mm;
   padding: 0mm;
-  font-family: helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: bold;
 }
