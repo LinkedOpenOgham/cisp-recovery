@@ -1,124 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <title>CISP - Celtic Inscribed Stones Project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="corpusdb_modern.js"></script>
+  <script>
+    function corpinfo() {
+      const cp = document.form1.corpus.selectedIndex;
+      const url = "bibliog/bibbliog.html#" + c[cp];
+      document.location = url;
+    }
 
-<title>CISP - Celtic Inscribed Stones Project</title>
+    function butclick() {
+      const s = document.form1.infield.value.toLowerCase();
+      const cp = document.form1.corpus.selectedIndex;
 
-<link rel=stylesheet type="text/css" href="style.css">
+      if (cp === 0) {
+        const url = getcisp(s);
+        document.location = url;
+      } else {
+        const ind = cp + "_" + s;
+        console.log("Index:", ind);
 
+        const ref = d[ind];
+        if (typeof ref === "undefined") {
+          alert("Reference not found in corpus");
+          return;
+        }
+
+        const url = "stone/" + ref + ".html";
+        document.location = url;
+      }
+    }
+
+    function getcisp(s) {
+      const a = s.split("/");
+      const site = a[0].toLowerCase();
+
+      if (a.length === 1) {
+        return "site/" + site + ".html";
+      } else if (a.length === 2) {
+        return "stone/" + site + "_" + a[1] + ".html";
+      } else {
+        return "stone/" + site + "_" + a[1] + ".html#i" + a[2];
+      }
+    }
+  </script>
 </head>
-
-
-
-<script>
-
-function corpinfo()
-
-{
-
-  cp = document.form1.corpus.selectedIndex
-
-  url = "bibliog/bibbliog.html#" + parent.c[cp]
-
-  document.location = url
-
-}
-
-  
-
-function butclick()
-
-{
-
-  s = document.form1.infield.value.toLowerCase()
-
-  cp = document.form1.corpus.selectedIndex
-
-  if (cp == 0) {
-
-   url = getcisp ( s )
-
-  }
-
-  else
-
-  { 
-
-   ind = cp + "_" + s
-
-   url =  new String(parent.d[ind])
-
-   if (url.toString() == "undefined") 
-
-   {
-
-     alert("Reference not found in corpus")
-
-     return
-
-   }
-
-   url = "stone/" + url + ".html"
-
-  
-
-  }
-
-  document.location = url
-
-}
-
-
-
-  
-
-
-
-function getcisp ( s )
-
-{
-
-  dir = "site"
-
-  a = s.split("/")
-
-  n = a.length
-
-  site = a[0].toLowerCase()
-
-  if (n == 1) 
-
-  {
-
-    url = "site/" + site + ".html"
-
-  }
-
-  else if (n == 2)  
-
-  {
-
-    url = "stone/" + site + "_" + a[1] + ".html"
-
-  }
-
-  else 
-
-  {
-
-    url = "stone/" + site + "_" + a[1] + ".html" + "#i" + a[2]
-
-  }
-
-  
-
-  return url
-
-}
-
-
-
-</script>
 
 <body class=toplevel>
 
@@ -482,21 +412,8 @@ permission to use works and images for which they hold the copyright.</p>
 
 <p>
 
-This website was designed and generated from the database by 
+This website was designed and generated from the database by Mike Gahan.
 
-<a href=mailto:m.gahan@ucl.ac.uk>Mike Gahan</a>.
-
-
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-11188334-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
 </body>
 
 </html>
