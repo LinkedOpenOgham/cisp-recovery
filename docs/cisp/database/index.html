@@ -47,6 +47,17 @@
         return "stone/" + site + "_" + a[1] + ".html#i" + a[2];
       }
     }
+
+    function checkURLParam() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      if (id && typeof d[id] !== "undefined") {
+        const url = "stone/" + d[id] + ".html";
+        window.location.href = url;
+      }
+    }
+    // beim Laden automatisch prüfen
+    window.onload = checkURLParam;
   </script>
 </head>
 
