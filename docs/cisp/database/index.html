@@ -51,8 +51,16 @@
     function checkURLParam() {
       const params = new URLSearchParams(window.location.search);
       const id = params.get("id");
+      const cisp = params.get("cisp");
+
       if (id && typeof d[id] !== "undefined") {
         const url = "stone/" + d[id] + ".html";
+        window.location.href = url;
+        return;
+      }
+      
+      if (cisp) {
+        const url = getcisp(cisp.toLowerCase());
         window.location.href = url;
       }
     }
