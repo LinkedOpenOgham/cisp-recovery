@@ -1,0 +1,768 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>An introduction to databases</TITLE>
+<META NAME="description" CONTENT="An introduction to databases">
+<META NAME="keywords" CONTENT="MANUAL4">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="MANUAL4.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="MANUAL4.html">
+<LINK REL="up" HREF="MANUAL4.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html105"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html99"
+  HREF="MANUAL4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html93"
+  HREF="MANUAL4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A> 
+<A NAME="tex2html101"
+  HREF="MANUAL4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.gif"></A> 
+<A NAME="tex2html103"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html106"
+  HREF="node2.html">The CISP database</A>
+<B> Up:</B> <A NAME="tex2html100"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+<B> Previous:</B> <A NAME="tex2html94"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+ &nbsp <B>  <A NAME="tex2html102"
+  HREF="MANUAL4.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html104"
+  HREF="node8.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html107"
+  HREF="node1.html#SECTION00110000000000000000">Introduction</A>
+<LI><A NAME="tex2html108"
+  HREF="node1.html#SECTION00120000000000000000">Database concepts</A>
+<UL>
+<LI><A NAME="tex2html109"
+  HREF="node1.html#SECTION00121000000000000000">Databases</A>
+<LI><A NAME="tex2html110"
+  HREF="node1.html#SECTION00122000000000000000">Specific purpose vs. resource databases</A>
+<LI><A NAME="tex2html111"
+  HREF="node1.html#SECTION00123000000000000000">Relational databases</A>
+<UL>
+<LI><A NAME="tex2html112"
+  HREF="node1.html#SECTION00123100000000000000">One-to-one relationships</A>
+<LI><A NAME="tex2html113"
+  HREF="node1.html#SECTION00123200000000000000">One-to-many relationships</A>
+<LI><A NAME="tex2html114"
+  HREF="node1.html#SECTION00123300000000000000">Many-to-many relationships</A>
+<LI><A NAME="tex2html115"
+  HREF="node1.html#SECTION00123400000000000000">Primary and foreign keys</A>
+<LI><A NAME="tex2html116"
+  HREF="node1.html#SECTION00123500000000000000">Data types and definition</A>
+<LI><A NAME="tex2html117"
+  HREF="node1.html#SECTION00123600000000000000">Look-up tables</A>
+<LI><A NAME="tex2html118"
+  HREF="node1.html#SECTION00123700000000000000">Database applications</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html119"
+  HREF="node1.html#SECTION00130000000000000000">Conclusions</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00100000000000000000"></A>
+<A NAME="introchap"></A>
+<BR>
+An introduction to databases
+</H1>
+
+<P>
+
+<H1><A NAME="SECTION00110000000000000000">
+Introduction</A>
+</H1>
+
+<P>
+The <SPAN  CLASS="textit">Celtic Inscribed Stones Project</SPAN> (<SMALL>CISP</SMALL>) is jointly run
+between the Department of History, UCL, and the Institute of
+Archaeology, UCL, under the direction of Prof. Wendy Davies in
+collaboration with Prof. James Graham-Campbell. The project
+currently (as of October 18, 2000) employs three full-time staff (Dr Kris
+Lockyear, Dr Mark Handley and Dr Paul Kershaw).  The database
+structure described in this manual was constructed with by Dr Kris
+Lockyear and former research fellow Dr Katherine Forsyth.  The
+first three years of the Project was funded by the HRB/HEFCE via
+their institutional fellowship scheme.
+
+<P>
+<SMALL>CISP</SMALL>'s aim is to undertake a collaborative, interdisciplinary
+study of Early Medieval Celtic inscriptions. One of its main
+objectives is the compilation of a comprehensive and authoritative
+database of all known inscriptions from Great Britain, Ireland and
+Brittany. By bringing this material together in one place and
+making it readily available our goal is to turn what is a largely
+untapped resource into usable material.
+
+<P>
+Further details of the Project are available on the Project's web
+pages
+<BR>(http://www.ucl.ac.uk/archaeology/cisp).
+
+<P>
+This guide and manual is intended both as a general introduction
+to the <SMALL>CISP</SMALL> database, and as a detailed guide for data entry.
+Chapter <A HREF="node1.html#introchap"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>  contains an introduction to databases,
+database management systems, and data structures (terms which are
+discussed below). The subsequent chapters discuss the contents of
+the <SMALL>CISP</SMALL> database, and provide a detailed table by table, field
+by field guide to the database including allowed terms and
+definitions of fields and entries, and a short guide to the <SMALL>CISP</SMALL> 
+data entry application. Appendices provide a glossary of terms and
+list major changes to the database since the first version of this
+manual.
+
+<P>
+
+<H1><A NAME="SECTION00120000000000000000">
+Database concepts</A>
+</H1>
+
+<P>
+This section discusses a number of database concepts and is primarily
+intended for those who have had little or no experience of computer-based
+databases.
+
+<P>
+
+<H2><A NAME="SECTION00121000000000000000">
+Databases</A>
+</H2>
+
+<P>
+A <SPAN  CLASS="textit">database</SPAN><A NAME="63"></A> is structured collection of data. Thus,
+card indices, printed catalogues of archaeological artefacts and telephone
+directories are all examples of databases. Databases <SPAN  CLASS="textit">may</SPAN> be stored on
+a computer and examined using a program. These programs are often called
+`databases', but more strictly are <SPAN  CLASS="textit">database management systems</SPAN>
+(DMS).<A NAME="66"></A> Just as a card index or catalogue
+has to be constructed carefully in order to be useful, so must a database on
+a computer. Similarly, just as there are many ways that a printed catalogue
+can be organised, there are many ways, or models, by which a computerised
+database may be organised. One of the most common and powerful models is the
+`relational'<A NAME="67"></A> model (discussed below), and
+programs which use this model are known as <SPAN  CLASS="textit">relational database
+management systems</SPAN> (RDMS).<A NAME="69"></A>
+
+<P>
+Computer-based databases are usually organised into one or more
+<SPAN  CLASS="textit">tables</SPAN>.<A NAME="71"></A> A table stores data in a format similar to a
+published table and consists of a series of rows and columns. To carry the
+analogy further, just as a published table will have a title at the top of
+each column, so each column in a database table will have a name, often
+called a <SPAN  CLASS="textit">field name.</SPAN> The term <SPAN  CLASS="textit">field</SPAN><A NAME="74"></A> is often used
+instead of column. Each row in a table will represent one example of the type
+of object about which data has been collected. Table <A HREF="node1.html#extable">1(a)</A> (p. <A HREF="node1.html#extable"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>) is a an example of a table from a database of English
+towns. Each row, in this case a town, is an <SPAN  CLASS="textit">entity</SPAN>,<A NAME="78"></A> and
+each column represents an <SPAN  CLASS="textit">attribute</SPAN><A NAME="80"></A> of that entity.
+Thus, in this table `population' is an attribute of `town.'
+
+<P>
+One advantage of computer-based tables is that they can be presented on
+screen in a variety of orders, formats, or according to certain criteria, 
+all the towns in Hertfordshire, or all towns with a cathedral.
+
+<P>
+
+<H2><A NAME="SECTION00122000000000000000">
+Specific purpose vs. resource databases</A>
+</H2>
+
+<P>
+Databases often fall into one of two broad categories. The
+<A NAME="82"></A> first comprises specific purpose, limited
+databases. In academia, these often contain data gathered to perform a
+relatively limited r&#244;le only in a particular project. The database may be
+intended to provide the researcher with a particular set of data, but have no
+particular function or r&#244;le at the conclusion of the project. For example,
+Lockyear's <SPAN  CLASS="textit">Coin Hoards of the Roman Republic</SPAN> (<SMALL>CHRR</SMALL>)
+database<A NAME="1483"></A> included only data necessary
+for the project in hand [<A
+ HREF="node7.html#Lockyear:1996">LockyearLockyear1996</A>, chapter 5].
+
+<P>
+The second category comprises general purpose, resource
+databases.<A NAME="87"></A> A good example of a resource database
+are county archaeological sites and monuments records (SMRs), or national
+monuments records (Hansen:1993). These databases are not project
+specific but are intended to be of use to a wide variety of users. Resource
+databases usually attempt to be comprehensive within their `domain of
+discourse', are maintained and updated, and are made available to interested
+parties. As these databases attempt to be comprehensive in order to
+accomodate unpredicted enquiries and research, they include a wide variety of
+data which in turn requires a complex `data structure', or way of storing the
+information.
+
+<P>
+The <SMALL>CISP</SMALL> database is intended to be a resource database and as a result has
+a complex data structure (discussed below). This structure, however, provides
+great power and flexibility both for the retrieval and for the handling of
+the data, but also for future expansion of the database to include other
+information and materials.
+
+<P>
+
+<H2><A NAME="SECTION00123000000000000000">
+Relational databases</A>
+</H2>
+
+<P>
+A common and powerful method for organising data for computerisation is the
+<A NAME="90"></A><SPAN  CLASS="textit">relational data model</SPAN>. Use of this model
+often results in a database with many tables, and a common question is why
+such a complex structure should be necessary. Table <A HREF="node1.html#extable2">1(b)</A> is an
+example of bad table design with the same towns as in Table <A HREF="node1.html#extable">1(a)</A> but
+with some additional information--the population and the area of the
+counties--added. We can see from this table that the size and population of
+Hertfordshire is repeated three times. This duplication is called <SPAN  CLASS="textit">data
+redundency</SPAN>.<A NAME="95"></A> Data redundency is a problem for several
+reasons:
+
+<UL>
+<LI>It is a waste of time to enter the same data repeatedly.
+</LI>
+<LI>It increases the possibilities of error. In Table <A HREF="node1.html#extable2">1(b)</A> the
+population for Hertfordshire has been mis-typed in the third row.
+</LI>
+<LI>Entry errors will create errors in data retrieval, which are likely to
+be less visible/predictable in complex queries.
+</LI>
+<LI>It is a waste of disk space--this can be a major consideration with
+large databases.
+</LI>
+<LI>It can slow down some queries on the database.
+</LI>
+<LI>Updates or corrections have to be applied to multiple rows.
+</LI>
+</UL>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="112"></A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+Example tables from a geographical database</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>[A table of English towns]
+<A NAME="extable"></A><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">town</TD>
+<TD ALIGN="LEFT">county</TD>
+<TD ALIGN="LEFT">population</TD>
+<TD ALIGN="LEFT">county town?</TD>
+<TD ALIGN="LEFT">cathedral?</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Welwyn Garden City</TD>
+<TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">40,570</TD>
+<TD ALIGN="LEFT">no</TD>
+<TD ALIGN="LEFT">no</TD>
+</TR>
+<TR><TD ALIGN="LEFT">St. Albans</TD>
+<TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">123,800</TD>
+<TD ALIGN="LEFT">no</TD>
+<TD ALIGN="LEFT">yes</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Hertford</TD>
+<TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">2,023</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">no</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Durham</TD>
+<TD ALIGN="LEFT">Durham</TD>
+<TD ALIGN="LEFT">29,490</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">yes</TD>
+</TR>
+</TABLE>
+[A badly designed table]
+<A NAME="extable2"></A><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">town</TD>
+<TD ALIGN="LEFT">county</TD>
+<TD ALIGN="LEFT">population</TD>
+<TD ALIGN="LEFT">county town?</TD>
+<TD ALIGN="LEFT">cathedral?</TD>
+<TD ALIGN="LEFT">county population</TD>
+<TD ALIGN="LEFT">county size</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Welwyn Garden City</TD>
+<TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">40,570</TD>
+<TD ALIGN="LEFT">no</TD>
+<TD ALIGN="LEFT">no</TD>
+<TD ALIGN="LEFT">937,300</TD>
+<TD ALIGN="LEFT">631</TD>
+</TR>
+<TR><TD ALIGN="LEFT">St. Albans</TD>
+<TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">123,800</TD>
+<TD ALIGN="LEFT">no</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">937,300</TD>
+<TD ALIGN="LEFT">631</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Hertford</TD>
+<TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">2,023</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">no</TD>
+<TD ALIGN="LEFT">397,300</TD>
+<TD ALIGN="LEFT">631</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Durham</TD>
+<TD ALIGN="LEFT">Durham</TD>
+<TD ALIGN="LEFT">29,490</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">yes</TD>
+<TD ALIGN="LEFT">132,681</TD>
+<TD ALIGN="LEFT">295</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">Essex</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">1,426,200</TD>
+<TD ALIGN="LEFT">1,528</TD>
+</TR>
+</TABLE>
+[A table of counties]
+<A NAME="extable3"></A><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">county</TD>
+<TD ALIGN="LEFT">population</TD>
+<TD ALIGN="LEFT">size (square miles)</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Hertfordshire</TD>
+<TD ALIGN="LEFT">937,300</TD>
+<TD ALIGN="LEFT">631</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Durham</TD>
+<TD ALIGN="LEFT">132,681</TD>
+<TD ALIGN="LEFT">295</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">Essex</TD>
+<TD ALIGN="LEFT">1,426,200</TD>
+<TD ALIGN="LEFT">1,528</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+A second problem with the table can be seen in the last row. We have
+information about the population of Essex as a whole but none about any
+individual town. To accomodate this information we have had to create a row
+of data with only partial information. As well as these problems, a poor data
+structure can lead to inflexibility in the use of the database, and possibly
+problems in retrieving data in the form required. Examples of poor database
+design are all too common.
+
+<P>
+To solve these problems, the data should be split into several tables. To
+follow the town example through, we could have a table of towns as given in
+Table <A HREF="node1.html#extable">1(a)</A>. Each item of information stored in this table is an
+attribute of a town. The information about counties is then stored in a
+second, separate table of counties as shown in Table <A HREF="node1.html#extable3">1(c)</A>. In this
+table every item of information is an attribute of a county. This process of
+breaking data down into a series of tables is called
+<SPAN  CLASS="textit">normalisation</SPAN><A NAME="117"></A> and is the first and most
+important step in designing a relational database.
+
+<P>
+Normalisation is the process of identifying entities and their attributes,
+and defining the relationship between the entities. In our example we have
+two entities--towns and counties, and we have recorded various attributes
+(Tables <A HREF="node1.html#extable">1(a)</A> &amp; <A HREF="node1.html#extable3">1(c)</A>). There are three types of
+relationship between entities:
+<SPAN  CLASS="textit">one-to-one</SPAN><A NAME="121"></A>,
+<SPAN  CLASS="textit">one-to-many</SPAN><A NAME="123"></A>, and
+<SPAN  CLASS="textit">many-to-many</SPAN>.<A NAME="125"></A> Figure <A HREF="node1.html#relate">1</A>
+shows the different types of relationship in a diagramatic form which are
+discussed in detail below. This type of diagram is known as an <SPAN  CLASS="textit">entity
+relationship diagram</SPAN>.<A NAME="128"></A>
+
+<P>
+
+<H3><A NAME="SECTION00123100000000000000"></A><A NAME="130"></A>
+<BR>
+One-to-one relationships
+</H3>
+This is where there is, for any one entity, only one example of another
+related entity. For example, if we had only collected data about
+<SPAN  CLASS="textit">county</SPAN> towns, there would be a one-to-one relationship between each
+entry (county) in the table of counties and a town in the table of county
+towns. This type of relationship is shown in Figure <A HREF="node1.html#rel1">1(a)</A>. It would be
+possible, although not really desirable, to store all the information in one
+table in this case.
+
+<P>
+A special case of a one-to-one relationship is where particular pieces of
+information only exist, or are only applicable, to some of the entries in a
+table. In our geographical example we may wish to record the length of coast
+line or other attributes which only relate to counties which border the sea.
+In these cases one can create a separate table for this information. This
+helps to save disk space on the computer, minimise data entry time, and break
+down potentially large tables. This type of relationship is shown in Figure
+<A HREF="node1.html#rel2">1(b)</A>.
+
+<P>
+
+<H3><A NAME="SECTION00123200000000000000"></A><A NAME="135"></A>
+<BR>
+One-to-many relationships
+</H3>
+This is where there is, for any one entity, many examples of another entity.
+This is the relationship between the counties as shown in Table
+<A HREF="node1.html#extable3">1(c)</A> and the towns in Table <A HREF="node1.html#extable">1(a)</A>--a town can only have
+one county <SPAN  CLASS="textit">but</SPAN> a county will have many towns. In these cases, the
+information about each entity must be stored in separate tables. This type of
+relationship is shown in Figure <A HREF="node1.html#rel3">1(c)</A>.
+
+<P>
+
+<H3><A NAME="SECTION00123300000000000000"></A><A NAME="141"></A>
+<BR>
+Many-to-many relationships
+</H3>
+This is where an entity can have many examples of another entity <SPAN  CLASS="textit">but</SPAN>
+this second entity can also have many examples of the first. In our
+geographical example, we may want to store information about rivers. Any one
+county has many rivers, but similarly, a river is likely to flow through many
+counties. This type of relationship is illustrated in Figure <A HREF="node1.html#rel4">1(d)</A>.
+
+<P>
+This type of relationship necessitates the use of the third table. This
+effectively creates two one-to-many relationships. These intermediate tables
+can be called <SPAN  CLASS="textit">linking tables</SPAN>.<A NAME="145"></A><A NAME="linking"></A> These tables often only contain two columns which act as a link between the
+two main tables. In our geographical example, the linking table would contain
+the names of counties, and the names of rivers only. This solution to
+modelling many-to-many relationships is illustrated in Figure <A HREF="node1.html#rel5">1(e)</A>.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="rel1"></A><A NAME="rel2"></A><A NAME="rel3"></A><A NAME="rel4"></A><A NAME="rel5"></A><A NAME="relate"></A><A NAME="1492"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1:</STRONG>
+Entity relationship diagrams.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV>[A one-to-one relationship]<!-- MATH
+ $\includegraphics[height=1.4cm]{rel1.eps}$
+ -->
+<IMG
+ WIDTH="311" HEIGHT="63" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="\includegraphics[height=1.4cm]{rel1.eps}">
+<P>
+[A one-to-one relationship for some entities only]<!-- MATH
+ $\includegraphics[height=1.4cm]{rel2.eps}$
+ -->
+<IMG
+ WIDTH="311" HEIGHT="63" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.gif"
+ ALT="\includegraphics[height=1.4cm]{rel2.eps}">
+<P>
+[A one-to-many relationship]<!-- MATH
+ $\includegraphics[height=1.4cm]{rel3.eps}$
+ -->
+<IMG
+ WIDTH="311" HEIGHT="63" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="\includegraphics[height=1.4cm]{rel3.eps}">
+<P>
+[A many-to-many relationship]<!-- MATH
+ $\includegraphics[height=1.4cm]{rel4.eps}$
+ -->
+<IMG
+ WIDTH="311" HEIGHT="63" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="\includegraphics[height=1.4cm]{rel4.eps}">
+<P>
+[Splitting a many-to-many relationship into two one-to-many
+relationships]<!-- MATH
+ $\includegraphics[height=1.4cm]{rel5.eps}$
+ -->
+<IMG
+ WIDTH="457" HEIGHT="63" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="\includegraphics[height=1.4cm]{rel5.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<H3><A NAME="SECTION00123400000000000000"></A>
+<A NAME="162"></A>
+<A NAME="163"></A>
+<A NAME="164"></A>
+<BR>
+Primary and foreign keys
+</H3>
+
+<P>
+Every row in a table in a relational database must be unique, there must
+not be two identical rows. One or more columns are therefore designated the
+<SPAN  CLASS="textit">primary key</SPAN> (sometimes called the unique identifier)
+for the items contained within it. Thus, in Table
+<A HREF="node1.html#extable">1(a)</A> the column `town' could act as the primary key, and in
+Table <A HREF="node1.html#extable3">1(c)</A> column `county' can act as that table's primary key.
+This concept has been used in paper-based (published)
+databases, each inscribed stone catalogued in R. A. S. Macalister's
+<SPAN  CLASS="textit">Corpus Inscriptionum Insularum Celticarum</SPAN>
+Macalister:1945,Macalister:1949 has an unique identifying number,
+as does each hoard in Crawford's <SPAN  CLASS="textit">Roman Republican Coin Hoards</SPAN>
+Crawford:1969:b.
+
+<P>
+In our geographical example, however, there can be more than one town with
+the same name, Newcastle or Newport for example. In this case we could
+designate the `town' <SPAN  CLASS="textit">and</SPAN> the `county' columns together as the primary key.
+
+<P>
+<SPAN  CLASS="textit">Foreign keys</SPAN><A NAME="174"></A> are columns in a table which provide a
+link to another table. In our geographical example, the county column in our
+table of towns provides a link to the table of counties, and is thus a key
+field in that relationship. It is very important therefore to ensure that
+entries in the both tables are identical, that both tables use the full
+county name (Hertfordshire) or an abbreviation (Herts) but not a mixture of
+the two.
+
+<P>
+There is one final complexity which must be addressed. What could we do in
+the case where there are two towns with the same name in the same county?
+Although in our example it is unlikely, in databases of other information
+this could happen. We could use a combination of name, county and population
+as the primary key for the table of towns. If we had a table of shops,
+we would have to include the town name, county <SPAN  CLASS="textit">and</SPAN> the population to
+provide a link between the two tables. This, however, will re-introduce the
+problem of data redundancy.<A NAME="176"></A> A better course of action
+is to assign a unique code to each town, and to use this code as the link to
+the table of shops. The use of codes has other advantages: it can be quite
+short and thus save time during data entry and disk space. These codes can be
+assigned by the user, WGC for Welwyn Garden City, or could be a
+sequential number created automatically by the program.
+
+<P>
+
+<H3><A NAME="SECTION00123500000000000000"></A><A NAME="178"></A>
+<BR>
+Data types and definition
+</H3>
+
+<P>
+The data stored in tables can be classified into types. In Table
+<A HREF="node1.html#extable">1(a)</A> the first column can contain any letter, number, or other
+character (such as {, or &amp;). This is an alphanumeric data type, also known
+as a string or character field.<A NAME="180"></A><A NAME="181"></A> The third column for population contains a number and is a
+numeric data type. The last two columns are `logical' and can only contain
+yes or no. There are other data types such as date or even images and sounds.
+
+<P>
+The type of data is important as different types of data behave in different
+ways. A good example is the sorting order of a series of numbers. If we store
+1, 22, 3, 10, 2 and 15 in a numeric column, and ask the program to sort the
+rows of the table on this column, we will get 1, 2, 3, 10, 15, 22 as we might
+expect. If that column was defined as an alphanumeric data type, the result
+would be 1, 10, 15, 2, 22, 3, a rather different result! Different DMSs
+have different ways of handling different types of data (see below).
+
+<P>
+Each column of data also has to be defined.<A NAME="182"></A> This can
+be quite simple, `the county column will contain the full county name'.
+We also have to decide what the entries mean, in the table of counties we
+have a column for area--we have to decide if this is the area in square
+miles or square kilometers.
+
+<P>
+We may wish to restrict the possible entries in a column. We can do this to
+prevent errors, we may decide that the maximum allowed population in a
+town is 10,000,000 as no town in Britain has a population larger than that.
+We may also wish to restrict entries to a limited list of terms. If, for
+example, we had `type' as an attribute of town, we could have market town,
+small town, county town, village, small village, hamlet and so on. If any
+term was allowable, this attribute would not be very useful for retrieving
+groups of settlements in any meaningful way. We might, therefore, create a
+list of allowed terms which are precisely defined and which would therefore
+allow meaningful data retrieval.
+
+<P>
+
+<H3><A NAME="SECTION00123600000000000000"></A><A NAME="184"></A><A NAME="lookup"></A>
+<BR>
+Look-up tables
+</H3>
+
+<P>
+In the previous section restricted data fields were discussed. How, in
+practice, are the entries in fields to be restricted? The first method is for
+the allowed terms to be listed in a manual such as this one, and for every
+user to be disciplined enough only to use those terms, and to check that they
+have used the correct ones. There are advantages, however, in storing these
+terms on the computer along with the main tables of data. There are thus two
+further methods. The first is to include the definitions in a database
+application (see below), or in the way the table is defined within the DMS.
+This has the disadvantage that the information is dependent on the software
+being used, and if the data is transferred (`ported') to another program this
+information will be lost. It is also difficult to add new terms to the list.
+The second alternative method is to use <SPAN  CLASS="textit">look-up tables</SPAN>, of which there
+are two types, simple and hierarchical.
+
+<P>
+<SPAN  CLASS="textit">Simple look-up tables</SPAN><A NAME="188"></A> typically consist
+of one or two columns. In a one column example, the list of allowed terms is
+stored in the table; in a two column example the first column stores the
+allowed term, often in the form of a code, and the second column stores the
+definition of that term or code. A good example of simple look-up tables are
+the <SMALL>POSIT1</SMALL><A NAME="1558"></A>, <SMALL>POSIT2</SMALL><A NAME="1561"></A> and <SMALL>POSIT3</SMALL><A NAME="1564"></A> tables discussed on
+page <A HREF="node3.html#posits"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>.
+
+<P>
+<SPAN  CLASS="textit">Hierarchical look-up tables</SPAN><A NAME="194"></A> are
+very similar in that one column contains a series of unique terms or codes.
+The remaining columns then contain definitions of that code, but in different
+levels of detail. Using our geographical example, we might wish to classify
+the rivers. The look-up table would contain a column of codes. Another column
+could then contain some broad classification such as `major river', `minor
+river' and `stream.' A third column could then further subdivide the
+classification, major rivers might be divided into `tidal' and
+`non-tidal', and a fourth column could divide `tidal' into `estuarine' and
+`non-estuarine'. The <SMALL>SITETYPE</SMALL><A NAME="1567"></A> table discussed in section
+<A HREF="node3.html#sitetype">10.6</A> is a good example of a hierarchical look-up table.
+
+<P>
+Hierarchical look-up tables have a dual function--to restrict the entries in
+a second table (sometimes called a parent table), and to provide a mechanism
+by which complex queries can be simplified. Both types of look-up table can
+be used to create printed output from the database which is more readily
+understood, by replacing a series of possibly obscure codes with more
+descriptive pieces of text.
+
+<P>
+
+<H3><A NAME="SECTION00123700000000000000">
+Database applications</A>
+</H3>
+Relational database management systems (RDMS)<A NAME="198"></A> will typically provide a series of tools for creating
+tables, conducting searches, producing printed reports, With a
+complicated database, however, it is usual for a <SPAN  CLASS="textit">database
+application</SPAN><A NAME="200"></A> to be written. A database
+application is a usually a program within a program, it is a program that
+runs inside the RDMS. Most, if not all RDMSs, provide an `application
+development language.' This will allow a computer programmer to create an
+application to perform specific tasks for a particular database, most
+commonly to provide a simpler and more efficient method of inputting data to
+the database, and for checking for errors. Often this will use a series of
+forms with menus and buttons.
+
+<P>
+
+<H1><A NAME="SECTION00130000000000000000">
+Conclusions</A>
+</H1>
+This chapter has provided an overview of the concept of databases, and has
+presented detail relating to the concept of relational databases, their
+structure and requirements. For those wishing to go further the database
+Bible remains Date's <SPAN  CLASS="textit">An Introduction to Database Systems</SPAN>
+[<A
+ HREF="node7.html#Date:1995">DateDate1995</A>];<A NAME="204"></A> Carter:1992 provides a less
+comprehensive but perhaps more comprehensible account for non-specialists.
+
+<P>
+The following chapters examine the content and structure of the <SMALL>CISP</SMALL> 
+database in general, and then provide a data definition guide to all tables
+and fields.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html105"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html99"
+  HREF="MANUAL4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html93"
+  HREF="MANUAL4.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A> 
+<A NAME="tex2html101"
+  HREF="MANUAL4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.gif"></A> 
+<A NAME="tex2html103"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html106"
+  HREF="node2.html">The CISP database</A>
+<B> Up:</B> <A NAME="tex2html100"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+<B> Previous:</B> <A NAME="tex2html94"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+ &nbsp <B>  <A NAME="tex2html102"
+  HREF="MANUAL4.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html104"
+  HREF="node8.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mike Gahan
+2000-10-18
+</ADDRESS>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</HTML>

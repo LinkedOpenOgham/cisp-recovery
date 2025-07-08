@@ -1,0 +1,1561 @@
+
+
+<head>
+
+<title>CISP - Cork & Waterford (all sites)</title>
+
+<link rel=stylesheet type="text/css" href="style.css">
+
+<script src=maps.js></script>
+
+<script>
+
+function showonmap ( site ) {
+
+  flashsym ( site );
+
+  jumpTo ( 'top' );
+
+}
+
+</script>
+
+
+
+<body onload="loaded();">
+
+<a name=top></a>
+
+<center>
+
+<table border=4 cellspacing=0 cellpadding=4 bordercolor=brown bgcolor=linen>
+
+<tr bgcolor=linen><th>Cork & Waterford</th>
+
+<tr bgcolor=black><td><center>
+
+<applet name=IMAP ARCHIVE=ImageMap.jar CODE=ImageMap.class
+
+	WIDTH=560 HEIGHT=418 MAYSCRIPT>
+
+<PARAM NAME=background VALUE=cork.jpg>
+
+<PARAM NAME=areas VALUE="
+
+
+
+
+
+  area coords=350,204 shape=1,2,1 id=LISMR
+
+  alt=|Lismore|
+
+  href=../site/lismr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=217,258 shape=1,0,1 id=COOLN
+
+  alt=|Coolowen|
+
+  href=../site/cooln.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=550,86 shape=1,0,1 id=FIDUP
+
+  alt=|Fiddaun Upper|
+
+  href=../site/fidup.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=157,237 shape=4,1,1 id=BARHA,KLWER
+
+  alt=|2 sites near Barrahaurin|
+
+  onclick=|jumpTo('BARHA')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=81,302 shape=1,0,1 id=CRSER
+
+  alt=|Crushterra|
+
+  href=../site/crser.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=108,214 shape=1,1,1 id=LHANE
+
+  alt=|Liscahane|
+
+  href=../site/lhane.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=159,243 shape=1,0,1 id=KILTH
+
+  alt=|Kilcullen South|
+
+  href=../site/kilth.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=89,311 shape=1,0,1 id=AUTAG
+
+  alt=|Aultagh|
+
+  href=../site/autag.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=449,142 shape=1,1,1 id=WINDG
+
+  alt=|Windgap|
+
+  href=../site/windg.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=154,253 shape=4,1,1 id=COOGH,MNTRI
+
+  alt=|2 sites near Aghabulloge|
+
+  onclick=|jumpTo('COOGH')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=83,329 shape=1,1,1 id=DNWAY
+
+  alt=|Dunmanway|
+
+  href=../site/dnway.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=139,124 shape=1,1,1 id=TULYS
+
+  alt=|Tullylease|
+
+  href=../site/tulys.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=158,277 shape=1,1,1 id=ROVMO
+
+  alt=|Rooves More|
+
+  href=../site/rovmo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=502,201 shape=1,0,1 id=BAVEL
+
+  alt=|Ballyvellon|
+
+  href=../site/bavel.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=156,281 shape=1,2,1 id=KNWEE
+
+  alt=|Knockshanawee|
+
+  href=../site/knwee.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=442,208 shape=1,0,1 id=FOXCA
+
+  alt=|Fox's Castle|
+
+  href=../site/foxca.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=444,192 shape=4,1,1 id=GAMIL,KNKLA
+
+  alt=|2 sites near Garranmillon|
+
+  onclick=|jumpTo('GAMIL')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=291,259 shape=1,1,1 id=GLEWI
+
+  alt=|Glenawillin|
+
+  href=../site/glewi.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=389,178 shape=1,0,1 id=PRIES
+
+  alt=|Priesttown|
+
+  href=../site/pries.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=527,42 shape=1,1,1 id=CHLAR
+
+  alt=|Churchclara|
+
+  href=../site/chlar.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=105,288 shape=1,0,1 id=COOLH
+
+  alt=|Cooldorragha|
+
+  href=../site/coolh.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=445,221 shape=1,0,1 id=OLDIS
+
+  alt=|Old Island|
+
+  href=../site/oldis.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=478,107 shape=1,1,1 id=LAMOG
+
+  alt=|Lamoge|
+
+  href=../site/lamog.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=526,51 shape=1,1,1 id=DUNB
+
+  alt=|Dunbell Big|
+
+  href=../site/dunb.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=337,181 shape=1,0,1 id=SCHUD
+
+  alt=|Seemochuda|
+
+  href=../site/schud.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=13,241 shape=1,0,1 id=MANGE
+
+  alt=|Mangerton Mountain|
+
+  href=../site/mange.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=523,80 shape=1,0,1 id=LEGAN
+
+  alt=|Legan|
+
+  href=../site/legan.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=180,246 shape=1,0,1 id=BUKIL
+
+  alt=|Bunkilla|
+
+  href=../site/bukil.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=132,210 shape=1,0,1 id=CRNLO
+
+  alt=|Crinnaloo|
+
+  href=../site/crnlo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=60,287 shape=1,0,1 id=KLVMO
+
+  alt=|Kealvaugh More|
+
+  href=../site/klvmo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=471,148 shape=4,1,1 id=CREHS,CRGHH
+
+  alt=|2 sites near Crehanagh South|
+
+  onclick=|jumpTo('CREHS')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=472,151 shape=1,0,1 id=BQUIN
+
+  alt=|Ballyquin|
+
+  href=../site/bquin.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=134,233 shape=1,0,1 id=CRGUL
+
+  alt=|Carrigagulla|
+
+  href=../site/crgul.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=135,255 shape=1,0,1 id=DEELI
+
+  alt=|Deelish|
+
+  href=../site/deeli.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=384,263 shape=1,0,1 id=GRANG
+
+  alt=|Grange|
+
+  href=../site/grang.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=389,275 shape=1,1,1 id=AMORE
+
+  alt=|Ardmore|
+
+  href=../site/amore.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=100,381 shape=1,0,1 id=BURGA
+
+  alt=|Burgatia|
+
+  href=../site/burga.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=479,208 shape=1,0,1 id=KLBEG
+
+  alt=|Kilbeg|
+
+  href=../site/klbeg.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=473,215 shape=1,1,1 id=KNMAH
+
+  alt=|Knockmahon|
+
+  href=../site/knmah.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=277,244 shape=1,0,1 id=RACOB
+
+  alt=|Rathcobane|
+
+  href=../site/racob.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=276,273 shape=1,0,1 id=BIISL
+
+  alt=|Bishop's Island|
+
+  href=../site/biisl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=137,349 shape=1,1,1 id=AHLIS
+
+  alt=|Ahalisky|
+
+  href=../site/ahlis.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=130,358 shape=1,0,1 id=TEMAN
+
+  alt=|Templebryan|
+
+  href=../site/teman.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=244,-3 shape=1,0,1 id=CLOON
+
+  alt=|Castleconnell, Cloon Island|
+
+  href=../site/cloon.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=161,245 shape=1,1,1 id=MONAT
+
+  alt=|Monataggart|
+
+  href=../site/monat.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=366,229 shape=1,1,1 id=DROMR
+
+  alt=|Dromore|
+
+  href=../site/dromr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=163,257 shape=1,0,1 id=TLGMO
+
+  alt=|Tullig More|
+
+  href=../site/tlgmo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=532,65 shape=1,0,1 id=TULHE
+
+  alt=|Tullaherin|
+
+  href=../site/tulhe.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=530,83 shape=1,0,1 id=THOTO
+
+  alt=|Thomastown|
+
+  href=../site/thoto.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=343,110 shape=1,3,1 id=TOURP
+
+  alt=|Toureen|
+
+  href=../site/tourp.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=314,238 shape=1,3,1 id=BAKNK
+
+  alt=|Ballyknock|
+
+  href=../site/baknk.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=45,320 shape=1,0,1 id=COOME
+
+  alt=|Coomleagh East|
+
+  href=../site/coome.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=25,170 shape=1,0,1 id=BAWGL
+
+  alt=|Bawnaglanna|
+
+  href=../site/bawgl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=161,301 shape=1,0,1 id=GARES
+
+  alt=|Garranes|
+
+  href=../site/gares.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=392,163 shape=1,0,1 id=TOOCU
+
+  alt=|Tooracurragh|
+
+  href=../site/toocu.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=450,204 shape=1,2,1 id=DRUML
+
+  alt=|Drumlohan|
+
+  href=../site/druml.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=453,215 shape=1,1,1 id=BLVOO
+
+  alt=|Ballyvooney|
+
+  href=../site/blvoo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=204,214 shape=4,1,1 id=BURNF,GRENL
+
+  alt=|2 sites near Burnfort|
+
+  onclick=|jumpTo('BURNF')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=404,190 shape=1,2,1 id=KNBOY
+
+  alt=|Seskinan, Knockboy|
+
+  href=../site/knboy.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=403,233 shape=1,0,1 id=SHNKL
+
+  alt=|Two Mile Bridge|
+
+  href=../site/shnkl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=114,341 shape=1,1,1 id=CARHA
+
+  alt=|Carhoovauler|
+
+  href=../site/carha.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=21,264 shape=1,0,1 id=LMNGH
+
+  alt=|Lomanagh|
+
+  href=../site/lmngh.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=148,246 shape=1,1,1 id=KNOUR
+
+  alt=|Knockrour|
+
+  href=../site/knour.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=70,312 shape=1,0,1 id=KEENH
+
+  alt=|Keenrath|
+
+  href=../site/keenh.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=26,280 shape=1,0,1 id=INAGH
+
+  alt=|Inchinanagh|
+
+  href=../site/inagh.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=195,299 shape=1,2,1 id=BAHAN
+
+  alt=|Ballyhank|
+
+  href=../site/bahan.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=326,108 shape=1,0,1 id=BKYLE
+
+  alt=|St Berrihert's Kyle|
+
+  href=../site/bkyle.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=165,78 shape=1,0,1 id=BAYEL
+
+  alt=|Ballyelan|
+
+  href=../site/bayel.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=379,160 shape=1,0,1 id=NEWLE
+
+  alt=|Newcastle|
+
+  href=../site/newle.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=263,111 shape=1,0,1 id=BGARR
+
+  alt=|Ballingary|
+
+  href=../site/bgarr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=430,228 shape=1,2,1 id=KLGRV
+
+  alt=|Kilgrovan|
+
+  href=../site/klgrv.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=238,244 shape=1,1,1 id=BABOR
+
+  alt=|Ballynabortagh|
+
+  href=../site/babor.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=232,250 shape=1,0,1 id=DNBUL
+
+  alt=|Dunbulloge|
+
+  href=../site/dnbul.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=171,239 shape=1,0,1 id=LABAN
+
+  alt=|Lackabane|
+
+  href=../site/laban.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=375,219 shape=1,0,1 id=KLMOL
+
+  alt=|Kilmolash|
+
+  href=../site/klmol.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=218,126 shape=1,0,1 id=MNTRU
+
+  alt=|Mount Russell|
+
+  href=../site/mntru.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=462,96 shape=1,1,1 id=KMERY
+
+  alt=|Killamery|
+
+  href=../site/kmery.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=551,15 shape=1,1,1 id=CLMOR
+
+  alt=|Clonmore|
+
+  href=../site/clmor.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=553,28 shape=1,0,1 id=SHANK
+
+  alt=|Shankill|
+
+  href=../site/shank.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=324,274 shape=1,1,1 id=RTHCA
+
+  alt=|Rathcanning|
+
+  href=../site/rthca.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=507,100 shape=1,0,1 id=BALBO
+
+  alt=|Ballyboodan|
+
+  href=../site/balbo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=43,27 shape=1,0,1 id=COHIL
+
+  alt=|Cockhill|
+
+  href=../site/cohil.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=81,252 shape=1,1,1 id=GLEBE
+
+  alt=|Glebe|
+
+  href=../site/glebe.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=84,263 shape=1,0,1 id=CLHEE
+
+  alt=|Cloheena|
+
+  href=../site/clhee.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=216,231 shape=1,0,1 id=GLSHS
+
+  alt=|Glashaboy South|
+
+  href=../site/glshs.html
+
+  target=text_display
+
+  
+
+">
+
+<PARAM NAME=key VALUE="
+
+item shape=1,0,1 text='1 Stone'
+
+item shape=1,1,1 text='2 - 5 stones'
+
+item shape=1,2,1 text='6 - 10 stones'
+
+item shape=1,3,1 text='> 10 stones'
+
+item shape=4,3,1 text='several nearby sites'
+
+">
+
+</applet>
+
+</table>
+
+</center>
+
+<table border=0 cellpadding=4>
+
+<tr valign=top>
+
+<td><h1>All Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+<tr><td><a href="../site/coogh.html" target=text_display> COOGH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COOGH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Aghabulloge</td><td>2</td>
+
+<tr><td><a href="../site/ahlis.html" target=text_display> AHLIS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('AHLIS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ahalisky</td><td>3</td>
+
+<tr><td><a href="../site/amore.html" target=text_display> AMORE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('AMORE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ardmore</td><td>3</td>
+
+<tr><td><a href="../site/autag.html" target=text_display> AUTAG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('AUTAG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Aultagh</td><td>1</td>
+
+<tr><td><a href="../site/bgarr.html" target=text_display> BGARR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BGARR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballingary</td><td>1</td>
+
+<tr><td><a href="../site/balbo.html" target=text_display> BALBO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BALBO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyboodan</td><td>1</td>
+
+<tr><td><a href="../site/bayel.html" target=text_display> BAYEL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAYEL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyelan</td><td>1</td>
+
+<tr><td><a href="../site/bahan.html" target=text_display> BAHAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAHAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyhank</td><td>6</td>
+
+<tr><td><a href="../site/baknk.html" target=text_display> BAKNK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAKNK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyknock</td><td>15</td>
+
+<tr><td><a href="../site/babor.html" target=text_display> BABOR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BABOR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballynabortagh</td><td>2</td>
+
+<tr><td><a href="../site/bquin.html" target=text_display> BQUIN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BQUIN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyquin</td><td>1</td>
+
+<tr><td><a href="../site/bavel.html" target=text_display> BAVEL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAVEL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyvellon</td><td>1</td>
+
+<tr><td><a href="../site/blvoo.html" target=text_display> BLVOO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BLVOO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ballyvooney</td><td>2</td>
+
+<tr><td><a href="../site/barha.html" target=text_display> BARHA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BARHA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Barrahaurin</td><td>1</td>
+
+<tr><td><a href="../site/bawgl.html" target=text_display> BAWGL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAWGL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bawnaglanna</td><td>1</td>
+
+<tr><td><a href="../site/biisl.html" target=text_display> BIISL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BIISL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bishop's Island</td><td>1</td>
+
+<tr><td><a href="../site/bukil.html" target=text_display> BUKIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BUKIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bunkilla</td><td>1</td>
+
+<tr><td><a href="../site/burga.html" target=text_display> BURGA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BURGA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Burgatia</td><td>1</td>
+
+<tr><td><a href="../site/burnf.html" target=text_display> BURNF</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BURNF');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Burnfort</td><td>1</td>
+
+<tr><td><a href="../site/carha.html" target=text_display> CARHA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CARHA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Carhoovauler</td><td>3</td>
+
+<tr><td><a href="../site/crgul.html" target=text_display> CRGUL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRGUL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Carrigagulla</td><td>1</td>
+
+<tr><td><a href="../site/cloon.html" target=text_display> CLOON</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CLOON');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Castleconnell, Cloon Island</td><td>1</td>
+
+<tr><td><a href="../site/chlar.html" target=text_display> CHLAR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CHLAR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Churchclara</td><td>2</td>
+
+<tr><td><a href="../site/clhee.html" target=text_display> CLHEE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CLHEE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cloheena</td><td>1</td>
+
+<tr><td><a href="../site/clmor.html" target=text_display> CLMOR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CLMOR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Clonmore</td><td>2</td>
+
+<tr><td><a href="../site/cohil.html" target=text_display> COHIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COHIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cockhill</td><td>1</td>
+
+<tr><td><a href="../site/coolh.html" target=text_display> COOLH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COOLH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cooldorragha</td><td>1</td>
+
+<tr><td><a href="../site/cooln.html" target=text_display> COOLN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COOLN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Coolowen</td><td>1</td>
+
+<tr><td><a href="../site/coome.html" target=text_display> COOME</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COOME');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Coomleagh East</td><td>1</td>
+
+<tr><td><a href="../site/crehs.html" target=text_display> CREHS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CREHS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Crehanagh South</td><td>1</td>
+
+<tr><td><a href="../site/crnlo.html" target=text_display> CRNLO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRNLO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Crinnaloo</td><td>1</td>
+
+<tr><td><a href="../site/crser.html" target=text_display> CRSER</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRSER');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Crushterra</td><td>1</td>
+
+<tr><td><a href="../site/crghh.html" target=text_display> CRGHH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRGHH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Curraghnagarraha</td><td>1</td>
+
+<tr><td><a href="../site/deeli.html" target=text_display> DEELI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DEELI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Deelish</td><td>1</td>
+
+<tr><td><a href="../site/dromr.html" target=text_display> DROMR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DROMR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dromore</td><td>3</td>
+
+<tr><td><a href="../site/druml.html" target=text_display> DRUML</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DRUML');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Drumlohan</td><td>10</td>
+
+<tr><td><a href="../site/dunb.html" target=text_display> DUNB</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DUNB');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dunbell Big</td><td>2</td>
+
+<tr><td><a href="../site/dnbul.html" target=text_display> DNBUL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DNBUL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dunbulloge</td><td>1</td>
+
+<tr><td><a href="../site/dnway.html" target=text_display> DNWAY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DNWAY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dunmanway</td><td>3</td>
+
+<tr><td><a href="../site/fidup.html" target=text_display> FIDUP</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('FIDUP');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Fiddaun Upper</td><td>1</td>
+
+<tr><td><a href="../site/foxca.html" target=text_display> FOXCA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('FOXCA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Fox's Castle</td><td>1</td>
+
+<tr><td><a href="../site/gares.html" target=text_display> GARES</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GARES');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Garranes</td><td>1</td>
+
+<tr><td><a href="../site/gamil.html" target=text_display> GAMIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GAMIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Garranmillon</td><td>2</td>
+
+<tr><td><a href="../site/glshs.html" target=text_display> GLSHS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GLSHS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Glashaboy South</td><td>1</td>
+
+<tr><td><a href="../site/glebe.html" target=text_display> GLEBE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GLEBE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Glebe</td><td>3</td>
+
+<tr><td><a href="../site/glewi.html" target=text_display> GLEWI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GLEWI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Glenawillin</td><td>2</td>
+
+<tr><td><a href="../site/grang.html" target=text_display> GRANG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GRANG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Grange</td><td>1</td>
+
+<tr><td><a href="../site/grenl.html" target=text_display> GRENL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GRENL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Greenhill</td><td>2</td>
+
+<tr><td><a href="../site/inagh.html" target=text_display> INAGH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('INAGH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Inchinanagh</td><td>1</td>
+
+<tr><td><a href="../site/klvmo.html" target=text_display> KLVMO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLVMO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kealvaugh More</td><td>1</td>
+
+<tr><td><a href="../site/keenh.html" target=text_display> KEENH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KEENH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Keenrath</td><td>1</td>
+
+<tr><td><a href="../site/klbeg.html" target=text_display> KLBEG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLBEG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kilbeg</td><td>1</td>
+
+<tr><td><a href="../site/kilth.html" target=text_display> KILTH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KILTH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kilcullen South</td><td>1</td>
+
+<tr><td><a href="../site/klgrv.html" target=text_display> KLGRV</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLGRV');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kilgrovan</td><td>6</td>
+
+<tr><td><a href="../site/kmery.html" target=text_display> KMERY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KMERY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Killamery</td><td>3</td>
+
+<tr><td><a href="../site/klwer.html" target=text_display> KLWER</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLWER');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kilmartin Lower</td><td>1</td>
+
+<tr><td><a href="../site/klmol.html" target=text_display> KLMOL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLMOL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kilmolash</td><td>1</td>
+
+<tr><td><a href="../site/knkla.html" target=text_display> KNKLA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNKLA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Knockalafalla</td><td>1</td>
+
+<tr><td><a href="../site/knmah.html" target=text_display> KNMAH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNMAH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Knockmahon</td><td>2</td>
+
+<tr><td><a href="../site/knour.html" target=text_display> KNOUR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNOUR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Knockrour</td><td>2</td>
+
+<tr><td><a href="../site/knwee.html" target=text_display> KNWEE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNWEE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Knockshanawee</td><td>6</td>
+
+<tr><td><a href="../site/laban.html" target=text_display> LABAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LABAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lackabane</td><td>1</td>
+
+<tr><td><a href="../site/lamog.html" target=text_display> LAMOG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LAMOG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lamoge</td><td>2</td>
+
+<tr><td><a href="../site/legan.html" target=text_display> LEGAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LEGAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Legan</td><td>1</td>
+
+<tr><td><a href="../site/lhane.html" target=text_display> LHANE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LHANE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Liscahane</td><td>2</td>
+
+<tr><td><a href="../site/lismr.html" target=text_display> LISMR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LISMR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lismore</td><td>6</td>
+
+<tr><td><a href="../site/lmngh.html" target=text_display> LMNGH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LMNGH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lomanagh</td><td>1</td>
+
+<tr><td><a href="../site/mange.html" target=text_display> MANGE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MANGE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mangerton Mountain</td><td>1</td>
+
+<tr><td><a href="../site/monat.html" target=text_display> MONAT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MONAT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Monataggart</td><td>4</td>
+
+<tr><td><a href="../site/mntri.html" target=text_display> MNTRI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MNTRI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mount Rivers</td><td>2</td>
+
+<tr><td><a href="../site/mntru.html" target=text_display> MNTRU</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MNTRU');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mount Russell</td><td>1</td>
+
+<tr><td><a href="../site/newle.html" target=text_display> NEWLE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NEWLE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Newcastle</td><td>1</td>
+
+<tr><td><a href="../site/oldis.html" target=text_display> OLDIS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('OLDIS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Old Island</td><td>1</td>
+
+<tr><td><a href="../site/pries.html" target=text_display> PRIES</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRIES');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Priesttown</td><td>1</td>
+
+<tr><td><a href="../site/rthca.html" target=text_display> RTHCA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RTHCA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Rathcanning</td><td>2</td>
+
+<tr><td><a href="../site/racob.html" target=text_display> RACOB</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RACOB');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Rathcobane</td><td>1</td>
+
+<tr><td><a href="../site/rovmo.html" target=text_display> ROVMO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ROVMO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Rooves More</td><td>3</td>
+
+<tr><td><a href="../site/schud.html" target=text_display> SCHUD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCHUD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Seemochuda</td><td>1</td>
+
+<tr><td><a href="../site/knboy.html" target=text_display> KNBOY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNBOY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Seskinan, Knockboy</td><td>8</td>
+
+<tr><td><a href="../site/shank.html" target=text_display> SHANK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SHANK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Shankill</td><td>1</td>
+
+<tr><td><a href="../site/bkyle.html" target=text_display> BKYLE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BKYLE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Berrihert's Kyle</td><td>1</td>
+
+<tr><td><a href="../site/teman.html" target=text_display> TEMAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TEMAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Templebryan</td><td>1</td>
+
+<tr><td><a href="../site/thoto.html" target=text_display> THOTO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('THOTO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Thomastown</td><td>1</td>
+
+<tr><td><a href="../site/toocu.html" target=text_display> TOOCU</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TOOCU');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tooracurragh</td><td>1</td>
+
+<tr><td><a href="../site/tourp.html" target=text_display> TOURP</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TOURP');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Toureen</td><td>45</td>
+
+<tr><td><a href="../site/tulhe.html" target=text_display> TULHE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TULHE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tullaherin</td><td>1</td>
+
+<tr><td><a href="../site/tlgmo.html" target=text_display> TLGMO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TLGMO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tullig More</td><td>1</td>
+
+<tr><td><a href="../site/tulys.html" target=text_display> TULYS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TULYS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tullylease</td><td>5</td>
+
+<tr><td><a href="../site/shnkl.html" target=text_display> SHNKL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SHNKL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Two Mile Bridge</td><td>1</td>
+
+<tr><td><a href="../site/windg.html" target=text_display> WINDG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WINDG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Windgap</td><td>2</td>
+
+</table>
+
+</td>
+
+
+
+
+
+<td><h1>Clustered Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+
+
+<tr><th colspan=3><a name=BARHA></a>
+
+Sites near Barrahaurin</th>
+
+<tr><td><a href="../site/barha.html" target=text_display> BARHA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BARHA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Barrahaurin</td><td>1</td>
+
+<tr><td><a href="../site/klwer.html" target=text_display> KLWER</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLWER');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kilmartin Lower</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=COOGH></a>
+
+Sites near Aghabulloge</th>
+
+<tr><td><a href="../site/coogh.html" target=text_display> COOGH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COOGH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Aghabulloge</td><td>2</td>
+
+<tr><td><a href="../site/mntri.html" target=text_display> MNTRI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MNTRI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mount Rivers</td><td>2</td>
+
+
+
+<tr><th colspan=3><a name=GAMIL></a>
+
+Sites near Garranmillon</th>
+
+<tr><td><a href="../site/gamil.html" target=text_display> GAMIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GAMIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Garranmillon</td><td>2</td>
+
+<tr><td><a href="../site/knkla.html" target=text_display> KNKLA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNKLA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Knockalafalla</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=CREHS></a>
+
+Sites near Crehanagh South</th>
+
+<tr><td><a href="../site/crehs.html" target=text_display> CREHS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CREHS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Crehanagh South</td><td>1</td>
+
+<tr><td><a href="../site/crghh.html" target=text_display> CRGHH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRGHH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Curraghnagarraha</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=BURNF></a>
+
+Sites near Burnfort</th>
+
+<tr><td><a href="../site/burnf.html" target=text_display> BURNF</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BURNF');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Burnfort</td><td>1</td>
+
+<tr><td><a href="../site/grenl.html" target=text_display> GRENL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GRENL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Greenhill</td><td>2</td>
+
+</td></table>
+
+</td></table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+
+</html>
+
+
+

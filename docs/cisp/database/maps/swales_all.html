@@ -1,0 +1,2077 @@
+
+
+<head>
+
+<title>CISP - South Wales (all sites)</title>
+
+<link rel=stylesheet type="text/css" href="style.css">
+
+<script src=maps.js></script>
+
+<script>
+
+function showonmap ( site ) {
+
+  flashsym ( site );
+
+  jumpTo ( 'top' );
+
+}
+
+</script>
+
+
+
+<body onload="loaded();">
+
+<a name=top></a>
+
+<center>
+
+<table border=4 cellspacing=0 cellpadding=4 bordercolor=brown bgcolor=linen>
+
+<tr bgcolor=linen><th>South Wales</th>
+
+<tr bgcolor=black><td><center>
+
+<applet name=IMAP ARCHIVE=ImageMap.jar CODE=ImageMap.class
+
+	WIDTH=560 HEIGHT=418 MAYSCRIPT>
+
+<PARAM NAME=background VALUE=swales.jpg>
+
+<PARAM NAME=areas VALUE="
+
+
+
+
+
+  area coords=469,258 shape=1,0,1 id=MTDFL
+
+  alt=|Merthyr Tydfil|
+
+  href=../site/mtdfl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=105,178 shape=1,0,1 id=MTHRY
+
+  alt=|Mathry|
+
+  href=../site/mthry.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=299,152 shape=1,0,1 id=LLLWY
+
+  alt=|Maes Nonni|
+
+  href=../site/lllwy.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=214,245 shape=1,0,1 id=EGLWC
+
+  alt=|Eglwys Gymyn|
+
+  href=../site/eglwc.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=106,191 shape=4,1,1 id=BRAW3,BRAW1,SEDRN
+
+  alt=|3 sites near Brawdy, Cas Wilia Farm|
+
+  onclick=|jumpTo('BRAW3')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=100,239 shape=1,0,1 id=WLTNW
+
+  alt=|Walton West|
+
+  href=../site/wltnw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=497,189 shape=1,1,1 id=LGORS
+
+  alt=|Llangors|
+
+  href=../site/lgors.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=156,267 shape=1,0,1 id=CAREW
+
+  alt=|Carew Castle|
+
+  href=../site/carew.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=309,214 shape=1,0,1 id=LANEY
+
+  alt=|Llanarthney|
+
+  href=../site/laney.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=509,208 shape=1,0,1 id=LFIC1
+
+  alt=|Tir Gwenlli|
+
+  href=../site/lfic1.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=64,194 shape=4,1,1 id=SDAV3,SDAV2
+
+  alt=|2 sites near St. David's, Cathedral|
+
+  onclick=|jumpTo('SDAV3')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=64,201 shape=1,0,1 id=SDAV4
+
+  alt=|St. David's, Bishop's Palace|
+
+  href=../site/sdav4.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=493,211 shape=4,1,1 id=LDDTY,TALYB
+
+  alt=|2 sites near Llanddetty|
+
+  onclick=|jumpTo('LDDTY')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=444,183 shape=1,0,1 id=TRLLW
+
+  alt=|Trallwng|
+
+  href=../site/trllw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=359,291 shape=1,1,1 id=LTWIT
+
+  alt=|Llantwit Major|
+
+  href=../site/ltwit.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=414,345 shape=4,2,1 id=MARG2,MMAWR,MMWR2,MMWR3
+
+  alt=|4 sites near Margam Abbey|
+
+  onclick=|jumpTo('MARG2')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=468,371 shape=1,0,1 id=LCRFN
+
+  alt=|Llancarfan|
+
+  href=../site/lcrfn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=416,350 shape=1,0,1 id=OGMOR
+
+  alt=|Ogmore Castle|
+
+  href=../site/ogmor.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=358,58 shape=1,0,1 id=LWNNW
+
+  alt=|Llanwnnws|
+
+  href=../site/lwnnw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=497,268 shape=1,0,1 id=TIRPH
+
+  alt=|Capel Brithdir|
+
+  href=../site/tirph.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=187,221 shape=1,0,1 id=CDWYR
+
+  alt=|Castell Dwyran|
+
+  href=../site/cdwyr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=133,205 shape=4,1,1 id=SPTTL,SDOGW
+
+  alt=|2 sites near Spittal|
+
+  onclick=|jumpTo('SPTTL')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=296,303 shape=1,0,1 id=LNRDN
+
+  alt=|Llanrhidian|
+
+  href=../site/lnrdn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=274,150 shape=1,0,1 id=LDYSL
+
+  alt=|Llandysul|
+
+  href=../site/ldysl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=356,89 shape=1,1,1 id=TGARN
+
+  alt=|Tregaron|
+
+  href=../site/tgarn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=339,207 shape=1,0,1 id=LDEIO
+
+  alt=|Llandeilo Fawr|
+
+  href=../site/ldeio.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=388,246 shape=1,1,1 id=YGYNL
+
+  alt=|Ystradgynlais|
+
+  href=../site/ygynl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=94,199 shape=1,0,1 id=BRAW4
+
+  alt=|Brawdy, Rickardston Hall Farm|
+
+  href=../site/braw4.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=98,204 shape=1,0,1 id=BRAW2
+
+  alt=|Brawdy, Brawdy Farm|
+
+  href=../site/braw2.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=221,168 shape=1,1,1 id=CLYDI
+
+  alt=|Clydai|
+
+  href=../site/clydi.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=472,179 shape=1,0,1 id=LDDEW
+
+  alt=|Llanddew|
+
+  href=../site/lddew.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=185,291 shape=1,0,1 id=CALDY
+
+  alt=|Caldey Island|
+
+  href=../site/caldy.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=168,153 shape=1,1,1 id=NEVRN
+
+  alt=|Nevern|
+
+  href=../site/nevrn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=313,101 shape=1,0,1 id=LLLYR
+
+  alt=|Llanllyr House|
+
+  href=../site/lllyr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=478,195 shape=1,0,1 id=LFRYN
+
+  alt=|Llanfrynach|
+
+  href=../site/lfryn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=137,288 shape=1,0,1 id=SPOLE
+
+  alt=|Stackpole Elidyr|
+
+  href=../site/spole.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=224,195 shape=1,0,1 id=LWNIO
+
+  alt=|Llanwinio|
+
+  href=../site/lwnio.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=535,247 shape=1,0,1 id=LHAML
+
+  alt=|Llanhamlach|
+
+  href=../site/lhaml.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=505,361 shape=1,0,1 id=LDOUG
+
+  alt=|Llandough|
+
+  href=../site/ldoug.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=381,312 shape=4,1,1 id=PRTT2,PRTT1,PRTT4
+
+  alt=|3 sites near Lower Court, Port Talbot|
+
+  onclick=|jumpTo('PRTT2')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=477,235 shape=1,0,1 id=PONTS
+
+  alt=|Ystrad mountain|
+
+  href=../site/ponts.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=114,159 shape=1,1,1 id=SNCL1
+
+  alt=|St Nicholas, Llandrudian Farm|
+
+  href=../site/sncl1.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=111,167 shape=1,0,1 id=SNCL2
+
+  alt=|St Nicholas|
+
+  href=../site/sncl2.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=427,228 shape=4,1,1 id=YFLL1,YFLL2
+
+  alt=|2 sites near Ystradfellte|
+
+  onclick=|jumpTo('YFLL1')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=328,52 shape=1,0,1 id=LGWYR
+
+  alt=|Maesllyn Farm|
+
+  href=../site/lgwyr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=276,96 shape=1,0,1 id=LARTH
+
+  alt=|Llanarth|
+
+  href=../site/larth.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=278,299 shape=1,0,1 id=LMADC
+
+  alt=|Llanmadoc|
+
+  href=../site/lmadc.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=194,134 shape=1,1,1 id=SDOGM
+
+  alt=|St Dogmaels Abbey|
+
+  href=../site/sdogm.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=319,204 shape=1,0,1 id=LFYNY
+
+  alt=|Llanfynydd|
+
+  href=../site/lfyny.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=198,146 shape=1,0,1 id=BRIDL
+
+  alt=|Bridell|
+
+  href=../site/bridl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=116,255 shape=1,0,1 id=STNTN
+
+  alt=|Steynton|
+
+  href=../site/stntn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=252,213 shape=1,0,1 id=MRTHR
+
+  alt=|Merthyr|
+
+  href=../site/mrthr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=197,186 shape=1,0,1 id=LFRN2
+
+  alt=|Llanfrynach, Mynydd Stambar|
+
+  href=../site/lfrn2.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=208,206 shape=1,1,1 id=LBOID
+
+  alt=|Llanboidy|
+
+  href=../site/lboid.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=422,343 shape=1,0,1 id=NEWCA
+
+  alt=|Newcastle-Bridgend|
+
+  href=../site/newca.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=453,226 shape=4,1,1 id=NANTC,NANTD
+
+  alt=|2 sites near Nant Crew|
+
+  onclick=|jumpTo('NANTC')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=140,170 shape=1,0,1 id=LYCHR
+
+  alt=|Llanychaer|
+
+  href=../site/lychr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=197,218 shape=4,1,1 id=LNGAN,HENLL
+
+  alt=|2 sites near Llangan|
+
+  onclick=|jumpTo('LNGAN')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=145,185 shape=1,0,1 id=PUNCH
+
+  alt=|Puncheston|
+
+  href=../site/punch.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=454,239 shape=1,1,1 id=ABCAR
+
+  alt=|Abercar|
+
+  href=../site/abcar.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=234,116 shape=1,0,1 id=PBRYN
+
+  alt=|Penbryn|
+
+  href=../site/pbryn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=285,152 shape=1,0,1 id=LFIHA
+
+  alt=|Llanfihangel-ar-arth|
+
+  href=../site/lfiha.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=549,178 shape=1,1,1 id=LVEYN
+
+  alt=|Llanveynoe|
+
+  href=../site/lveyn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=284,85 shape=1,0,1 id=HENFN
+
+  alt=|Henfynyw|
+
+  href=../site/henfn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=289,208 shape=1,1,1 id=AGWIL
+
+  alt=|Pant Deuddwr|
+
+  href=../site/agwil.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=177,143 shape=1,0,1 id=CILGN
+
+  alt=|Cilgerran|
+
+  href=../site/cilgn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=488,197 shape=1,0,1 id=SCETH
+
+  alt=|Scethrog|
+
+  href=../site/sceth.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=392,286 shape=1,0,1 id=RSOLV
+
+  alt=|Bryncyneithwyn|
+
+  href=../site/rsolv.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=322,116 shape=1,0,1 id=SLIAN
+
+  alt=|Silian|
+
+  href=../site/slian.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=50,205 shape=1,0,1 id=RAMSY
+
+  alt=|Ramsey Island|
+
+  href=../site/ramsy.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=394,312 shape=1,0,1 id=PYFAI
+
+  alt=|Pen-y-fai, Bridgend|
+
+  href=../site/pyfai.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=400,313 shape=1,0,1 id=MARG1
+
+  alt=|Margam Mountain|
+
+  href=../site/marg1.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=431,189 shape=1,0,1 id=DFYNG
+
+  alt=|Defynnog|
+
+  href=../site/dfyng.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=343,281 shape=1,0,1 id=LGYFL
+
+  alt=|Llangyfelach|
+
+  href=../site/lgyfl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=391,325 shape=4,1,1 id=MARG3,KENFG
+
+  alt=|2 sites near Cwrt-y-defaid Farm, Margam|
+
+  onclick=|jumpTo('MARG3')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=171,194 shape=4,1,1 id=LDEIL,MNCLO
+
+  alt=|2 sites near Llandeilo|
+
+  onclick=|jumpTo('LDEIL')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=175,212 shape=4,1,1 id=EGRMT,LDYSI
+
+  alt=|2 sites near Egremont|
+
+  onclick=|jumpTo('EGRMT')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=230,244 shape=4,1,1 id=LDWKE,LSADY
+
+  alt=|2 sites near Llandawke|
+
+  onclick=|jumpTo('LDWKE')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=120,180 shape=1,0,1 id=JRDNS
+
+  alt=|Jordanston, Llangwarren House|
+
+  href=../site/jrdns.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=174,234 shape=1,0,1 id=NBRTH
+
+  alt=|Narberth North|
+
+  href=../site/nbrth.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=269,158 shape=1,0,1 id=LGELR
+
+  alt=|Llangeler|
+
+  href=../site/lgelr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=438,261 shape=1,0,1 id=HIRWN
+
+  alt=|Hirwaun Common|
+
+  href=../site/hirwn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=179,4 shape=1,0,1 id=SVNSS
+
+  alt=|Seven Sisters|
+
+  href=../site/svnss.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=524,191 shape=1,0,1 id=PATRS
+
+  alt=|Patrishow|
+
+  href=../site/patrs.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=350,104 shape=1,1,1 id=LDEWB
+
+  alt=|Llanddewi-Brefi|
+
+  href=../site/ldewb.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=80,192 shape=1,0,1 id=SDAV1
+
+  alt=|St. David's, Carnhedryn-uchaf Farm|
+
+  href=../site/sdav1.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=178,282 shape=1,0,1 id=PALLY
+
+  alt=|Penally|
+
+  href=../site/pally.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=525,215 shape=1,0,1 id=CRCKH
+
+  alt=|Crickhowell|
+
+  href=../site/crckh.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=293,78 shape=1,0,1 id=LDEWA
+
+  alt=|Llanddewi-aber-arth|
+
+  href=../site/ldewa.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=466,174 shape=1,1,1 id=LDYFL
+
+  alt=|Llandyfaelog-fach|
+
+  href=../site/ldyfl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=261,202 shape=1,1,1 id=NEWCH
+
+  alt=|Llanfihangel Croesfeini|
+
+  href=../site/newch.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=483,340 shape=1,0,1 id=LILTE
+
+  alt=|Capel Llanilltern|
+
+  href=../site/lilte.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=211,180 shape=1,0,1 id=LFRN1
+
+  alt=|Llanfrynach|
+
+  href=../site/lfrn1.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=377,305 shape=4,1,1 id=BAGLN,PRTT3
+
+  alt=|2 sites near Baglan|
+
+  onclick=|jumpTo('BAGLN')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=80,245 shape=1,0,1 id=SBRID
+
+  alt=|St. Brides|
+
+  href=../site/sbrid.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=412,187 shape=4,1,1 id=ABHYD,TCSTL
+
+  alt=|2 sites near Aberhydfer|
+
+  onclick=|jumpTo('ABHYD')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=434,341 shape=1,1,1 id=COYCH
+
+  alt=|Coychurch|
+
+  href=../site/coych.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=354,151 shape=1,1,1 id=CNWYL
+
+  alt=|Cynwyl Gaeo|
+
+  href=../site/cnwyl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=88,258 shape=1,0,1 id=SISML
+
+  alt=|St. Ismael's|
+
+  href=../site/sisml.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=416,203 shape=1,0,1 id=CRAI
+
+  alt=|Pentrey Goch Garreg|
+
+  href=../site/crai.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=321,284 shape=1,0,1 id=LOUGH
+
+  alt=|Loughor|
+
+  href=../site/lough.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=262,253 shape=1,1,1 id=SISHM
+
+  alt=|Llansaint|
+
+  href=../site/sishm.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=467,245 shape=1,0,1 id=VAENR
+
+  alt=|Vaenor|
+
+  href=../site/vaenr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=295,144 shape=1,0,1 id=RHDDL
+
+  alt=|Rhyddlan|
+
+  href=../site/rhddl.html
+
+  target=text_display
+
+  
+
+">
+
+<PARAM NAME=key VALUE="
+
+item shape=1,0,1 text='1 Stone'
+
+item shape=1,1,1 text='2 - 5 stones'
+
+item shape=1,2,1 text='6 - 10 stones'
+
+item shape=1,3,1 text='> 10 stones'
+
+item shape=4,3,1 text='several nearby sites'
+
+">
+
+</applet>
+
+</table>
+
+</center>
+
+<table border=0 cellpadding=4>
+
+<tr valign=top>
+
+<td><h1>All Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+<tr><td><a href="../site/abcar.html" target=text_display> ABCAR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ABCAR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Abercar</td><td>2</td>
+
+<tr><td><a href="../site/abhyd.html" target=text_display> ABHYD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ABHYD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Aberhydfer</td><td>1</td>
+
+<tr><td><a href="../site/bagln.html" target=text_display> BAGLN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAGLN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Baglan</td><td>1</td>
+
+<tr><td><a href="../site/braw2.html" target=text_display> BRAW2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRAW2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brawdy, Brawdy Farm</td><td>1</td>
+
+<tr><td><a href="../site/braw3.html" target=text_display> BRAW3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRAW3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brawdy, Cas Wilia Farm</td><td>1</td>
+
+<tr><td><a href="../site/braw1.html" target=text_display> BRAW1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRAW1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brawdy, Castle Villa</td><td>1</td>
+
+<tr><td><a href="../site/braw4.html" target=text_display> BRAW4</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRAW4');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brawdy, Rickardston Hall Farm</td><td>1</td>
+
+<tr><td><a href="../site/bridl.html" target=text_display> BRIDL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRIDL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bridell</td><td>1</td>
+
+<tr><td><a href="../site/rsolv.html" target=text_display> RSOLV</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RSOLV');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bryncyneithwyn</td><td>1</td>
+
+<tr><td><a href="../site/caldy.html" target=text_display> CALDY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CALDY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Caldey Island</td><td>1</td>
+
+<tr><td><a href="../site/tirph.html" target=text_display> TIRPH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TIRPH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Capel Brithdir</td><td>1</td>
+
+<tr><td><a href="../site/lilte.html" target=text_display> LILTE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LILTE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Capel Llanilltern</td><td>1</td>
+
+<tr><td><a href="../site/carew.html" target=text_display> CAREW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CAREW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Carew Castle</td><td>1</td>
+
+<tr><td><a href="../site/cdwyr.html" target=text_display> CDWYR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CDWYR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Castell Dwyran</td><td>1</td>
+
+<tr><td><a href="../site/cilgn.html" target=text_display> CILGN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CILGN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cilgerran</td><td>1</td>
+
+<tr><td><a href="../site/clydi.html" target=text_display> CLYDI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CLYDI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Clydai</td><td>3</td>
+
+<tr><td><a href="../site/coych.html" target=text_display> COYCH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('COYCH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Coychurch</td><td>2</td>
+
+<tr><td><a href="../site/crckh.html" target=text_display> CRCKH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRCKH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Crickhowell</td><td>1</td>
+
+<tr><td><a href="../site/prtt3.html" target=text_display> PRTT3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Croft Farm, Port Talbot</td><td>1</td>
+
+<tr><td><a href="../site/marg3.html" target=text_display> MARG3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MARG3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cwrt-y-defaid Farm, Margam</td><td>2</td>
+
+<tr><td><a href="../site/cnwyl.html" target=text_display> CNWYL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CNWYL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cynwyl Gaeo</td><td>3</td>
+
+<tr><td><a href="../site/dfyng.html" target=text_display> DFYNG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DFYNG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Defynnog</td><td>1</td>
+
+<tr><td><a href="../site/eglwc.html" target=text_display> EGLWC</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('EGLWC');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Eglwys Gymyn</td><td>1</td>
+
+<tr><td><a href="../site/kenfg.html" target=text_display> KENFG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KENFG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Eglwys Nynnydd, Kenfig</td><td>2</td>
+
+<tr><td><a href="../site/egrmt.html" target=text_display> EGRMT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('EGRMT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Egremont</td><td>1</td>
+
+<tr><td><a href="../site/henfn.html" target=text_display> HENFN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('HENFN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Henfynyw</td><td>1</td>
+
+<tr><td><a href="../site/hirwn.html" target=text_display> HIRWN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('HIRWN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Hirwaun Common</td><td>1</td>
+
+<tr><td><a href="../site/jrdns.html" target=text_display> JRDNS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('JRDNS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Jordanston, Llangwarren House</td><td>1</td>
+
+<tr><td><a href="../site/larth.html" target=text_display> LARTH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LARTH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanarth</td><td>1</td>
+
+<tr><td><a href="../site/laney.html" target=text_display> LANEY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LANEY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanarthney</td><td>1</td>
+
+<tr><td><a href="../site/lboid.html" target=text_display> LBOID</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LBOID');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanboidy</td><td>3</td>
+
+<tr><td><a href="../site/lcrfn.html" target=text_display> LCRFN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LCRFN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llancarfan</td><td>1</td>
+
+<tr><td><a href="../site/ldwke.html" target=text_display> LDWKE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDWKE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandawke</td><td>1</td>
+
+<tr><td><a href="../site/lddty.html" target=text_display> LDDTY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDDTY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanddetty</td><td>1</td>
+
+<tr><td><a href="../site/lddew.html" target=text_display> LDDEW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDDEW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanddew</td><td>1</td>
+
+<tr><td><a href="../site/ldewa.html" target=text_display> LDEWA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDEWA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanddewi-aber-arth</td><td>1</td>
+
+<tr><td><a href="../site/ldewb.html" target=text_display> LDEWB</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDEWB');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanddewi-Brefi</td><td>3</td>
+
+<tr><td><a href="../site/ldeil.html" target=text_display> LDEIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDEIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandeilo</td><td>2</td>
+
+<tr><td><a href="../site/ldeio.html" target=text_display> LDEIO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDEIO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandeilo Fawr</td><td>1</td>
+
+<tr><td><a href="../site/ldoug.html" target=text_display> LDOUG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDOUG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandough</td><td>1</td>
+
+<tr><td><a href="../site/ldyfl.html" target=text_display> LDYFL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDYFL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandyfaelog-fach</td><td>2</td>
+
+<tr><td><a href="../site/ldysi.html" target=text_display> LDYSI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDYSI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandysilio West</td><td>3</td>
+
+<tr><td><a href="../site/ldysl.html" target=text_display> LDYSL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDYSL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandysul</td><td>1</td>
+
+<tr><td><a href="../site/newch.html" target=text_display> NEWCH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NEWCH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanfihangel Croesfeini</td><td>2</td>
+
+<tr><td><a href="../site/lfiha.html" target=text_display> LFIHA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LFIHA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanfihangel-ar-arth</td><td>1</td>
+
+<tr><td><a href="../site/lfrn1.html" target=text_display> LFRN1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LFRN1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanfrynach</td><td>1</td>
+
+<tr><td><a href="../site/lfryn.html" target=text_display> LFRYN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LFRYN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanfrynach</td><td>1</td>
+
+<tr><td><a href="../site/lfrn2.html" target=text_display> LFRN2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LFRN2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanfrynach, Mynydd Stambar</td><td>1</td>
+
+<tr><td><a href="../site/lfyny.html" target=text_display> LFYNY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LFYNY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanfynydd</td><td>1</td>
+
+<tr><td><a href="../site/lngan.html" target=text_display> LNGAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LNGAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llangan</td><td>1</td>
+
+<tr><td><a href="../site/lgelr.html" target=text_display> LGELR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LGELR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llangeler</td><td>1</td>
+
+<tr><td><a href="../site/lgors.html" target=text_display> LGORS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LGORS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llangors</td><td>2</td>
+
+<tr><td><a href="../site/lgyfl.html" target=text_display> LGYFL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LGYFL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llangyfelach</td><td>1</td>
+
+<tr><td><a href="../site/lhaml.html" target=text_display> LHAML</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LHAML');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanhamlach</td><td>1</td>
+
+<tr><td><a href="../site/lllyr.html" target=text_display> LLLYR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LLLYR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanllyr House</td><td>1</td>
+
+<tr><td><a href="../site/lmadc.html" target=text_display> LMADC</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LMADC');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanmadoc</td><td>1</td>
+
+<tr><td><a href="../site/lnrdn.html" target=text_display> LNRDN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LNRDN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanrhidian</td><td>1</td>
+
+<tr><td><a href="../site/lsady.html" target=text_display> LSADY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LSADY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llansadyrnin</td><td>1</td>
+
+<tr><td><a href="../site/sishm.html" target=text_display> SISHM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SISHM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llansaint</td><td>2</td>
+
+<tr><td><a href="../site/ltwit.html" target=text_display> LTWIT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LTWIT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llantwit Major</td><td>3</td>
+
+<tr><td><a href="../site/lveyn.html" target=text_display> LVEYN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LVEYN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanveynoe</td><td>2</td>
+
+<tr><td><a href="../site/lwnio.html" target=text_display> LWNIO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LWNIO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanwinio</td><td>1</td>
+
+<tr><td><a href="../site/lwnnw.html" target=text_display> LWNNW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LWNNW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanwnnws</td><td>1</td>
+
+<tr><td><a href="../site/lychr.html" target=text_display> LYCHR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LYCHR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanychaer</td><td>1</td>
+
+<tr><td><a href="../site/lough.html" target=text_display> LOUGH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LOUGH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Loughor</td><td>1</td>
+
+<tr><td><a href="../site/prtt2.html" target=text_display> PRTT2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lower Court, Port Talbot</td><td>1</td>
+
+<tr><td><a href="../site/mnclo.html" target=text_display> MNCLO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MNCLO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Maenclochog, Temple Druid</td><td>1</td>
+
+<tr><td><a href="../site/lllwy.html" target=text_display> LLLWY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LLLWY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Maes Nonni</td><td>1</td>
+
+<tr><td><a href="../site/lgwyr.html" target=text_display> LGWYR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LGWYR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Maesllyn Farm</td><td>1</td>
+
+<tr><td><a href="../site/marg2.html" target=text_display> MARG2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MARG2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Margam Abbey</td><td>3</td>
+
+<tr><td><a href="../site/marg1.html" target=text_display> MARG1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MARG1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Margam Mountain</td><td>1</td>
+
+<tr><td><a href="../site/mthry.html" target=text_display> MTHRY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MTHRY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mathry</td><td>1</td>
+
+<tr><td><a href="../site/mrthr.html" target=text_display> MRTHR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MRTHR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Merthyr</td><td>1</td>
+
+<tr><td><a href="../site/mmawr.html" target=text_display> MMAWR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MMAWR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Merthyr Mawr</td><td>1</td>
+
+<tr><td><a href="../site/mtdfl.html" target=text_display> MTDFL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MTDFL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Merthyr Tydfil</td><td>1</td>
+
+<tr><td><a href="../site/nantc.html" target=text_display> NANTC</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NANTC');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Nant Crew</td><td>1</td>
+
+<tr><td><a href="../site/nantd.html" target=text_display> NANTD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NANTD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Nant-ddu, Vaynor</td><td>1</td>
+
+<tr><td><a href="../site/nbrth.html" target=text_display> NBRTH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NBRTH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Narberth North</td><td>1</td>
+
+<tr><td><a href="../site/nevrn.html" target=text_display> NEVRN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NEVRN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Nevern</td><td>3</td>
+
+<tr><td><a href="../site/newca.html" target=text_display> NEWCA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NEWCA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Newcastle-Bridgend</td><td>1</td>
+
+<tr><td><a href="../site/ogmor.html" target=text_display> OGMOR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('OGMOR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ogmore Castle</td><td>1</td>
+
+<tr><td><a href="../site/agwil.html" target=text_display> AGWIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('AGWIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Pant Deuddwr</td><td>2</td>
+
+<tr><td><a href="../site/henll.html" target=text_display> HENLL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('HENLL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Parc y Maen</td><td>1</td>
+
+<tr><td><a href="../site/patrs.html" target=text_display> PATRS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PATRS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Patrishow</td><td>1</td>
+
+<tr><td><a href="../site/pyfai.html" target=text_display> PYFAI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PYFAI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Pen-y-fai, Bridgend</td><td>1</td>
+
+<tr><td><a href="../site/pally.html" target=text_display> PALLY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PALLY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Penally</td><td>1</td>
+
+<tr><td><a href="../site/pbryn.html" target=text_display> PBRYN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PBRYN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Penbryn</td><td>1</td>
+
+<tr><td><a href="../site/tcstl.html" target=text_display> TCSTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TCSTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Pentre Poeth Farm</td><td>1</td>
+
+<tr><td><a href="../site/crai.html" target=text_display> CRAI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRAI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Pentrey Goch Garreg</td><td>1</td>
+
+<tr><td><a href="../site/prtt1.html" target=text_display> PRTT1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Port Talbot</td><td>1</td>
+
+<tr><td><a href="../site/punch.html" target=text_display> PUNCH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PUNCH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Puncheston</td><td>1</td>
+
+<tr><td><a href="../site/ramsy.html" target=text_display> RAMSY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RAMSY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ramsey Island</td><td>1</td>
+
+<tr><td><a href="../site/rhddl.html" target=text_display> RHDDL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RHDDL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Rhyddlan</td><td>1</td>
+
+<tr><td><a href="../site/mmwr2.html" target=text_display> MMWR2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MMWR2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>River Ogwr, Merthyr Mawr</td><td>1</td>
+
+<tr><td><a href="../site/sceth.html" target=text_display> SCETH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCETH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Scethrog</td><td>1</td>
+
+<tr><td><a href="../site/svnss.html" target=text_display> SVNSS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SVNSS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Seven Sisters</td><td>1</td>
+
+<tr><td><a href="../site/slian.html" target=text_display> SLIAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SLIAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Silian</td><td>1</td>
+
+<tr><td><a href="../site/spttl.html" target=text_display> SPTTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SPTTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Spittal</td><td>1</td>
+
+<tr><td><a href="../site/sdogm.html" target=text_display> SDOGM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDOGM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Dogmaels Abbey</td><td>2</td>
+
+<tr><td><a href="../site/sdogw.html" target=text_display> SDOGW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDOGW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Dogwells, Little Trefgarne</td><td>1</td>
+
+<tr><td><a href="../site/sedrn.html" target=text_display> SEDRN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SEDRN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Edrens</td><td>2</td>
+
+<tr><td><a href="../site/sncl2.html" target=text_display> SNCL2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SNCL2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Nicholas</td><td>1</td>
+
+<tr><td><a href="../site/sncl1.html" target=text_display> SNCL1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SNCL1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Nicholas, Llandrudian Farm</td><td>2</td>
+
+<tr><td><a href="../site/sbrid.html" target=text_display> SBRID</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SBRID');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. Brides</td><td>1</td>
+
+<tr><td><a href="../site/sdav4.html" target=text_display> SDAV4</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDAV4');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. David's, Bishop's Palace</td><td>1</td>
+
+<tr><td><a href="../site/sdav1.html" target=text_display> SDAV1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDAV1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. David's, Carnhedryn-uchaf Farm</td><td>1</td>
+
+<tr><td><a href="../site/sdav3.html" target=text_display> SDAV3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDAV3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. David's, Cathedral</td><td>4</td>
+
+<tr><td><a href="../site/sdav2.html" target=text_display> SDAV2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDAV2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. David's, Pen Arthur Farm</td><td>1</td>
+
+<tr><td><a href="../site/sisml.html" target=text_display> SISML</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SISML');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. Ismael's</td><td>1</td>
+
+<tr><td><a href="../site/spole.html" target=text_display> SPOLE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SPOLE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Stackpole Elidyr</td><td>1</td>
+
+<tr><td><a href="../site/stntn.html" target=text_display> STNTN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('STNTN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Steynton</td><td>1</td>
+
+<tr><td><a href="../site/talyb.html" target=text_display> TALYB</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TALYB');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Talybont</td><td>1</td>
+
+<tr><td><a href="../site/lfic1.html" target=text_display> LFIC1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LFIC1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tir Gwenlli</td><td>1</td>
+
+<tr><td><a href="../site/trllw.html" target=text_display> TRLLW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TRLLW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trallwng</td><td>1</td>
+
+<tr><td><a href="../site/tgarn.html" target=text_display> TGARN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TGARN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tregaron</td><td>2</td>
+
+<tr><td><a href="../site/prtt4.html" target=text_display> PRTT4</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT4');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Upper Court Farm, Port Talbot</td><td>1</td>
+
+<tr><td><a href="../site/vaenr.html" target=text_display> VAENR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('VAENR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Vaenor</td><td>1</td>
+
+<tr><td><a href="../site/wltnw.html" target=text_display> WLTNW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WLTNW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Walton West</td><td>1</td>
+
+<tr><td><a href="../site/mmwr3.html" target=text_display> MMWR3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MMWR3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Whitney Farm, Merthyr Mawr</td><td>1</td>
+
+<tr><td><a href="../site/ponts.html" target=text_display> PONTS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PONTS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ystrad mountain</td><td>1</td>
+
+<tr><td><a href="../site/yfll1.html" target=text_display> YFLL1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YFLL1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ystradfellte</td><td>1</td>
+
+<tr><td><a href="../site/yfll2.html" target=text_display> YFLL2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YFLL2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ystradfellte</td><td>1</td>
+
+<tr><td><a href="../site/ygynl.html" target=text_display> YGYNL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YGYNL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ystradgynlais</td><td>2</td>
+
+</table>
+
+</td>
+
+
+
+
+
+<td><h1>Clustered Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+
+
+<tr><th colspan=3><a name=BRAW3></a>
+
+Sites near Brawdy, Cas Wilia Farm</th>
+
+<tr><td><a href="../site/braw3.html" target=text_display> BRAW3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRAW3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brawdy, Cas Wilia Farm</td><td>1</td>
+
+<tr><td><a href="../site/braw1.html" target=text_display> BRAW1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRAW1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brawdy, Castle Villa</td><td>1</td>
+
+<tr><td><a href="../site/sedrn.html" target=text_display> SEDRN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SEDRN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Edrens</td><td>2</td>
+
+
+
+<tr><th colspan=3><a name=SDAV3></a>
+
+Sites near St. David's, Cathedral</th>
+
+<tr><td><a href="../site/sdav3.html" target=text_display> SDAV3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDAV3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. David's, Cathedral</td><td>4</td>
+
+<tr><td><a href="../site/sdav2.html" target=text_display> SDAV2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDAV2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. David's, Pen Arthur Farm</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=LDDTY></a>
+
+Sites near Llanddetty</th>
+
+<tr><td><a href="../site/lddty.html" target=text_display> LDDTY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDDTY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llanddetty</td><td>1</td>
+
+<tr><td><a href="../site/talyb.html" target=text_display> TALYB</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TALYB');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Talybont</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=MARG2></a>
+
+Sites near Margam Abbey</th>
+
+<tr><td><a href="../site/marg2.html" target=text_display> MARG2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MARG2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Margam Abbey</td><td>3</td>
+
+<tr><td><a href="../site/mmawr.html" target=text_display> MMAWR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MMAWR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Merthyr Mawr</td><td>1</td>
+
+<tr><td><a href="../site/mmwr2.html" target=text_display> MMWR2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MMWR2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>River Ogwr, Merthyr Mawr</td><td>1</td>
+
+<tr><td><a href="../site/mmwr3.html" target=text_display> MMWR3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MMWR3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Whitney Farm, Merthyr Mawr</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=SPTTL></a>
+
+Sites near Spittal</th>
+
+<tr><td><a href="../site/spttl.html" target=text_display> SPTTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SPTTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Spittal</td><td>1</td>
+
+<tr><td><a href="../site/sdogw.html" target=text_display> SDOGW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SDOGW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Dogwells, Little Trefgarne</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=PRTT2></a>
+
+Sites near Lower Court, Port Talbot</th>
+
+<tr><td><a href="../site/prtt2.html" target=text_display> PRTT2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lower Court, Port Talbot</td><td>1</td>
+
+<tr><td><a href="../site/prtt1.html" target=text_display> PRTT1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Port Talbot</td><td>1</td>
+
+<tr><td><a href="../site/prtt4.html" target=text_display> PRTT4</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT4');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Upper Court Farm, Port Talbot</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=YFLL1></a>
+
+Sites near Ystradfellte</th>
+
+<tr><td><a href="../site/yfll1.html" target=text_display> YFLL1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YFLL1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ystradfellte</td><td>1</td>
+
+<tr><td><a href="../site/yfll2.html" target=text_display> YFLL2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YFLL2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ystradfellte</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=NANTC></a>
+
+Sites near Nant Crew</th>
+
+<tr><td><a href="../site/nantc.html" target=text_display> NANTC</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NANTC');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Nant Crew</td><td>1</td>
+
+<tr><td><a href="../site/nantd.html" target=text_display> NANTD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NANTD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Nant-ddu, Vaynor</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=LNGAN></a>
+
+Sites near Llangan</th>
+
+<tr><td><a href="../site/lngan.html" target=text_display> LNGAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LNGAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llangan</td><td>1</td>
+
+<tr><td><a href="../site/henll.html" target=text_display> HENLL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('HENLL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Parc y Maen</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=MARG3></a>
+
+Sites near Cwrt-y-defaid Farm, Margam</th>
+
+<tr><td><a href="../site/marg3.html" target=text_display> MARG3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MARG3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cwrt-y-defaid Farm, Margam</td><td>2</td>
+
+<tr><td><a href="../site/kenfg.html" target=text_display> KENFG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KENFG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Eglwys Nynnydd, Kenfig</td><td>2</td>
+
+
+
+<tr><th colspan=3><a name=LDEIL></a>
+
+Sites near Llandeilo</th>
+
+<tr><td><a href="../site/ldeil.html" target=text_display> LDEIL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDEIL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandeilo</td><td>2</td>
+
+<tr><td><a href="../site/mnclo.html" target=text_display> MNCLO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MNCLO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Maenclochog, Temple Druid</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=EGRMT></a>
+
+Sites near Egremont</th>
+
+<tr><td><a href="../site/egrmt.html" target=text_display> EGRMT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('EGRMT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Egremont</td><td>1</td>
+
+<tr><td><a href="../site/ldysi.html" target=text_display> LDYSI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDYSI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandysilio West</td><td>3</td>
+
+
+
+<tr><th colspan=3><a name=LDWKE></a>
+
+Sites near Llandawke</th>
+
+<tr><td><a href="../site/ldwke.html" target=text_display> LDWKE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDWKE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llandawke</td><td>1</td>
+
+<tr><td><a href="../site/lsady.html" target=text_display> LSADY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LSADY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Llansadyrnin</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=BAGLN></a>
+
+Sites near Baglan</th>
+
+<tr><td><a href="../site/bagln.html" target=text_display> BAGLN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BAGLN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Baglan</td><td>1</td>
+
+<tr><td><a href="../site/prtt3.html" target=text_display> PRTT3</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRTT3');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Croft Farm, Port Talbot</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=ABHYD></a>
+
+Sites near Aberhydfer</th>
+
+<tr><td><a href="../site/abhyd.html" target=text_display> ABHYD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ABHYD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Aberhydfer</td><td>1</td>
+
+<tr><td><a href="../site/tcstl.html" target=text_display> TCSTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TCSTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Pentre Poeth Farm</td><td>1</td>
+
+</td></table>
+
+</td></table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+
+</html>
+
+
+

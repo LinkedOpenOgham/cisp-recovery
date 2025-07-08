@@ -1,0 +1,18 @@
+/* Style for manual link tags */
+
+A.man {color: darkgreen}
+A.man:active {color: green}
+
+/* BODY {background: lightblue} */
+
+BODY {background-image: url(../pergamino.jpg)}
+BODY.toplevel {background-image: url(pergamino.jpg)}
+
+BODY.navbar {background: brown; font-family: helvetica}
+BODY.navbar INPUT , BODY.navbar SPAN { 
+		background: tan; 
+		border: 0mm; 
+		padding: 0mm;
+		font-family: helvetica, sans-serif;
+		font-weight: bold
+		}

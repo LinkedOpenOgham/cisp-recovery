@@ -1,0 +1,1097 @@
+
+
+<head>
+
+<title>CISP - Dumnonia (all sites)</title>
+
+<link rel=stylesheet type="text/css" href="style.css">
+
+<script src=maps.js></script>
+
+<script>
+
+function showonmap ( site ) {
+
+  flashsym ( site );
+
+  jumpTo ( 'top' );
+
+}
+
+</script>
+
+
+
+<body onload="loaded();">
+
+<a name=top></a>
+
+<center>
+
+<table border=4 cellspacing=0 cellpadding=4 bordercolor=brown bgcolor=linen>
+
+<tr bgcolor=linen><th>Dumnonia</th>
+
+<tr bgcolor=black><td><center>
+
+<applet name=IMAP ARCHIVE=ImageMap.jar CODE=ImageMap.class
+
+	WIDTH=560 HEIGHT=418 MAYSCRIPT>
+
+<PARAM NAME=background VALUE=dumnonia.jpg>
+
+<PARAM NAME=areas VALUE="
+
+
+
+
+
+  area coords=354,180 shape=1,0,1 id=SOURT
+
+  alt=|Sourton|
+
+  href=../site/sourt.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=212,256 shape=1,0,1 id=LIVET
+
+  alt=|Lanivet|
+
+  href=../site/livet.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=217,285 shape=1,0,1 id=BISCV
+
+  alt=|Biscovey|
+
+  href=../site/biscv.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=159,259 shape=1,0,1 id=RIALT
+
+  alt=|Rialton Barton|
+
+  href=../site/rialt.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=293,233 shape=1,0,1 id=SHILL
+
+  alt=|Southill|
+
+  href=../site/shill.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=30,341 shape=1,0,1 id=BOSLW
+
+  alt=|Boslow|
+
+  href=../site/boslw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=158,312 shape=1,0,1 id=SCLEM
+
+  alt=|St Clement|
+
+  href=../site/sclem.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=38,352 shape=1,1,1 id=SCRED
+
+  alt=|Sancreed|
+
+  href=../site/scred.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=39,361 shape=1,0,1 id=BOSKN
+
+  alt=|Boskenna|
+
+  href=../site/boskn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=105,319 shape=1,0,1 id=TCKML
+
+  alt=|Tuckingmill|
+
+  href=../site/tckml.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=101,322 shape=1,0,1 id=CMBRN
+
+  alt=|Camborne|
+
+  href=../site/cmbrn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=398,23 shape=1,0,1 id=LYNTN
+
+  alt=|Lynton|
+
+  href=../site/lyntn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=333,229 shape=4,1,1 id=TVST1,TVST4
+
+  alt=|2 sites near Tavistock (West Street)|
+
+  onclick=|jumpTo('TVST1')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=337,245 shape=4,1,1 id=BUCKM,TVST2
+
+  alt=|2 sites near Buckland Monachorum|
+
+  onclick=|jumpTo('BUCKM')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=277,211 shape=4,1,1 id=LWNCK,LWNCC
+
+  alt=|2 sites near Lewannick|
+
+  onclick=|jumpTo('LWNCK')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=180,308 shape=1,0,1 id=TGONY
+
+  alt=|Tregony|
+
+  href=../site/tgony.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=66,331 shape=4,1,1 id=TCROM,TVRRK
+
+  alt=|2 sites near Trencrom|
+
+  onclick=|jumpTo('TCROM')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=136,277 shape=1,0,1 id=PERNP
+
+  alt=|St Pieran's Oratory|
+
+  href=../site/pernp.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=420,209 shape=1,0,1 id=LUSTL
+
+  alt=|Lustleigh|
+
+  href=../site/lustl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=223,259 shape=1,0,1 id=TBYAN
+
+  alt=|Trebyan|
+
+  href=../site/tbyan.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=424,274 shape=1,0,1 id=BOWDN
+
+  alt=|Bowden|
+
+  href=../site/bowdn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=240,33 shape=1,1,1 id=LUNDY
+
+  alt=|Beacon Hill, Lundy|
+
+  href=../site/lundy.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=40,335 shape=1,0,1 id=MADR1
+
+  alt=|Madron|
+
+  href=../site/madr1.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=47,345 shape=1,1,1 id=MADR2
+
+  alt=|Madron|
+
+  href=../site/madr2.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=361,291 shape=1,0,1 id=YLMPN
+
+  alt=|Yealmpton|
+
+  href=../site/ylmpn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=44,358 shape=1,0,1 id=KRRIS
+
+  alt=|Chy-an-Kerris|
+
+  href=../site/krris.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=198,212 shape=1,0,1 id=SENDL
+
+  alt=|St Endellion|
+
+  href=../site/sendl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=116,317 shape=1,0,1 id=RDRTH
+
+  alt=|Redruth|
+
+  href=../site/rdrth.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=207,220 shape=1,0,1 id=STKEW
+
+  alt=|St Kew|
+
+  href=../site/stkew.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=451,64 shape=1,0,1 id=WNSFD
+
+  alt=|Winsford Hill|
+
+  href=../site/wnsfd.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=192,237 shape=1,0,1 id=NANSW
+
+  alt=|Nanscow Farm|
+
+  href=../site/nansw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=118,364 shape=1,0,1 id=MAWGN
+
+  alt=|Mawgan|
+
+  href=../site/mawgn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=77,333 shape=4,1,1 id=HAYLE,PHLLK
+
+  alt=|2 sites near Hayle|
+
+  onclick=|jumpTo('HAYLE')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=197,301 shape=1,1,1 id=LHADN
+
+  alt=|Lanhadron|
+
+  href=../site/lhadn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=74,345 shape=4,1,1 id=TRVNG,SHLRY
+
+  alt=|2 sites near East Treveneague Farm|
+
+  onclick=|jumpTo('TRVNG')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=232,196 shape=1,0,1 id=WVALE
+
+  alt=|Worthyvale|
+
+  href=../site/wvale.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=23,344 shape=4,1,1 id=KNDJK,SJUST
+
+  alt=|2 sites near Kenidjack|
+
+  onclick=|jumpTo('KNDJK')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=235,243 shape=1,1,1 id=CARDM
+
+  alt=|Cardinham|
+
+  href=../site/cardm.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=24,375 shape=1,0,1 id=PGWRA
+
+  alt=|Porthgwarra|
+
+  href=../site/pgwra.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=434,240 shape=1,0,1 id=EOGWL
+
+  alt=|East Ogwell|
+
+  href=../site/eogwl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=174,257 shape=4,1,1 id=BOSWR,SCOLM
+
+  alt=|2 sites near Bosworgey|
+
+  onclick=|jumpTo('BOSWR')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=322,193 shape=1,0,1 id=STWFD
+
+  alt=|Stowford|
+
+  href=../site/stwfd.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=371,276 shape=1,0,1 id=FARDL
+
+  alt=|Fardel|
+
+  href=../site/fardl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=262,210 shape=1,0,1 id=TWINT
+
+  alt=|Trewint|
+
+  href=../site/twint.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=54,344 shape=4,1,1 id=GULV1,GULV2,THILL
+
+  alt=|3 sites near Gulval|
+
+  onclick=|jumpTo('GULV1')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=215,186 shape=1,0,1 id=TNTIS
+
+  alt=|Tintagel Island|
+
+  href=../site/tntis.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=52,350 shape=1,0,1 id=PNZAN
+
+  alt=|Penzance, Green Market|
+
+  href=../site/pnzan.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=387,34 shape=1,0,1 id=PRCMB
+
+  alt=|Parracombe|
+
+  href=../site/prcmb.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=267,243 shape=1,0,1 id=REDGT
+
+  alt=|Redgate|
+
+  href=../site/redgt.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=126,321 shape=1,0,1 id=WHSTL
+
+  alt=|Whitestile|
+
+  href=../site/whstl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=490,129 shape=1,0,1 id=FCHRW
+
+  alt=|Cefn Gelli-gaer|
+
+  href=../site/fchrw.html
+
+  target=text_display
+
+  
+
+">
+
+<PARAM NAME=key VALUE="
+
+item shape=1,0,1 text='1 Stone'
+
+item shape=1,1,1 text='2 - 5 stones'
+
+item shape=1,2,1 text='6 - 10 stones'
+
+item shape=1,3,1 text='> 10 stones'
+
+item shape=4,3,1 text='several nearby sites'
+
+">
+
+</applet>
+
+</table>
+
+</center>
+
+<table border=0 cellpadding=4>
+
+<tr valign=top>
+
+<td><h1>All Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+<tr><td><a href="../site/lundy.html" target=text_display> LUNDY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LUNDY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Beacon Hill, Lundy</td><td>4</td>
+
+<tr><td><a href="../site/biscv.html" target=text_display> BISCV</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BISCV');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Biscovey</td><td>1</td>
+
+<tr><td><a href="../site/boskn.html" target=text_display> BOSKN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BOSKN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Boskenna</td><td>1</td>
+
+<tr><td><a href="../site/boslw.html" target=text_display> BOSLW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BOSLW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Boslow</td><td>1</td>
+
+<tr><td><a href="../site/boswr.html" target=text_display> BOSWR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BOSWR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bosworgey</td><td>1</td>
+
+<tr><td><a href="../site/bowdn.html" target=text_display> BOWDN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BOWDN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bowden</td><td>1</td>
+
+<tr><td><a href="../site/buckm.html" target=text_display> BUCKM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BUCKM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Buckland Monachorum</td><td>1</td>
+
+<tr><td><a href="../site/tvst2.html" target=text_display> TVST2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVST2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Buckland Monachorum (now Tavistock)</td><td>1</td>
+
+<tr><td><a href="../site/cmbrn.html" target=text_display> CMBRN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CMBRN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Camborne</td><td>1</td>
+
+<tr><td><a href="../site/cardm.html" target=text_display> CARDM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CARDM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cardinham</td><td>2</td>
+
+<tr><td><a href="../site/fchrw.html" target=text_display> FCHRW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('FCHRW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cefn Gelli-gaer</td><td>1</td>
+
+<tr><td><a href="../site/krris.html" target=text_display> KRRIS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KRRIS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Chy-an-Kerris</td><td>1</td>
+
+<tr><td><a href="../site/eogwl.html" target=text_display> EOGWL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('EOGWL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>East Ogwell</td><td>1</td>
+
+<tr><td><a href="../site/trvng.html" target=text_display> TRVNG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TRVNG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>East Treveneague Farm</td><td>1</td>
+
+<tr><td><a href="../site/fardl.html" target=text_display> FARDL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('FARDL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Fardel</td><td>1</td>
+
+<tr><td><a href="../site/gulv1.html" target=text_display> GULV1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GULV1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Gulval</td><td>1</td>
+
+<tr><td><a href="../site/gulv2.html" target=text_display> GULV2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GULV2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Gulval</td><td>1</td>
+
+<tr><td><a href="../site/hayle.html" target=text_display> HAYLE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('HAYLE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Hayle</td><td>1</td>
+
+<tr><td><a href="../site/kndjk.html" target=text_display> KNDJK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNDJK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kenidjack</td><td>1</td>
+
+<tr><td><a href="../site/lhadn.html" target=text_display> LHADN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LHADN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lanhadron</td><td>2</td>
+
+<tr><td><a href="../site/livet.html" target=text_display> LIVET</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LIVET');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lanivet</td><td>1</td>
+
+<tr><td><a href="../site/lwnck.html" target=text_display> LWNCK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LWNCK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lewannick</td><td>2</td>
+
+<tr><td><a href="../site/lwncc.html" target=text_display> LWNCC</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LWNCC');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lewannick Churchtown</td><td>1</td>
+
+<tr><td><a href="../site/lustl.html" target=text_display> LUSTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LUSTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lustleigh</td><td>1</td>
+
+<tr><td><a href="../site/lyntn.html" target=text_display> LYNTN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LYNTN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lynton</td><td>1</td>
+
+<tr><td><a href="../site/madr1.html" target=text_display> MADR1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MADR1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Madron</td><td>1</td>
+
+<tr><td><a href="../site/madr2.html" target=text_display> MADR2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MADR2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Madron</td><td>2</td>
+
+<tr><td><a href="../site/mawgn.html" target=text_display> MAWGN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MAWGN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mawgan</td><td>1</td>
+
+<tr><td><a href="../site/nansw.html" target=text_display> NANSW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NANSW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Nanscow Farm</td><td>1</td>
+
+<tr><td><a href="../site/prcmb.html" target=text_display> PRCMB</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PRCMB');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Parracombe</td><td>1</td>
+
+<tr><td><a href="../site/pnzan.html" target=text_display> PNZAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PNZAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Penzance, Green Market</td><td>1</td>
+
+<tr><td><a href="../site/phllk.html" target=text_display> PHLLK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PHLLK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Phillack</td><td>1</td>
+
+<tr><td><a href="../site/pgwra.html" target=text_display> PGWRA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PGWRA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Porthgwarra</td><td>1</td>
+
+<tr><td><a href="../site/redgt.html" target=text_display> REDGT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('REDGT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Redgate</td><td>1</td>
+
+<tr><td><a href="../site/rdrth.html" target=text_display> RDRTH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RDRTH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Redruth</td><td>1</td>
+
+<tr><td><a href="../site/rialt.html" target=text_display> RIALT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('RIALT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Rialton Barton</td><td>1</td>
+
+<tr><td><a href="../site/scred.html" target=text_display> SCRED</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCRED');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Sancreed</td><td>2</td>
+
+<tr><td><a href="../site/sourt.html" target=text_display> SOURT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SOURT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Sourton</td><td>1</td>
+
+<tr><td><a href="../site/shill.html" target=text_display> SHILL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SHILL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Southill</td><td>1</td>
+
+<tr><td><a href="../site/sclem.html" target=text_display> SCLEM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCLEM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Clement</td><td>1</td>
+
+<tr><td><a href="../site/scolm.html" target=text_display> SCOLM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCOLM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Columb Major</td><td>1</td>
+
+<tr><td><a href="../site/sendl.html" target=text_display> SENDL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SENDL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Endellion</td><td>1</td>
+
+<tr><td><a href="../site/shlry.html" target=text_display> SHLRY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SHLRY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Hilary</td><td>1</td>
+
+<tr><td><a href="../site/sjust.html" target=text_display> SJUST</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SJUST');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Just in Penwith</td><td>1</td>
+
+<tr><td><a href="../site/stkew.html" target=text_display> STKEW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('STKEW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Kew</td><td>1</td>
+
+<tr><td><a href="../site/pernp.html" target=text_display> PERNP</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PERNP');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Pieran's Oratory</td><td>1</td>
+
+<tr><td><a href="../site/stwfd.html" target=text_display> STWFD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('STWFD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Stowford</td><td>1</td>
+
+<tr><td><a href="../site/tvst1.html" target=text_display> TVST1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVST1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tavistock (West Street)</td><td>1</td>
+
+<tr><td><a href="../site/tvst4.html" target=text_display> TVST4</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVST4');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tavistock Abbey</td><td>2</td>
+
+<tr><td><a href="../site/tntis.html" target=text_display> TNTIS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TNTIS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tintagel Island</td><td>1</td>
+
+<tr><td><a href="../site/tbyan.html" target=text_display> TBYAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TBYAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trebyan</td><td>1</td>
+
+<tr><td><a href="../site/tgony.html" target=text_display> TGONY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TGONY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tregony</td><td>1</td>
+
+<tr><td><a href="../site/tcrom.html" target=text_display> TCROM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TCROM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trencrom</td><td>1</td>
+
+<tr><td><a href="../site/tvrrk.html" target=text_display> TVRRK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVRRK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trevarrack</td><td>1</td>
+
+<tr><td><a href="../site/thill.html" target=text_display> THILL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('THILL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trevaylor Hill</td><td>1</td>
+
+<tr><td><a href="../site/twint.html" target=text_display> TWINT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TWINT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trewint</td><td>1</td>
+
+<tr><td><a href="../site/tckml.html" target=text_display> TCKML</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TCKML');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tuckingmill</td><td>1</td>
+
+<tr><td><a href="../site/whstl.html" target=text_display> WHSTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WHSTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Whitestile</td><td>1</td>
+
+<tr><td><a href="../site/wnsfd.html" target=text_display> WNSFD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WNSFD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Winsford Hill</td><td>1</td>
+
+<tr><td><a href="../site/wvale.html" target=text_display> WVALE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WVALE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Worthyvale</td><td>1</td>
+
+<tr><td><a href="../site/ylmpn.html" target=text_display> YLMPN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YLMPN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Yealmpton</td><td>1</td>
+
+</table>
+
+</td>
+
+
+
+
+
+<td><h1>Clustered Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+
+
+<tr><th colspan=3><a name=TVST1></a>
+
+Sites near Tavistock (West Street)</th>
+
+<tr><td><a href="../site/tvst1.html" target=text_display> TVST1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVST1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tavistock (West Street)</td><td>1</td>
+
+<tr><td><a href="../site/tvst4.html" target=text_display> TVST4</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVST4');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tavistock Abbey</td><td>2</td>
+
+
+
+<tr><th colspan=3><a name=BUCKM></a>
+
+Sites near Buckland Monachorum</th>
+
+<tr><td><a href="../site/buckm.html" target=text_display> BUCKM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BUCKM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Buckland Monachorum</td><td>1</td>
+
+<tr><td><a href="../site/tvst2.html" target=text_display> TVST2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVST2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Buckland Monachorum (now Tavistock)</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=LWNCK></a>
+
+Sites near Lewannick</th>
+
+<tr><td><a href="../site/lwnck.html" target=text_display> LWNCK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LWNCK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lewannick</td><td>2</td>
+
+<tr><td><a href="../site/lwncc.html" target=text_display> LWNCC</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LWNCC');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lewannick Churchtown</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=TCROM></a>
+
+Sites near Trencrom</th>
+
+<tr><td><a href="../site/tcrom.html" target=text_display> TCROM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TCROM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trencrom</td><td>1</td>
+
+<tr><td><a href="../site/tvrrk.html" target=text_display> TVRRK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TVRRK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trevarrack</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=HAYLE></a>
+
+Sites near Hayle</th>
+
+<tr><td><a href="../site/hayle.html" target=text_display> HAYLE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('HAYLE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Hayle</td><td>1</td>
+
+<tr><td><a href="../site/phllk.html" target=text_display> PHLLK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PHLLK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Phillack</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=TRVNG></a>
+
+Sites near East Treveneague Farm</th>
+
+<tr><td><a href="../site/trvng.html" target=text_display> TRVNG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TRVNG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>East Treveneague Farm</td><td>1</td>
+
+<tr><td><a href="../site/shlry.html" target=text_display> SHLRY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SHLRY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Hilary</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=KNDJK></a>
+
+Sites near Kenidjack</th>
+
+<tr><td><a href="../site/kndjk.html" target=text_display> KNDJK</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KNDJK');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kenidjack</td><td>1</td>
+
+<tr><td><a href="../site/sjust.html" target=text_display> SJUST</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SJUST');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Just in Penwith</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=BOSWR></a>
+
+Sites near Bosworgey</th>
+
+<tr><td><a href="../site/boswr.html" target=text_display> BOSWR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BOSWR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Bosworgey</td><td>1</td>
+
+<tr><td><a href="../site/scolm.html" target=text_display> SCOLM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCOLM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Columb Major</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=GULV1></a>
+
+Sites near Gulval</th>
+
+<tr><td><a href="../site/gulv1.html" target=text_display> GULV1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GULV1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Gulval</td><td>1</td>
+
+<tr><td><a href="../site/gulv2.html" target=text_display> GULV2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GULV2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Gulval</td><td>1</td>
+
+<tr><td><a href="../site/thill.html" target=text_display> THILL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('THILL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Trevaylor Hill</td><td>1</td>
+
+</td></table>
+
+</td></table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+
+</html>
+
+
+

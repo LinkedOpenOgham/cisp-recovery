@@ -1,0 +1,871 @@
+
+
+<head>
+
+<title>CISP - Scotland (all sites)</title>
+
+<link rel=stylesheet type="text/css" href="style.css">
+
+<script src=maps.js></script>
+
+<script>
+
+function showonmap ( site ) {
+
+  flashsym ( site );
+
+  jumpTo ( 'top' );
+
+}
+
+</script>
+
+
+
+<body onload="loaded();">
+
+<a name=top></a>
+
+<center>
+
+<table border=4 cellspacing=0 cellpadding=4 bordercolor=brown bgcolor=linen>
+
+<tr bgcolor=linen><th>Scotland</th>
+
+<tr bgcolor=black><td><center>
+
+<applet name=IMAP ARCHIVE=ImageMap.jar CODE=ImageMap.class
+
+	WIDTH=418 HEIGHT=560 MAYSCRIPT>
+
+<PARAM NAME=background VALUE=scotland.jpg>
+
+<PARAM NAME=areas VALUE="
+
+
+
+
+
+  area coords=107,355 shape=1,0,1 id=POLCH
+
+  alt=|Poltaloch|
+
+  href=../site/polch.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=278,536 shape=1,0,1 id=OLCAR
+
+  alt=|Old Carlisle|
+
+  href=../site/olcar.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=128,516 shape=1,0,1 id=LONAW
+
+  alt=|Lochnaw|
+
+  href=../site/lonaw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=43,322 shape=4,2,1 id=IONAA,IONAR,IONAF,IONAS
+
+  alt=|4 sites near Iona Abbey|
+
+  onclick=|jumpTo('IONAA')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=311,235 shape=1,0,1 id=FRMSN
+
+  alt=|Formaston|
+
+  href=../site/frmsn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=115,435 shape=1,1,1 id=BLFOO
+
+  alt=|Blackwaterfoot|
+
+  href=../site/blfoo.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=308,516 shape=1,0,1 id=CASTL
+
+  alt=|Castlesteads fort|
+
+  href=../site/castl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=289,440 shape=1,0,1 id=YARRW
+
+  alt=|Whitefield|
+
+  href=../site/yarrw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=197,531 shape=1,1,1 id=AWALL
+
+  alt=|Ardwall Isle|
+
+  href=../site/awall.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=108,360 shape=4,1,1 id=BRNKL,DUNAD
+
+  alt=|2 sites near Barnakill|
+
+  onclick=|jumpTo('BRNKL')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=292,352 shape=1,0,1 id=SCNIE
+
+  alt=|Scoonie|
+
+  href=../site/scnie.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=311,273 shape=1,0,1 id=LTHNT
+
+  alt=|Lethnot|
+
+  href=../site/lthnt.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=260,328 shape=1,0,1 id=INCHY
+
+  alt=|Inchyra|
+
+  href=../site/inchy.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=245,166 shape=1,0,1 id=BROD
+
+  alt=|Brodie|
+
+  href=../site/brod.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=317,283 shape=1,0,1 id=BRCHN
+
+  alt=|The College Yards, Brechin|
+
+  href=../site/brchn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=333,262 shape=1,0,1 id=FORDN
+
+  alt=|St Palladius's Chapel|
+
+  href=../site/fordn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=144,545 shape=1,0,1 id=CRGIE
+
+  alt=|Low Curghie|
+
+  href=../site/crgie.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=194,393 shape=1,0,1 id=DROYN
+
+  alt=|Drumoyne|
+
+  href=../site/droyn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=269,334 shape=1,0,1 id=ABNTY
+
+  alt=|Abernethy|
+
+  href=../site/abnty.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=325,201 shape=1,0,1 id=NEWT
+
+  alt=|Newton|
+
+  href=../site/newt.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=269,77 shape=1,0,1 id=LARON
+
+  alt=|Latheron|
+
+  href=../site/laron.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=277,424 shape=1,1,1 id=PEEBL
+
+  alt=|Cross Kirk|
+
+  href=../site/peebl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=287,52 shape=1,0,1 id=ACKGL
+
+  alt=|Ackergill|
+
+  href=../site/ackgl.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=270,436 shape=1,0,1 id=MANOR
+
+  alt=|Manor Water|
+
+  href=../site/manor.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=329,212 shape=1,0,1 id=MAINS
+
+  alt=|Mains of Afforsk|
+
+  href=../site/mains.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=236,135 shape=1,0,1 id=TARBT
+
+  alt=|Tarbat Parish Church|
+
+  href=../site/tarbt.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=182,542 shape=4,1,1 id=WHIT2,WHIT1
+
+  alt=|2 sites near Mains farm|
+
+  onclick=|jumpTo('WHIT2')|
+
+  target=text_display
+
+  
+
+
+
+  area coords=265,384 shape=1,0,1 id=KLSTN
+
+  alt=|Kirkliston|
+
+  href=../site/klstn.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=139,532 shape=1,1,1 id=KMADR
+
+  alt=|Kirkmadrine|
+
+  href=../site/kmadr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=88,406 shape=1,1,1 id=GIGHA
+
+  alt=|Gigha|
+
+  href=../site/gigha.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=339,513 shape=1,0,1 id=CHOLM
+
+  alt=|Chesterholm|
+
+  href=../site/cholm.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=68,250 shape=1,0,1 id=DONAN
+
+  alt=|Kildonnan|
+
+  href=../site/donan.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=253,331 shape=1,0,1 id=DUPLN
+
+  alt=|Dupplin|
+
+  href=../site/dupln.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=344,247 shape=1,0,1 id=AUQUH
+
+  alt=|Auquhollie|
+
+  href=../site/auquh.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=152,351 shape=1,0,1 id=LOHED
+
+  alt=|Lochgoilhead|
+
+  href=../site/lohed.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=227,116 shape=1,0,1 id=GOLPI
+
+  alt=|Golspie|
+
+  href=../site/golpi.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=251,169 shape=1,0,1 id=ALTYR
+
+  alt=|Altyre|
+
+  href=../site/altyr.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=313,557 shape=1,0,1 id=BROUG
+
+  alt=|Brougham|
+
+  href=../site/broug.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=304,486 shape=1,0,1 id=LDDLW
+
+  alt=|Liddel Water|
+
+  href=../site/lddlw.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=322,303 shape=1,0,1 id=SVIGN
+
+  alt=|St. Vigean's|
+
+  href=../site/svign.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=252,546 shape=1,1,1 id=MAPOR
+
+  alt=|Maryport|
+
+  href=../site/mapor.html
+
+  target=text_display
+
+  
+
+
+
+  area coords=333,207 shape=4,1,1 id=BRATT,LPHIN
+
+  alt=|2 sites near Brandsbutt|
+
+  onclick=|jumpTo('BRATT')|
+
+  target=text_display
+
+  
+
+">
+
+<PARAM NAME=key VALUE="
+
+item shape=1,0,1 text='1 Stone'
+
+item shape=1,1,1 text='2 - 5 stones'
+
+item shape=1,2,1 text='6 - 10 stones'
+
+item shape=1,3,1 text='> 10 stones'
+
+item shape=4,3,1 text='several nearby sites'
+
+">
+
+</applet>
+
+</table>
+
+</center>
+
+<table border=0 cellpadding=4>
+
+<tr valign=top>
+
+<td><h1>All Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+<tr><td><a href="../site/abnty.html" target=text_display> ABNTY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ABNTY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Abernethy</td><td>1</td>
+
+<tr><td><a href="../site/ackgl.html" target=text_display> ACKGL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ACKGL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ackergill</td><td>1</td>
+
+<tr><td><a href="../site/altyr.html" target=text_display> ALTYR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('ALTYR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Altyre</td><td>1</td>
+
+<tr><td><a href="../site/awall.html" target=text_display> AWALL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('AWALL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Ardwall Isle</td><td>2</td>
+
+<tr><td><a href="../site/auquh.html" target=text_display> AUQUH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('AUQUH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Auquhollie</td><td>1</td>
+
+<tr><td><a href="../site/brnkl.html" target=text_display> BRNKL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRNKL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Barnakill</td><td>1</td>
+
+<tr><td><a href="../site/blfoo.html" target=text_display> BLFOO</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BLFOO');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Blackwaterfoot</td><td>3</td>
+
+<tr><td><a href="../site/bratt.html" target=text_display> BRATT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRATT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brandsbutt</td><td>1</td>
+
+<tr><td><a href="../site/brod.html" target=text_display> BROD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BROD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brodie</td><td>1</td>
+
+<tr><td><a href="../site/broug.html" target=text_display> BROUG</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BROUG');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brougham</td><td>1</td>
+
+<tr><td><a href="../site/castl.html" target=text_display> CASTL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CASTL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Castlesteads fort</td><td>1</td>
+
+<tr><td><a href="../site/cholm.html" target=text_display> CHOLM</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CHOLM');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Chesterholm</td><td>1</td>
+
+<tr><td><a href="../site/peebl.html" target=text_display> PEEBL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('PEEBL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Cross Kirk</td><td>2</td>
+
+<tr><td><a href="../site/droyn.html" target=text_display> DROYN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DROYN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Drumoyne</td><td>1</td>
+
+<tr><td><a href="../site/dunad.html" target=text_display> DUNAD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DUNAD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dunadd</td><td>1</td>
+
+<tr><td><a href="../site/dupln.html" target=text_display> DUPLN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DUPLN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dupplin</td><td>1</td>
+
+<tr><td><a href="../site/frmsn.html" target=text_display> FRMSN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('FRMSN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Formaston</td><td>1</td>
+
+<tr><td><a href="../site/gigha.html" target=text_display> GIGHA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GIGHA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Gigha</td><td>2</td>
+
+<tr><td><a href="../site/golpi.html" target=text_display> GOLPI</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('GOLPI');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Golspie</td><td>1</td>
+
+<tr><td><a href="../site/inchy.html" target=text_display> INCHY</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('INCHY');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Inchyra</td><td>1</td>
+
+<tr><td><a href="../site/ionaa.html" target=text_display> IONAA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Iona Abbey</td><td>2</td>
+
+<tr><td><a href="../site/donan.html" target=text_display> DONAN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DONAN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kildonnan</td><td>1</td>
+
+<tr><td><a href="../site/klstn.html" target=text_display> KLSTN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KLSTN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kirkliston</td><td>1</td>
+
+<tr><td><a href="../site/kmadr.html" target=text_display> KMADR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('KMADR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Kirkmadrine</td><td>3</td>
+
+<tr><td><a href="../site/laron.html" target=text_display> LARON</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LARON');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Latheron</td><td>1</td>
+
+<tr><td><a href="../site/lthnt.html" target=text_display> LTHNT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LTHNT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lethnot</td><td>1</td>
+
+<tr><td><a href="../site/lddlw.html" target=text_display> LDDLW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LDDLW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Liddel Water</td><td>1</td>
+
+<tr><td><a href="../site/lohed.html" target=text_display> LOHED</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LOHED');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lochgoilhead</td><td>1</td>
+
+<tr><td><a href="../site/lonaw.html" target=text_display> LONAW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LONAW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Lochnaw</td><td>1</td>
+
+<tr><td><a href="../site/lphin.html" target=text_display> LPHIN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LPHIN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Logie Elphinstone</td><td>1</td>
+
+<tr><td><a href="../site/crgie.html" target=text_display> CRGIE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('CRGIE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Low Curghie</td><td>1</td>
+
+<tr><td><a href="../site/whit2.html" target=text_display> WHIT2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WHIT2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mains farm</td><td>1</td>
+
+<tr><td><a href="../site/mains.html" target=text_display> MAINS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MAINS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mains of Afforsk</td><td>1</td>
+
+<tr><td><a href="../site/manor.html" target=text_display> MANOR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MANOR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Manor Water</td><td>1</td>
+
+<tr><td><a href="../site/mapor.html" target=text_display> MAPOR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('MAPOR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Maryport</td><td>2</td>
+
+<tr><td><a href="../site/newt.html" target=text_display> NEWT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('NEWT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Newton</td><td>1</td>
+
+<tr><td><a href="../site/olcar.html" target=text_display> OLCAR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('OLCAR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Old Carlisle</td><td>1</td>
+
+<tr><td><a href="../site/polch.html" target=text_display> POLCH</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('POLCH');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Poltaloch</td><td>1</td>
+
+<tr><td><a href="../site/ionar.html" target=text_display> IONAR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Reilig Odhráin, Iona</td><td>3</td>
+
+<tr><td><a href="../site/scnie.html" target=text_display> SCNIE</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SCNIE');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Scoonie</td><td>1</td>
+
+<tr><td><a href="../site/ionaf.html" target=text_display> IONAF</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAF');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Sithean Farm, Iona</td><td>1</td>
+
+<tr><td><a href="../site/ionas.html" target=text_display> IONAS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Columba's Shrine, Iona</td><td>3</td>
+
+<tr><td><a href="../site/fordn.html" target=text_display> FORDN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('FORDN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Palladius's Chapel</td><td>1</td>
+
+<tr><td><a href="../site/svign.html" target=text_display> SVIGN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('SVIGN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St. Vigean's</td><td>1</td>
+
+<tr><td><a href="../site/tarbt.html" target=text_display> TARBT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('TARBT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Tarbat Parish Church</td><td>1</td>
+
+<tr><td><a href="../site/brchn.html" target=text_display> BRCHN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRCHN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>The College Yards, Brechin</td><td>1</td>
+
+<tr><td><a href="../site/yarrw.html" target=text_display> YARRW</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('YARRW');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Whitefield</td><td>1</td>
+
+<tr><td><a href="../site/whit1.html" target=text_display> WHIT1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WHIT1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Whithorn Priory</td><td>1</td>
+
+</table>
+
+</td>
+
+
+
+
+
+<td><h1>Clustered Sites</h1>
+
+<table border=2 cellpadding=4 bgcolor=linen>
+
+<tr><th>Key</th><th>Site</th><th>Stones</th>
+
+
+
+<tr><th colspan=3><a name=IONAA></a>
+
+Sites near Iona Abbey</th>
+
+<tr><td><a href="../site/ionaa.html" target=text_display> IONAA</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAA');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Iona Abbey</td><td>2</td>
+
+<tr><td><a href="../site/ionar.html" target=text_display> IONAR</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAR');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Reilig Odhráin, Iona</td><td>3</td>
+
+<tr><td><a href="../site/ionaf.html" target=text_display> IONAF</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAF');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Sithean Farm, Iona</td><td>1</td>
+
+<tr><td><a href="../site/ionas.html" target=text_display> IONAS</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('IONAS');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>St Columba's Shrine, Iona</td><td>3</td>
+
+
+
+<tr><th colspan=3><a name=BRNKL></a>
+
+Sites near Barnakill</th>
+
+<tr><td><a href="../site/brnkl.html" target=text_display> BRNKL</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRNKL');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Barnakill</td><td>1</td>
+
+<tr><td><a href="../site/dunad.html" target=text_display> DUNAD</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('DUNAD');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Dunadd</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=WHIT2></a>
+
+Sites near Mains farm</th>
+
+<tr><td><a href="../site/whit2.html" target=text_display> WHIT2</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WHIT2');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Mains farm</td><td>1</td>
+
+<tr><td><a href="../site/whit1.html" target=text_display> WHIT1</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('WHIT1');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Whithorn Priory</td><td>1</td>
+
+
+
+<tr><th colspan=3><a name=BRATT></a>
+
+Sites near Brandsbutt</th>
+
+<tr><td><a href="../site/bratt.html" target=text_display> BRATT</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('BRATT');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Brandsbutt</td><td>1</td>
+
+<tr><td><a href="../site/lphin.html" target=text_display> LPHIN</a>&nbsp;&nbsp;&nbsp;<a href=# onclick="showonmap('LPHIN');return false;"><img src=../icons/pin.gif border=no alt=Flash></a></td>
+
+<td>Logie Elphinstone</td><td>1</td>
+
+</td></table>
+
+</td></table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+
+</html>
+
+
+

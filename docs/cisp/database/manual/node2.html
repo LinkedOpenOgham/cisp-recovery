@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The CISP database</TITLE>
+<META NAME="description" CONTENT="The CISP database">
+<META NAME="keywords" CONTENT="MANUAL4">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="MANUAL4.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="MANUAL4.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html132"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html126"
+  HREF="MANUAL4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html120"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A> 
+<A NAME="tex2html128"
+  HREF="MANUAL4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.gif"></A> 
+<A NAME="tex2html130"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html133"
+  HREF="node3.html">A guide to the</A>
+<B> Up:</B> <A NAME="tex2html127"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+<B> Previous:</B> <A NAME="tex2html121"
+  HREF="node1.html">An introduction to databases</A>
+ &nbsp <B>  <A NAME="tex2html129"
+  HREF="MANUAL4.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html131"
+  HREF="node8.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html134"
+  HREF="node2.html#SECTION00210000000000000000">Criteria for inclusion</A>
+<LI><A NAME="tex2html135"
+  HREF="node2.html#SECTION00220000000000000000">Doubtful inscriptions and lost stones</A>
+<LI><A NAME="tex2html136"
+  HREF="node2.html#SECTION00230000000000000000">The structure of the <SMALL>CISP</SMALL> database</A>
+<LI><A NAME="tex2html137"
+  HREF="node2.html#SECTION00240000000000000000">Data definition strategy</A>
+<LI><A NAME="tex2html138"
+  HREF="node2.html#SECTION00250000000000000000">Database implementation</A>
+<UL>
+<LI><A NAME="tex2html139"
+  HREF="node2.html#SECTION00251000000000000000">Hardware and software</A>
+<LI><A NAME="tex2html140"
+  HREF="node2.html#SECTION00252000000000000000">The data entry application</A>
+<LI><A NAME="tex2html141"
+  HREF="node2.html#SECTION00253000000000000000">Database dissemination</A>
+</UL></UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00200000000000000000">
+The <SMALL>CISP</SMALL> database</A>
+</H1>
+
+<P>
+This chapter firstly defines the `domain of
+discourse',<A NAME="208"></A> the information to be
+recorded in the database, and the discusses the structure of the
+database in the light of the concepts discussed in the previous
+chapter. Throughout this guide the following conventions are used:
+table (relation) names are given in <SMALL>SMALL CAPITALS</SMALL>, field
+(or column) names are given in a <TT>fixed space font</TT> and
+allowed entries for a restricted field in <SPAN  CLASS="textbf">bold type</SPAN>.
+
+<P>
+
+<H1><A NAME="SECTION00210000000000000000">
+Criteria for inclusion</A>
+</H1>
+
+<P>
+The database is to include all
+`early medieval inscribed stone monuments from Celtic-speaking regions'
+defined as follows:
+
+<P>
+
+<UL>
+<LI>`early medieval'
+
+<UL>
+<LI>lower limit -- earliest non-Roman inscriptions in the region
+</LI>
+<LI>upper limit -- <SPAN  CLASS="textit">c.</SPAN> 1100. This may need to be further defined
+on a region-by-region basis. Since not all stones are closely datable it may
+be necessary to decide to include all examples of a particular sub-type
+(details to be decided later, but inscriptions in Lombardic or `Black'
+lettering definitely excluded; Romanesque probably
+excluded).<A NAME="216"></A><A NAME="217"></A>
+</LI>
+</UL>
+</LI>
+<LI>`inscribed'
+
+<UL>
+<LI>carved with linguistic text (including `alpha-and-omega' but excluding
+`chi-rho monogram')<A NAME="220"></A><A NAME="221"></A>
+</LI>
+<LI>exclude stones carved with crosses and/or other ornament but no text
+</LI>
+<LI>exclude Pictish symbol stones<A NAME="222"></A>
+</LI>
+</UL>
+</LI>
+<LI>`stone monuments'
+
+<UL>
+<LI>exclude all inscriptions on materials other than stone
+</LI>
+<LI>exclude inscriptions on stone objects other than monuments
+          or buildings (stone lamps, stone whorls)
+</LI>
+</UL>
+</LI>
+<LI>`Celtic-speaking regions'
+
+<UL>
+<LI>all of Ireland, Scotland, Wales, Isle of Man, Dumnonia, Brittany
+          but exclude:
+          
+<UL>
+<LI>stones inscribed solely in runes (Anglian or
+Scandinavian)<A NAME="228"></A>
+</LI>
+<LI>Roman period Celtic (Gaulish) inscriptions from the Continent
+</LI>
+<LI>unambiguously Anglo-Saxon inscriptions from southern Scotland and
+      the Welsh and Dumnonian marches
+          
+</LI>
+</UL>
+</LI>
+<LI>include inscriptions from elsewhere in England and France
+and the Channel Islands which are written in a Celtic language
+or are otherwise of distinctively `Celtic' type
+</LI>
+</UL>
+</LI>
+</UL>
+
+<P>
+<SPAN  CLASS="textbf">Rule:</SPAN> If in doubt, include -- it is better to include
+things not strictly within the remit than to omit things that should be
+covered.
+
+<P>
+
+<H1><A NAME="SECTION00220000000000000000">
+Doubtful inscriptions and lost stones</A>
+</H1>
+
+<P>
+N.B. `Lost' refers to stones not inscriptions.
+If the stone is extant but the inscription is no
+longer visible (whether through extreme wear or
+because the inscribed portion has been
+broken and lost) it is `doubtful' only if the extant
+descriptions and illustrations are unreliable.
+
+<P>
+`Lost' stones are those which have been described and/or
+illustrated by a credible authority but whose current whereabouts
+are unknown (stones which have been destroyed, stolen, or
+mislaid). They are described as normal and the current location is
+given as `lost'. The dating parameters for their loss are noted
+(see the <SMALL>LOST</SMALL><A NAME="1572"></A> table below).
+
+<P>
+If there is doubt that the inscription on a lost stone was genuine,
+for instance if the description
+is ambiguous or fantastical, then the stone and its inscription
+are listed as normal and `doubtful' is recorded in the inscription table.
+The same goes for extant stones if there is
+doubt that visible scores (a) are artificial, (b) represent lettering,
+or (c) date to the early medieval period.
+
+<P>
+
+<H1><A NAME="SECTION00230000000000000000">
+The structure of the <SMALL>CISP</SMALL> database</A>
+</H1>
+
+<P>
+The <SMALL>CISP</SMALL> database  is comprised  of a
+primary group of five tables, each in a one-to-many relationship with another
+table in a hierarchy.<A NAME="1493"></A> These tables
+form the core of the database.
+As it is an explicit aim of the project to examine these
+monuments in their wider context, the first primary table is the
+<SMALL>SITE</SMALL><A NAME="1577"></A> table. Each site is given a primary key in the form of a
+five letter code. Any one site, however, can have more than one stone--there
+is a one-to-many relationship<A NAME="238"></A> between sites
+and stones. The stones are, therefore, recorded in a separate
+table (<SMALL>STONE</SMALL><A NAME="1580"></A>), and linked via the site's primary key.
+Similarly, any one stone can have more than one inscription and thus we have
+another one-to-many relationship and a third table (<SMALL>INSCRIP</SMALL><A NAME="1583"></A>).
+Similarly, any one inscription can have more than one reading, and an
+authority can provide us
+with more than one interpretation of a reading. This gives us the fourth and
+fifth tables (<SMALL>READING</SMALL><A NAME="1586"></A> &amp; <SMALL>TRANSLAT</SMALL><A NAME="1589"></A>).
+
+<P>
+For each of these primary tables there are some related subsidary
+tables.<A NAME="1494"></A> For
+example, a site may be known by more than one name. <SMALL>CISP</SMALL> will record the
+most commonly used name in the <SMALL>SITE</SMALL><A NAME="1593"></A> 
+table. Alternative names, if any, are stored in a separate table,
+<SMALL>ALT</SMALL>_<SMALL>NAME</SMALL><A NAME="1596"></A>. This allows a site to be accessed using any of the
+possible site names.
+ Figures <A HREF="node2.html#site">2</A>-<A HREF="node2.html#reading">5</A> show the
+five main tables, and their relationship to the other primary tables, and
+their subsidiary tables.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="site"></A><A NAME="1495"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 2:</STRONG>
+Tables related to the primary <SMALL>SITE</SMALL><A NAME="1599"></A> table</CAPTION>
+<TR><TD><!-- MATH
+ $\includegraphics[width=\textwidth]{findes1.eps}$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="370" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="\includegraphics[width=\textwidth]{findes1.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="stone"></A><A NAME="1496"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 3:</STRONG>
+Tables related to the primary <SMALL>STONE</SMALL><A NAME="1602"></A> table</CAPTION>
+<TR><TD><!-- MATH
+ $\includegraphics[width=\textwidth]{findes2.eps}$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="388" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.gif"
+ ALT="\includegraphics[width=\textwidth]{findes2.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="inscrip"></A><A NAME="1497"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 4:</STRONG>
+Tables related to the primary <SMALL>INSCRIP</SMALL><A NAME="1605"></A> table</CAPTION>
+<TR><TD><!-- MATH
+ $\includegraphics[width=\textwidth]{findes3.eps}$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="378" ALIGN="BOTTOM" BORDER="0"
+ SRC="img8.gif"
+ ALT="\includegraphics[width=\textwidth]{findes3.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="reading"></A><A NAME="1498"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5:</STRONG>
+Tables related to the primary <SMALL>READING</SMALL><A NAME="1608"></A> and <SMALL>TRANSLAT</SMALL><A NAME="1611"></A> 
+tables</CAPTION>
+<TR><TD><!-- MATH
+ $\includegraphics[width=\textwidth]{findes4.eps}$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="241" ALIGN="BOTTOM" BORDER="0"
+ SRC="img9.gif"
+ ALT="\includegraphics[width=\textwidth]{findes4.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+In addition to these five main tables and the subsidiary tables, there are a
+large number of simple and hierarchical look-up
+tables<A NAME="269"></A><A NAME="1499"></A>.
+These perform the functions discussed above (see page <A HREF="node1.html#lookup"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>); all
+are listed in the next chapter and the hierarchical tables are discussed in
+detail.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="systems"></A><A NAME="1500"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 6:</STRONG>
+General structure of the <SMALL>CISP</SMALL> database</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=0.75\textwidth]{findes5.eps}$
+ -->
+<IMG
+ WIDTH="416" HEIGHT="200" ALIGN="BOTTOM" BORDER="0"
+ SRC="img10.gif"
+ ALT="\includegraphics[width=0.75\textwidth]{findes5.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+We have, therefore, five primary tables which have a set of
+related secondary tables and look-up tables. These tables form the
+core of the <SMALL>CISP</SMALL> database. There are a number of other tables --
+it is helpful to divide the database into three groups or
+subsystems (see Figure <A HREF="node2.html#systems">6</A>). These are the core,
+bibliography and image subsystems.
+
+<P>
+The bibliography subsystem has one primary table, <SMALL>BIBLIOG</SMALL><A NAME="1616"></A> which will
+contain all the references to published sources and systematic archives such
+as sites and monuments records. This table is connected to four of the
+primary tables via a series of linking tables (see page
+<A HREF="node1.html#linking"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>).<A NAME="1501"></A> It is also
+connected to the <SMALL>NAME</SMALL><A NAME="1619"></A> table and the <SMALL>IMAGE</SMALL><A NAME="1622"></A> table. These
+linking tables contain, as well as the necessary linking information, further
+data such as specific page numbers, and an indication of the value of the
+reference, `major discussion' or `passing mention'.  Finally, the
+<SMALL>CORPORA</SMALL><A NAME="1625"></A> table forms an alternative link between the <SMALL>INSCRIP</SMALL><A NAME="1628"></A> 
+and <SMALL>BIBLIOG</SMALL><A NAME="1631"></A> tables and allows the retrieval of inscriptions by their
+standard reference numbers such as those in Macalister
+Macalister:1945,Macalister:1949. Figure <A HREF="node2.html#bibliog">7</A> illustrates
+the relationships.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="bibliog"></A><A NAME="1502"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 7:</STRONG>
+The bibliographic subsystem</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=\textwidth]{findes6.eps}$
+ -->
+<IMG
+ WIDTH="556" HEIGHT="409" ALIGN="BOTTOM" BORDER="0"
+ SRC="img11.gif"
+ ALT="\includegraphics[width=\textwidth]{findes6.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+The <SMALL>IMAGE</SMALL><A NAME="1634"></A> table stores images of sites, stones and inscriptions.
+This table has a many-to-many relationship with three of the primary tables
+and the bibliography table, and is therefore linked to them via intermediate
+linking tables. Lastly, the <SMALL>CISPARCH</SMALL><A NAME="1637"></A> table records information about
+the <SMALL>CISP</SMALL> archive including photographs, rubbings and correspondence. This
+table is linked to the <SMALL>SITE</SMALL><A NAME="1641"></A>, <SMALL>STONE</SMALL><A NAME="1644"></A>, and <SMALL>INSCRIP</SMALL><A NAME="1647"></A> 
+tables via further linking tables. Figure <A HREF="node2.html#imgarch">8</A> illustrates these
+last relationships.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="imgarch"></A><A NAME="1503"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8:</STRONG>
+The image subsystem</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=\textwidth]{findes7.eps}$
+ -->
+<IMG
+ WIDTH="556" HEIGHT="235" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.gif"
+ ALT="\includegraphics[width=\textwidth]{findes7.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+Although this data structure is complex, it allows for flexible data
+retrieval, and for future expansion of the project. For example, no changes
+to the structure of the database would be required in order to add runic and
+Anglo-Saxon inscriptions to the system, although some of the terms in the
+look-up tables might well need expansion. Portable artefacts could be added
+by creating an artefact table in parallel to the <SMALL>STONE</SMALL><A NAME="1650"></A> table, or
+more detailed recording of decoration or form could be added by creating
+further tables also linked to the <SMALL>STONE</SMALL><A NAME="1653"></A> table.
+
+<P>
+
+<H1><A NAME="SECTION00240000000000000000">
+Data definition strategy</A>
+</H1>
+
+<P>
+Tables in the <SMALL>CISP</SMALL> database consist of three basic types of fields. The
+first group are relatively short but unrestricted fields such as place names,
+measurements, or readings of inscriptions. The second group are fields with a
+very restricted range of entries controlled by look-up
+tables.<A NAME="304"></A> The final group of fields are memo or very long
+string fields.<A NAME="305"></A> Database purists dislike this type of field
+as it is unstructured and can lead to poor efficiency in data retrieval.
+In the case of the <SMALL>CISP</SMALL> database, it was felt that there were many cases
+where free form text was necessary, and an even more complex data structure
+would be counter-productive. In these situations, some information is stored
+in a structured format in restricted fields, and some in a memo format. For
+example, the <SMALL>STONE</SMALL><A NAME="1658"></A> table has two logical (yes/no) fields,
+<TT>cross</TT><A NAME="1661"></A> and <TT>other_carve</TT><A NAME="1664"></A> which record whether a stone has an
+inscribed cross and/or other carved decoration. If the answer is yes, further
+structured details are stored in the <SMALL>INSCROSS</SMALL><A NAME="1667"></A> and/or
+<SMALL>DECORATN</SMALL><A NAME="1670"></A> tables, and a fuller, free text description is entered into
+the <SMALL>DECOR</SMALL>_<SMALL>NOTES</SMALL><A NAME="1673"></A> memo field.
+
+<P>
+
+<H1><A NAME="SECTION00250000000000000000">
+Database implementation</A>
+</H1>
+
+<P>
+
+<H2><A NAME="SECTION00251000000000000000">
+Hardware and software</A>
+</H2>
+The above data schema is a theoretical construct derived from the information
+<SMALL>CISP</SMALL> wishes to record. This schema is independent of software or hardware
+platforms, it can be implemented using different RDMSs on different types
+of computer. As a result, the database can be moved (`ported') from one
+computer package to another with relatively few problems.
+
+<P>
+The primary obstacle to data transfer between systems is that different
+packages have different methods for storing data. For example, and
+paradox store long text (memo) fields in a separate computer file.
+These memo fields are of unlimited length whereas other strings are limited
+to 256 characters. Microsoft access can store strings up to 64kbytes
+as part of the main table.
+
+<P>
+The database was originally implemented using <SPAN  CLASS="textit">Visual</SPAN> dB<SMALL>ASE</SMALL> 5.5 on a
+Pentium 133mhz PC.<A NAME="tex2html10"
+  HREF="footnode.html#foot316"><SUP><SPAN CLASS="arabic">1</SPAN></SUP></A> One copy of the <SPAN  CLASS="textit">Visual</SPAN> dB<SMALL>ASE</SMALL> client-server bundle of
+computer programs was purchased which includes a program to help
+ease data transfer between different database systems.
+
+<P>
+
+<H2><A NAME="SECTION00252000000000000000">
+The data entry application</A>
+</H2>
+
+<P>
+The complex nature of the <SMALL>CISP</SMALL> database necessitated the construction of a
+data input application which was written by the author using <SPAN  CLASS="textit">Visual</SPAN> dB<SMALL>ASE</SMALL>'s
+`object orientated' programming language.<A NAME="tex2html11"
+  HREF="footnode.html#foot318"><SUP><SPAN CLASS="arabic">2</SPAN></SUP></A> Currently, only a single site/stone
+addition/browsing capability has been implemented. This application
+speeds up data entry, and helps minimise errors by the automatic creation and
+linking of primary keys wherever possible. The application allows the user to
+easily navigate around related sets of tables.
+
+<P>
+
+<H2><A NAME="SECTION00253000000000000000">
+Database dissemination</A>
+</H2>
+
+<P>
+It has been decided to mount the first release of the database on
+UCL's Oracle database server which will be accessible via a
+relatively simple database application accessible through the Web.
+
+<P>
+No decisions have been made as to the method by which the full and
+final version of the <SMALL>CISP</SMALL> database is to be disseminated. This is
+to keep the options open given the rapid development of computer
+technology, particularly the Internet. There are a number of
+possible options currently available, none of which need be
+exclusive.
+
+<UL>
+<LI>Submission of the database to the archaeology section of the Humanities
+Data Archive currently based in York. This is a requirement of the
+Project's funding.
+</LI>
+<LI>Dissemination of the data on disk, most probably on a <SMALL>CD-ROM</SMALL>.
+It would be possible to provide a compiled version of the database
+application (a version of the application which did not require the user
+to have <SPAN  CLASS="textit">Visual</SPAN> dB<SMALL>ASE</SMALL>) as well as the data.
+</LI>
+<LI>Providing an interface to the database via the World Wide Web.
+</LI>
+</UL>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html132"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html126"
+  HREF="MANUAL4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html120"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A> 
+<A NAME="tex2html128"
+  HREF="MANUAL4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.gif"></A> 
+<A NAME="tex2html130"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html133"
+  HREF="node3.html">A guide to the</A>
+<B> Up:</B> <A NAME="tex2html127"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+<B> Previous:</B> <A NAME="tex2html121"
+  HREF="node1.html">An introduction to databases</A>
+ &nbsp <B>  <A NAME="tex2html129"
+  HREF="MANUAL4.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html131"
+  HREF="node8.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mike Gahan
+2000-10-18
+</ADDRESS>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</HTML>

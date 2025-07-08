@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>CISP - Search Help</title>
+<link rel=stylesheet type="text/css" href="../style.css">
+</head>
+<body>
+<center><h1>Search Help</h1></center>
+Enter words to be searched for in the <b>Inscription Text</b> box. The following wildcards may be used:
+<ul>
+<li>? - match any single character
+<li>* - match a sequence of characters
+<li>[abc] - match one of the characters abc
+</ul>
+Thus <b><tt>IAC?T</tt></b> will match <tt>IACET</tt> and <tt>IACIT</tt>. <br>
+<b><tt>?esu*</tt></b> will match <tt>JESU, IESU, IESUS</tt> (search strings
+may be entered in upper or lower case)
+<p>
+If more than one word is given to search, then only inscriptions which
+match ALL the search words will be found. The CISP codes for matching inscriptions
+will be displayed, together with the exact strings matched. Click on the inscription code
+to link to the relevant page.
+<p>
+The strings are matched from the EXPANSION field in the 
+<a href="manual/node3.html#readingtable" target=manual class=man>TRANSLAT</a> table, with all
+special characters removed.
+<p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

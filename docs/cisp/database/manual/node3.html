@@ -1,0 +1,4095 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>A guide to the CISP database tables</TITLE>
+<META NAME="description" CONTENT="A guide to the CISP database tables">
+<META NAME="keywords" CONTENT="MANUAL4">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="MANUAL4.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="MANUAL4.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html154"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html148"
+  HREF="MANUAL4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html142"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A> 
+<A NAME="tex2html150"
+  HREF="MANUAL4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.gif"></A> 
+<A NAME="tex2html152"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html155"
+  HREF="node4.html">Glossary</A>
+<B> Up:</B> <A NAME="tex2html149"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+<B> Previous:</B> <A NAME="tex2html143"
+  HREF="node2.html">The CISP database</A>
+ &nbsp <B>  <A NAME="tex2html151"
+  HREF="MANUAL4.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html153"
+  HREF="node8.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html156"
+  HREF="node3.html#SECTION00310000000000000000">General guidelines</A>
+<LI><A NAME="tex2html157"
+  HREF="node3.html#SECTION00320000000000000000">The <SMALL>SITE</SMALL> and related tables</A>
+<UL>
+<LI><A NAME="tex2html158"
+  HREF="node3.html#SECTION00321000000000000000">The <SMALL>SITE</SMALL> table</A>
+<LI><A NAME="tex2html159"
+  HREF="node3.html#SECTION00322000000000000000">The <SMALL>SAINT</SMALL> table</A>
+<LI><A NAME="tex2html160"
+  HREF="node3.html#SECTION00323000000000000000">The <SMALL>REGION</SMALL> table</A>
+<LI><A NAME="tex2html161"
+  HREF="node3.html#SECTION00324000000000000000">The <SMALL>GRIDREF</SMALL> table</A>
+<LI><A NAME="tex2html162"
+  HREF="node3.html#SECTION00325000000000000000">The <SMALL>ALT</SMALL>_<SMALL>NAME</SMALL> table</A>
+<LI><A NAME="tex2html163"
+  HREF="node3.html#SECTION00326000000000000000">The <SMALL>SITE</SMALL>_<SMALL>TYP</SMALL> table</A>
+</UL>
+<LI><A NAME="tex2html164"
+  HREF="node3.html#SECTION00330000000000000000">The <SMALL>STONE</SMALL> and related tables</A>
+<UL>
+<LI><A NAME="tex2html165"
+  HREF="node3.html#SECTION00331000000000000000">The <SMALL>STONE</SMALL> table</A>
+<UL>
+<LI><A NAME="tex2html166"
+  HREF="node3.html#SECTION00331100000000000000">Measurements</A>
+</UL>
+<LI><A NAME="tex2html167"
+  HREF="node3.html#SECTION00332000000000000000">The <SMALL>LOST</SMALL> table</A>
+<LI><A NAME="tex2html168"
+  HREF="node3.html#SECTION00333000000000000000">The <SMALL>OTHERLOC</SMALL> table</A>
+<LI><A NAME="tex2html169"
+  HREF="node3.html#SECTION00334000000000000000">The <SMALL>MUSEUM</SMALL> table</A>
+<LI><A NAME="tex2html170"
+  HREF="node3.html#SECTION00335000000000000000">The <SMALL>FORM</SMALL> table</A>
+<LI><A NAME="tex2html171"
+  HREF="node3.html#SECTION00336000000000000000">The <SMALL>ALTSNAME</SMALL> table</A>
+<LI><A NAME="tex2html172"
+  HREF="node3.html#SECTION00337000000000000000">The <SMALL>FOLKLORE</SMALL> table</A>
+<LI><A NAME="tex2html173"
+  HREF="node3.html#SECTION00338000000000000000">The <SMALL>INSCROSS</SMALL> table</A>
+<LI><A NAME="tex2html174"
+  HREF="node3.html#SECTION00339000000000000000">The <SMALL>DECORATN</SMALL> and <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL>
+tables</A>
+</UL>
+<LI><A NAME="tex2html175"
+  HREF="node3.html#SECTION00340000000000000000">The <SMALL>INSCRIP</SMALL> and related tables</A>
+<UL>
+<LI><A NAME="tex2html176"
+  HREF="node3.html#SECTION00341000000000000000">The <SMALL>INSCRIP</SMALL> table</A>
+<LI><A NAME="tex2html177"
+  HREF="node3.html#SECTION00342000000000000000">The <SMALL>NAMES</SMALL> table</A>
+<LI><A NAME="tex2html178"
+  HREF="node3.html#SECTION00343000000000000000">The <SMALL>DATE</SMALL> table</A>
+<LI><A NAME="tex2html179"
+  HREF="node3.html#SECTION00344000000000000000">The <SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL> and <SMALL>SPECIAL</SMALL> tables</A>
+</UL>
+<LI><A NAME="tex2html180"
+  HREF="node3.html#SECTION00350000000000000000">The <SMALL>READING</SMALL> table</A>
+<UL>
+<LI><A NAME="tex2html181"
+  HREF="node3.html#SECTION00350100000000000000">Transliteration of inscriptions</A>
+<LI><A NAME="tex2html182"
+  HREF="node3.html#SECTION00350200000000000000">All inscriptions</A>
+<LI><A NAME="tex2html183"
+  HREF="node3.html#SECTION00350300000000000000">Ogham</A>
+</UL>
+<LI><A NAME="tex2html184"
+  HREF="node3.html#SECTION00360000000000000000">The <SMALL>TRANSLAT</SMALL> table</A>
+<LI><A NAME="tex2html185"
+  HREF="node3.html#SECTION00370000000000000000">The bibliography subsystem</A>
+<UL>
+<LI><A NAME="tex2html186"
+  HREF="node3.html#SECTION00371000000000000000">The <SMALL>BIBLIOG</SMALL> table</A>
+<LI><A NAME="tex2html187"
+  HREF="node3.html#SECTION00372000000000000000">Sample bibliographic entries</A>
+<LI><A NAME="tex2html188"
+  HREF="node3.html#SECTION00373000000000000000">The <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL> table</A>
+<LI><A NAME="tex2html189"
+  HREF="node3.html#SECTION00374000000000000000">The <SMALL>STON</SMALL>_<SMALL>PUB</SMALL>, <SMALL>INSC</SMALL>_<SMALL>PUB</SMALL>, and
+<SMALL>READ</SMALL>_<SMALL>PUB</SMALL> tables</A>
+<LI><A NAME="tex2html190"
+  HREF="node3.html#SECTION00375000000000000000">The <SMALL>CORPORA</SMALL> table</A>
+<LI><A NAME="tex2html191"
+  HREF="node3.html#SECTION00376000000000000000">The <SMALL>NAME</SMALL>_<SMALL>BIB</SMALL> table</A>
+</UL>
+<LI><A NAME="tex2html192"
+  HREF="node3.html#SECTION00380000000000000000">The image subsystem</A>
+<LI><A NAME="tex2html193"
+  HREF="node3.html#SECTION00390000000000000000">The linguistic indexing system</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00300000000000000000"></A><A NAME="guidechap"></A>
+<BR>
+A guide to the <SMALL>CISP</SMALL> database tables and fields
+</H1>
+
+<P>
+This chapter describes each table and field in turn and in detail along with
+allowed entries, meanings and other relevant information. Simple look-up
+tables will not be discussed in detail. After a few general points, each of
+the five primary tables are discussed first along with related subsidiary and
+hierarchical look-up tables, followed by the bibliographic, archive and image
+subsystems.
+
+<P>
+
+<H1><A NAME="SECTION00310000000000000000"></A><A NAME="guidelines"></A>
+<BR>
+General guidelines
+</H1>
+
+<P>
+Fields marked with a dagger (<IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">) are memo fields, fields marked with &#167; are the table's primary key fields.
+
+<P>
+As a general rule, no entries are to be left blank.
+If the field is not applicable <SPAN  CLASS="textbf">n/a</SPAN> should be entered;
+if information is not
+available, <SPAN  CLASS="textbf">inc</SPAN> (`incomplete') should be entered; if
+the information will never be available (for example the details
+of an inscribed cross are too warn to be described) then
+<SPAN  CLASS="textbf">ind</SPAN> (indeterminate) should be entered.
+
+<P>
+Memo fields should conform to the following guidelines.
+
+<UL>
+<LI>Memo fields contain free-form text but the emphasis shall be on quoting
+verbatim from the literature with appropriate bibliographic references.
+The references should be of the following form:
+
+<UL>
+<LI><TT>Macalister/1945: `...'</TT> <SPAN  CLASS="textit">or</SPAN>
+</LI>
+<LI><TT>Macalister/1945, 345: `...'</TT> <SPAN  CLASS="textit">or</SPAN>
+</LI>
+<LI><TT>Macalister/1945, 360-361: `...'</TT>
+</LI>
+</UL>
+where the form of the reference is the same as that of the primary
+key
+in the <SMALL>BIBLIOG</SMALL><A NAME="1691"></A> table. Note the use of the correct opening quote
+(<TT>`</TT>) and the double dashes in the page ranges. In many cases a
+specific page reference will be necessary.
+</LI>
+<LI>The information in the memo fields should be given in a concise note
+form.
+</LI>
+<LI><SPAN  CLASS="textit">Italics</SPAN> in memo fields should be indicated by
+underscores, <TT>_some italic text_</TT>.
+</LI>
+<LI>Paragraphs should be indicated by a blank line.
+</LI>
+</UL>
+
+<P>
+
+<H1><A NAME="SECTION00320000000000000000"></A><A NAME="1694"></A>
+<BR>
+The <SMALL>SITE</SMALL> and related tables
+</H1>
+
+<P>
+Tables considered in this section are <SMALL>SITE</SMALL><A NAME="1697"></A>,
+<SMALL>REGION</SMALL><A NAME="1700"></A>, <SMALL>ALT</SMALL>_<SMALL>NAME</SMALL><A NAME="1703"></A>, <SMALL>GRIDREF</SMALL><A NAME="1706"></A>,
+<SMALL>SITETYPE</SMALL><A NAME="1709"></A>, and <SMALL>SAINT</SMALL><A NAME="1712"></A>. Tables <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL><A NAME="1715"></A> 
+and <SMALL>SITE</SMALL>_<SMALL>IMG</SMALL><A NAME="1718"></A> are discussed in sections
+<A HREF="node3.html#biblio">15</A>-<A HREF="node3.html#imagesys">16</A>.
+
+<P>
+
+<H2><A NAME="SECTION00321000000000000000"></A><A NAME="1721"></A><A NAME="sitetable"></A>
+<BR>
+The <SMALL>SITE</SMALL> table
+</H2>
+
+<P>
+The `site' is the earliest known location of a stone, not necessarily its
+current location.
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="1724"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Name</TT><A NAME="1727"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Cel_name</TT><A NAME="1730"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Place</TT><A NAME="1733"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>Cel_place</TT><A NAME="1736"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>Parish</TT><A NAME="1739"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>Cel_parish</TT><A NAME="1742"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT"><TT>County</TT><A NAME="1745"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">9</TD>
+<TD ALIGN="LEFT"><TT>Cel_county</TT><A NAME="1748"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">10</TD>
+<TD ALIGN="LEFT"><TT>Country</TT><A NAME="1751"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">12</TD>
+<TD ALIGN="LEFT"><TT>Site_type</TT><A NAME="1754"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">13</TD>
+<TD ALIGN="LEFT"><TT>Site_descrip</TT><A NAME="1757"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">14</TD>
+<TD ALIGN="LEFT"><TT>Site_history</TT><A NAME="1760"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+
+<P>
+
+<OL>
+<LI>Unique five letter alphanumeric code in capitals. Code is derived from
+the site's name and is assigned by <SMALL>CISP</SMALL>, and acts as the primary key for the table.
+</LI>
+<LI>Name of site. Use the name current in recent scholarly literature (list
+alternative names in <SMALL>ALT</SMALL>_<SMALL>NAME</SMALL><A NAME="1764"></A> table). In most cases this will be
+the name of an adjacent farm,
+ church or village, or the name of the parish, townland or island. Despite
+the
+ inconsistencies, names used by previous writers are retained unless there is
+good reason to change (to differentiate two sites with the same name).
+</LI>
+<LI>The above name in the local modern Celtic language.
+</LI>
+<LI>Name of nearest town or village (in Ireland list the townland). In many
+cases this will be the same name as fields 2-3.
+</LI>
+<LI>The above name in the local modern Celtic language.
+</LI>
+<LI>Name of ecclesiastical (not civil) parish (in Ireland list barony; in
+Brittany list  commune).
+</LI>
+<LI>The above name in the local modern Celtic language.
+</LI>
+<LI>County (pre-1974 counties for Britain, current counties for Ireland,
+d&#233;partements for France)
+</LI>
+<LI>The above name in the local modern Celtic language, if appropriate.
+</LI>
+<LI>Country: <SPAN  CLASS="textbf">Scotland</SPAN>, <SPAN  CLASS="textbf">Ireland</SPAN> (not distinguishing
+between the Republic and Northern Ireland,
+but see <SMALL>REGION</SMALL><A NAME="1767"></A> below), <SPAN  CLASS="textbf">Wales</SPAN>, <SPAN  CLASS="textbf">England</SPAN>,
+<SPAN  CLASS="textbf">Isle-of-Man</SPAN>, <SPAN  CLASS="textbf">Channel-Islands</SPAN>, <SPAN  CLASS="textbf">France</SPAN>.
+</LI>
+<LI>The <TT>site_type</TT><A NAME="1770"></A> is stored as a five letter lower-case code the
+meanings of which are stored in the hierarchical look-up table
+<SMALL>SITETYPE</SMALL><A NAME="1773"></A> discussed on page <A HREF="node3.html#sitetype"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag"><TT>Site_descrip</TT><A NAME="1776"></A>: fuller description of extant physical
+features of site, other standing remains, crop marks, finds. Particular
+emphasis on early medieval period, but also on earlier phases, later only if
+deemed relevant (Romanesque church).
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag"><TT>Site_history</TT><A NAME="1779"></A>: any relevant historical information,
+including place-name, documentary refs. to site, including details of any
+excavation Details of dedication or other associations with saint.
+</LI>
+</OL>
+
+<P>
+In practice, it proved very difficult to split
+<TT>site_descrip</TT><A NAME="1782"></A> and <TT>site_history</TT><A NAME="1785"></A>, and for many
+sites there was very little information.  In the longer term these
+two fields are likely to be merged.
+
+<P>
+
+<H2><A NAME="SECTION00322000000000000000"></A><A NAME="1788"></A><A NAME="sainttable"></A>
+<BR>
+The <SMALL>SAINT</SMALL> table
+</H2>
+
+<P>
+The name of any saint associated with site, place-name, church
+dedication, historical reference . This is stored in a separate table
+since a site may have more than one, either simultaneously or temporally.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="1791"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Saint</TT><A NAME="1794"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;Site code; links to <SMALL>SITE</SMALL><A NAME="1797"></A> table.
+</LI>
+<LI>&#167;Name of saint (without `St').
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00323000000000000000"></A><A NAME="1800"></A><A NAME="regiontable"></A>
+<BR>
+The <SMALL>REGION</SMALL> table
+</H2>
+
+<P>
+This table allows otherwise cumbersome searches by historic region.
+Further regions can be added easily as the need arises. Below are some
+suggestions.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>County</TT><A NAME="1803"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Region</TT><A NAME="1806"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;County
+</LI>
+<LI>&#167;Region
+</LI>
+</OL>
+
+<P>
+<DL>
+<DT></DT>
+<DD>
+</DD>
+<DT><STRONG>Ireland</STRONG></DT>
+<DD>Munster, Leinster, Ulster, Connacht; also: Northern
+          Ireland
+</DD>
+<DT><STRONG>Scotland</STRONG></DT>
+<DD>Pictland, D&#225;l R&#237;ada, Between-the-Walls
+</DD>
+<DT><STRONG>England</STRONG></DT>
+<DD>Dumnonia
+</DD>
+<DT><STRONG>Wales</STRONG></DT>
+<DD>1974 counties.
+</DD>
+<DT><STRONG>France</STRONG></DT>
+<DD>historic Brittany, modern administrative Brittany, diocese.
+</DD>
+<DT></DT>
+<DD>
+</DD>
+<DT><STRONG>Munster</STRONG></DT>
+<DD>Kerry, Cork, Waterford, Limerick, Tipperary, Clare
+</DD>
+<DT><STRONG>Connacht</STRONG></DT>
+<DD>Galway, Mayo, Sligo, Roscommon, Leitrim
+</DD>
+<DT><STRONG>Leinster</STRONG></DT>
+<DD>Wexford, Kilkenny, Carlow, Laois, Wicklow, Offaly, Kildare,
+Dublin, Meath, Louth, Cavan, Longford, Westmeath
+</DD>
+<DT><STRONG>Ulster</STRONG></DT>
+<DD>Antrim, Down, Armagh, Tyrone, Fermanagh, Donegal, Londonderry,
+          Monaghan
+</DD>
+<DT><STRONG>D&#225;l R&#237;ada</STRONG></DT>
+<DD>Argyll and Southern Hebrides
+</DD>
+<DT><STRONG>Pictland</STRONG></DT>
+<DD>FIF, CLK, PER, ANG, STL, KCD, ABD, BNF, MOR, SUT, CAI, INV,
+ORK, SHE, ROS, KNR, NAI [replace with full county names].
+</DD>
+<DT><STRONG>Between-the-Walls</STRONG></DT>
+<DD>LNK, RNF, AYR, DMF, WIG, BWK, PEB, DNB, ELO, MLO,
+ROX, WLO (the British kingdoms between the Roman walls, Strathclyde,
+               Gododdin, Cumbria ) [replace with full county names].
+</DD>
+</DL>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="429"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 9:</STRONG>
+Conversion of OS grid letters to numbers. For example, SS
+123 456 becomes 212300 145600.</CAPTION>
+<TR><TD><!-- MATH
+ $\includegraphics[width=0.5\textwidth]{map.eps}$
+ -->
+<IMG
+ WIDTH="277" HEIGHT="373" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.gif"
+ ALT="\includegraphics[width=0.5\textwidth]{map.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00324000000000000000"></A><A NAME="1809"></A><A NAME="gridreftable"></A>
+<BR>
+The <SMALL>GRIDREF</SMALL> table
+</H2>
+
+<P>
+National Grid Reference given to monument or centre of site.
+N.B. To ensure compatibility of grid references all must be stored as 12
+figure numbers and, therefore their true accuracy must also be
+recorded (12 figures implies an accuracy to the nearest metre).
+This is recorded as a measurement in metres, a GB letters <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$+$"></SPAN> 8 figure
+reference (SS 1456 3256) is to 10 metres, 6 figures to 100
+metres, and 4 figures to 1km.  The GB letters need to be converted
+to numbers representing their 100km grid square.  For the north of
+Scotland this will result in a 7 figure northing.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="1812"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>System</TT><A NAME="1815"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">7</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>East</TT><A NAME="1818"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>North</TT><A NAME="1821"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>Accuracy</TT><A NAME="1824"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>System (<SPAN  CLASS="textbf">GB</SPAN>, <SPAN  CLASS="textbf">Ireland</SPAN>, <SPAN  CLASS="textbf">France</SPAN>)
+</LI>
+<LI>Eastings: 6 figure reference to include numeric version of letter code.
+</LI>
+<LI>Northings: as above (7 figures for the north of Scotland).
+</LI>
+<LI>Accuracy in metres.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00325000000000000000"></A><A NAME="1827"></A><A NAME="altnametable"></A>
+<BR>
+The <SMALL>ALT</SMALL>_<SMALL>NAME</SMALL> table
+</H2>
+
+<P>
+Alternative name(s) for a site, Inis Cealtra is also known in the
+literature as `Holy Island' and `Inishcaltra', Toureen Peakaun is also known
+as `Kilpeakaun'. See also the <SMALL>ALTSNAME</SMALL><A NAME="1830"></A> table.
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="1833"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Alt_name</TT><A NAME="1836"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The alternative name.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00326000000000000000"></A><A NAME="1839"></A><A NAME="sitetype"></A>
+<BR>
+The <SMALL>SITE</SMALL>_<SMALL>TYP</SMALL> table
+</H2>
+
+<P>
+This is a look-up table for the <TT>site_type</TT><A NAME="1842"></A> field of the
+<SMALL>SITE</SMALL><A NAME="1845"></A> table.<A NAME="467"></A>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Sitetype</TT><A NAME="1848"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Description</TT><A NAME="1851"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;A five letter code in lower case.
+</LI>
+<LI>A description of the site type.
+</LI>
+</OL>
+
+<P>
+The following lists the contents of this table. It is intended that this list
+is comprehensive but it may be added to if necessary. The <TT>sitetype</TT><A NAME="1854"></A> 
+field contains the allowed codes for the <TT>site_type</TT><A NAME="1857"></A> field of the
+<SMALL>SITE</SMALL><A NAME="1860"></A> table.
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT"><TT>Sitetype</TT><A NAME="1863"></A></TD>
+<TD ALIGN="LEFT"><TT>Description</TT><A NAME="1866"></A></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="LEFT">cemet</TD>
+<TD ALIGN="LEFT">cemetery<SPAN  CLASS="textbf">[1]</SPAN></TD>
+</TR>
+<TR><TD ALIGN="LEFT">eccle</TD>
+<TD ALIGN="LEFT">ecclesiastical<SPAN  CLASS="textbf">[2]</SPAN></TD>
+</TR>
+<TR><TD ALIGN="LEFT">inc</TD>
+<TD ALIGN="LEFT">incomplete information</TD>
+</TR>
+<TR><TD ALIGN="LEFT">ind</TD>
+<TD ALIGN="LEFT">indeterminate</TD>
+</TR>
+<TR><TD ALIGN="LEFT">lands</TD>
+<TD ALIGN="LEFT">landscape setting</TD>
+</TR>
+<TR><TD ALIGN="LEFT">modsc</TD>
+<TD ALIGN="LEFT">modern secondary<SPAN  CLASS="textbf">[3]</SPAN></TD>
+</TR>
+<TR><TD ALIGN="LEFT">n/a</TD>
+<TD ALIGN="LEFT">not applicable</TD>
+</TR>
+<TR><TD ALIGN="LEFT">other</TD>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+<TR><TD ALIGN="LEFT">settl</TD>
+<TD ALIGN="LEFT">settlement</TD>
+</TR>
+<TR><TD ALIGN="LEFT">soutn</TD>
+<TD ALIGN="LEFT">souterrain</TD>
+</TR>
+</TABLE>
+
+<P>
+<SPAN  CLASS="textbf">[1]</SPAN> without associated church
+
+<P>
+<SPAN  CLASS="textbf">[2]</SPAN> church, abbey, early Christian site, including graveyard
+
+<P>
+<SPAN  CLASS="textbf">[3]</SPAN> First found re-used in a post-medieval context or
+structure (other than
+a church), as a gatepost, a house lintel, or in a wall.
+
+<P>
+
+<H1><A NAME="SECTION00330000000000000000"></A><A NAME="1875"></A>
+<BR>
+The <SMALL>STONE</SMALL> and related tables
+</H1>
+
+<P>
+Tables considered in this section are the
+<SMALL>STONE</SMALL><A NAME="1878"></A>, <SMALL>ALTSNAME</SMALL><A NAME="1881"></A>, <SMALL>MUSEUM</SMALL><A NAME="1884"></A>, <SMALL>LOST</SMALL><A NAME="1887"></A>,
+<SMALL>OTHERLOC</SMALL><A NAME="1890"></A>, <SMALL>FOLKLORE</SMALL><A NAME="1893"></A>, <SMALL>INSCROSS</SMALL><A NAME="1896"></A>, <SMALL>DECORATN</SMALL><A NAME="1899"></A>,
+<SMALL>DECOR</SMALL>_<SMALL>CD</SMALL><A NAME="1902"></A>, and <SMALL>FORM</SMALL><A NAME="1905"></A> tables. Tables
+<SMALL>STON</SMALL>_<SMALL>PUB</SMALL><A NAME="1908"></A> and
+<SMALL>STON</SMALL>_<SMALL>IMG</SMALL><A NAME="1911"></A> are discussed in sections
+<A HREF="node3.html#biblio">15</A>-<A HREF="node3.html#imagesys">16</A>. Look-up tables <SMALL>CIRCUM</SMALL><A NAME="1914"></A>,
+<SMALL>DAMAGE</SMALL><A NAME="1917"></A>, <SMALL>SETTING</SMALL><A NAME="1920"></A>, <SMALL>LOCATION</SMALL><A NAME="1923"></A>, and <SMALL>STATUS</SMALL><A NAME="1926"></A> 
+are not discussed in detail.
+
+<P>
+
+<H2><A NAME="SECTION00331000000000000000"></A><A NAME="1929"></A><A NAME="stonetable"></A>
+<BR>
+The <SMALL>STONE</SMALL> table
+</H2>
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="1932"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="1935"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Disc_circ</TT><A NAME="1938"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">15</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Disc_when</TT><A NAME="1941"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>Disc_who</TT><A NAME="1944"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">20</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">6</TD>
+<TD ALIGN="LEFT"><TT>Subsq_hist</TT><A NAME="1947"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>Current_setting</TT><A NAME="1950"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT"><TT>Current_location</TT><A NAME="1953"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">15</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">9</TD>
+<TD ALIGN="LEFT"><TT>Loc_notes</TT><A NAME="1956"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">10</TD>
+<TD ALIGN="LEFT"><TT>Mon_form</TT><A NAME="1959"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">11</TD>
+<TD ALIGN="LEFT"><TT>Form_notes</TT><A NAME="1962"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">12</TD>
+<TD ALIGN="LEFT"><TT>Completeness</TT><A NAME="1965"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">13</TD>
+<TD ALIGN="LEFT"><TT>Preservation</TT><A NAME="1968"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">14</TD>
+<TD ALIGN="LEFT"><TT>Prescondnotes</TT><A NAME="1971"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">15</TD>
+<TD ALIGN="LEFT"><TT>M_sources</TT><A NAME="1974"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">16</TD>
+<TD ALIGN="LEFT"><TT>M_height</TT><A NAME="1977"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">17</TD>
+<TD ALIGN="LEFT"><TT>M_ht_status</TT><A NAME="1980"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">18</TD>
+<TD ALIGN="LEFT"><TT>M_width</TT><A NAME="1983"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">19</TD>
+<TD ALIGN="LEFT"><TT>M_wdth_status</TT><A NAME="1986"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">20</TD>
+<TD ALIGN="LEFT"><TT>M_thickness</TT><A NAME="1989"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">21</TD>
+<TD ALIGN="LEFT"><TT>M_thck_status</TT><A NAME="1992"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">22</TD>
+<TD ALIGN="LEFT"><TT>I_source</TT><A NAME="1995"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">23</TD>
+<TD ALIGN="LEFT"><TT>I_ht_feet</TT><A NAME="1998"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">24</TD>
+<TD ALIGN="LEFT"><TT>I_ht_inches</TT><A NAME="2001"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">25</TD>
+<TD ALIGN="LEFT"><TT>I_ht_status</TT><A NAME="2004"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">26</TD>
+<TD ALIGN="LEFT"><TT>I_wd_feet</TT><A NAME="2007"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">27</TD>
+<TD ALIGN="LEFT"><TT>I_wd_inches</TT><A NAME="2010"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">28</TD>
+<TD ALIGN="LEFT"><TT>I_wdth_status</TT><A NAME="2013"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">29</TD>
+<TD ALIGN="LEFT"><TT>I_th_feet</TT><A NAME="2016"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">30</TD>
+<TD ALIGN="LEFT"><TT>I_th_inches</TT><A NAME="2019"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">31</TD>
+<TD ALIGN="LEFT"><TT>I_thck_status</TT><A NAME="2022"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">32</TD>
+<TD ALIGN="LEFT"><TT>No_carved</TT><A NAME="2025"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">2</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">33</TD>
+<TD ALIGN="LEFT"><TT>Decor_notes</TT><A NAME="2028"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">34</TD>
+<TD ALIGN="LEFT"><TT>Visited</TT><A NAME="2031"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;Number assigned by the <SMALL>CISP</SMALL> data entry application
+(if there is more than one stone at a site,
+follow traditional numbering where possible).
+</LI>
+<LI>Circumstances of discovery.  These codes are stored in the
+<SMALL>CIRCUM</SMALL><A NAME="2035"></A> table: <SPAN  CLASS="textbf">first mentioned</SPAN> (earliest
+reference in print or archive, circumstances of discovery unknown),
+<SPAN  CLASS="textbf">arch excav</SPAN> (archaeological excavation),
+<SPAN  CLASS="textbf">non-arch dig</SPAN> (non-archaeological excavation, 
+laying pipes, digging graves), <SPAN  CLASS="textbf">recognised</SPAN> on standing monument (
+stone previously known but inscription not recognised as such), found
+built <SPAN  CLASS="textbf">in/on structure</SPAN> or wall (when it was pulled down, stone
+not previously known).
+</LI>
+<LI>Date of discovery or, if unknown, first publication.
+</LI>
+<LI>Name of person who discovered stone or, if unknown (or stone was
+`always known'), who published the first
+account. Names should be entered surname first, Macalister, R.
+A. S.  If unnamed, phrases like `workmen' are admissable.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Notes on subsequent history of stone, later reuse, removal to
+other
+site(s), falling down, re-erection, if once part of named antiquarian
+collection.
+</LI>
+<LI>The current setting of the stone: <SPAN  CLASS="textbf">unattch</SPAN> (unattached), <SPAN  CLASS="textbf">in
+ground</SPAN>, <SPAN  CLASS="textbf">on ground</SPAN>, <SPAN  CLASS="textbf">in struct</SPAN> (in structure), <SPAN  CLASS="textbf">in
+display</SPAN> (default for museums). Values stored in look-up table
+<SMALL>SETTING</SMALL><A NAME="2038"></A>.
+</LI>
+<LI>Current location:
+<SPAN  CLASS="textbf">earliest</SPAN> (still in the earliest recorded location);
+<SPAN  CLASS="textbf">lost</SPAN>;
+<SPAN  CLASS="textbf">museum</SPAN>;
+<SPAN  CLASS="textbf">on site</SPAN> (generally on the same site as found, but not in the exact
+original location, found originally when digging a grave, now set up in the churchyard);
+<SPAN  CLASS="textbf">other</SPAN> (any other location, for current location see <SMALL>OTHERLOC</SMALL><A NAME="2041"></A> 
+table). These codes are stored in the <SMALL>LOCATION</SMALL><A NAME="2044"></A> look-up
+table.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Precise description of location and related notes (to enable some
+one looking for it to find it or differentiate it from other stones, also as
+a bench-mark in case of future movement or loss).
+</LI>
+<LI>Physical form of monument: standard terms only permitted -- see
+description of the <SMALL>FORM</SMALL><A NAME="2047"></A> table below.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Any further details of the physical form of the stone (excluding
+ornament).
+</LI>
+<LI>Degree of completeness: <SPAN  CLASS="textbf">complete</SPAN> (roughly 90-100% of
+original monument survives), <SPAN  CLASS="textbf">incomplete</SPAN> (60-90%),
+<SPAN  CLASS="textbf">frgmntry</SPAN> (less than 60%). Values stored in the
+<SMALL>COMPLETE</SMALL><A NAME="2050"></A> look-up table.
+</LI>
+<LI>State of preservation: <SPAN  CLASS="textbf">good</SPAN>, <SPAN  CLASS="textbf">some</SPAN>-damage,
+<SPAN  CLASS="textbf">poor</SPAN>. Values stored in the <SMALL>DAMAGE</SMALL><A NAME="2053"></A> look-up table.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Notes on the present condition if further description is
+necessary, `damaged by
+ recutting for use as building stone', `water-worn', `broken at top',
+`deteriorated considerably in recent past -- cast in NMI made in 1893 shows
+more detail'.
+</LI>
+</OL>
+
+<P>
+
+<H3><A NAME="SECTION00331100000000000000">
+Measurements</A>
+</H3>
+
+<P>
+The maximum height, width and thickness of the stone are recorded. These are
+defined as follows:
+<DL>
+<DT><STRONG>Height</STRONG></DT>
+<DD>Vertical axis of upright stones, long axis of recumbents (as
+per original orientation where this can be determined, not as it now lies if
+fallen). This measurement will usually be the longest of the three
+</DD>
+<DT><STRONG>Width</STRONG></DT>
+<DD>Maximum dimensions of the cross-section, at 90 degrees to
+height.
+</DD>
+<DT><STRONG>Thickness</STRONG></DT>
+<DD>At 90 degrees to both of the above. This will usually be the
+shortest measurement of the three.
+</DD>
+</DL>
+If additional measurements are required, because the shape is complex,
+these are put in the physical form notes field.
+
+<P>
+It is noted whether the measurement is <SPAN  CLASS="textbf">actual</SPAN> (the entire length was
+available for measurement), <SPAN  CLASS="textbf">visible</SPAN> (part of the stone was not
+available for measurement because it was embedded in the ground or built into
+a wall), <SPAN  CLASS="textbf">uncertain</SPAN> (it is impossible to tell from the published
+account), <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN> or <SPAN  CLASS="textbf">n/a</SPAN>.  The last is used for
+unmeasured lost stones in particular.
+
+<P>
+The minimum visible measurement is fixed conventionally as 0.01m. If the
+information is not known it is given as 0.00m (because the field is numeric
+therefore <SPAN  CLASS="textbf">inc</SPAN> is a not possible entry).
+
+<P>
+Following the precedent of the British Academy Corpus of Anglo-Saxon Stone
+Sculpture, and because most of the published corpora only provide
+measurements in imperial units, each dimension is expressed in both metric
+and imperial units (metric since it is the modern scientific standard,
+imperial since it is thought to approximate to the units in use in
+the early Medieval period). The source of each measurement is given (either
+<SMALL>CISP</SMALL>, or bibliographic reference).  If measurements are available
+in only one format (metric or Imperial), the <SMALL>CISP</SMALL> data entry application
+provides automated conversion to the other system.  In this case,
+the source is cited as <SPAN  CLASS="textbf">converted</SPAN>.
+
+<P>
+Following the precedent of the British Academy Corpus of Anglo-Saxon stone
+sculpture, the imperial units used are feet and inches (conventionally
+expressed to 2 decimal places to allow for <SPAN CLASS="MATH"><IMG
+ WIDTH="22" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img16.gif"
+ ALT="$\frac{1}{4}''$"></SPAN> ).
+
+<P>
+
+<OL>
+<LI>Source of data: <SPAN  CLASS="textbf">CISP</SPAN>, reference, <SPAN  CLASS="textbf">n/a</SPAN> or
+<SPAN  CLASS="textbf">converted</SPAN>.<A NAME="sourcesM"></A></LI>
+<LI>Height in metres.
+</LI>
+<LI><SPAN  CLASS="textbf">actual</SPAN>/<SPAN  CLASS="textbf">visible</SPAN>/<SPAN  CLASS="textbf">inc</SPAN>/<SPAN  CLASS="textbf">n/a</SPAN><SPAN  CLASS="textbf">ind</SPAN>/<SPAN  CLASS="textbf">uncertain</SPAN> (source not
+clear on this point)<A NAME="meastypes"></A></LI>
+<LI>Width in metres.
+</LI>
+<LI>As for <A HREF="node3.html#meastypes">17</A>.
+</LI>
+<LI>Thickness in metres.
+</LI>
+<LI>As for <A HREF="node3.html#meastypes">17</A>.
+</LI>
+<LI>As for <A HREF="node3.html#sourcesM">15</A>
+</LI>
+<LI>Height, feet part.
+</LI>
+<LI>Height, inches part.
+</LI>
+<LI>As for <A HREF="node3.html#meastypes">17</A>.
+</LI>
+<LI>Width, feet part.
+</LI>
+<LI>Width, inches part.
+</LI>
+<LI>As for <A HREF="node3.html#meastypes">17</A>.
+</LI>
+<LI>Thickness, feet part.
+</LI>
+<LI>Thickness, inches part.
+</LI>
+<LI>As for <A HREF="node3.html#meastypes">17</A>.
+</LI>
+</OL>
+
+<P><P>
+<BR>
+
+<OL>
+<LI>Number of faces carved (excluding textual carving): <SPAN  CLASS="textbf">1 2 3 4 5 5+</SPAN>
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Other carving notes: additional information on carving other than
+text (see also the <SMALL>INSCROSS</SMALL><A NAME="2058"></A> and <SMALL>DECORATN</SMALL><A NAME="2061"></A> tables
+as appropriate).
+</LI>
+<LI>Has the stone been seen by <SMALL>CISP</SMALL>?  Logical (yes/no) field.
+</LI>
+</OL>
+
+<P>
+
+<P>
+
+<H2><A NAME="SECTION00332000000000000000"></A><A NAME="2066"></A><A NAME="losttable"></A>
+<BR>
+The <SMALL>LOST</SMALL> table
+</H2>
+
+<P>
+Details of the date and circumstances of the loss of lost stones.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2069"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2072"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Date_last_present</TT><A NAME="2075"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Date_missing</TT><A NAME="2078"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">5</TD>
+<TD ALIGN="LEFT"><TT>Notes</TT><A NAME="2081"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;Site code.
+</LI>
+<LI>&#167;Stone number.
+</LI>
+<LI>Year last recorded present
+</LI>
+<LI>Year first recorded missing
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Notes (authority, bibliographic reference, circumstances, places
+looked )
+</LI>
+</OL>
+
+<P>
+Fields 1 and 2 provide a link to the stone table.
+
+<P>
+
+<H2><A NAME="SECTION00333000000000000000"></A><A NAME="2084"></A><A NAME="otherloctable"></A>
+<BR>
+The <SMALL>OTHERLOC</SMALL> table
+</H2>
+
+<P>
+If stone is no longer in its original/earliest location (the place
+described in `site') and is
+not in a museum, its current location is given as a grid
+reference. See the <SMALL>GRID</SMALL>_<SMALL>REF</SMALL><A NAME="2087"></A> table for more details on
+the details of the grid references.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2090"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2093"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Placename</TT><A NAME="2096"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">35</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">4</TD>
+<TD ALIGN="LEFT"><TT>Notes</TT><A NAME="2099"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>System</TT><A NAME="2102"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">7</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>East</TT><A NAME="2105"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>North</TT><A NAME="2108"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT"><TT>Accuracy</TT><A NAME="2111"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>The placename of the location.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Any notes about this location.
+</LI>
+<LI>The grid system (<SPAN  CLASS="textbf">GB</SPAN>, <SPAN  CLASS="textbf">Ireland</SPAN>, <SPAN  CLASS="textbf">France</SPAN>).
+</LI>
+<LI>The easting as a six figure coordinate.
+</LI>
+<LI>The northing as a six figure coordinate.
+</LI>
+<LI>The true accuracy of the reference in metres.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00334000000000000000"></A><A NAME="2114"></A><A NAME="museumtable"></A>
+<BR>
+The <SMALL>MUSEUM</SMALL> table
+</H2>
+
+<P>
+Information about any stone currently housed in a museum (but not a church).
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2117"></A></TD>
+<TD ALIGN="LEFT">alphanumeric              5</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2120"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Mus</TT><A NAME="2123"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Acc_no</TT><A NAME="2126"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>Name of museum.
+</LI>
+<LI>Museum's accession/catalogue number.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00335000000000000000"></A><A NAME="2129"></A><A NAME="formtable"></A>
+<BR>
+The <SMALL>FORM</SMALL> table
+</H2>
+
+<P>
+This is a hierarchical look-up table of allowed forms.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Mon_form</TT><A NAME="2132"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">8</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Gen_form</TT><A NAME="2135"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Med_form</TT><A NAME="2138"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Detail_form</TT><A NAME="2141"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The form code--a five character letter code in lowercase.
+</LI>
+<LI>The general categories of monument.
+</LI>
+<LI>The middle level of detail of category of monument.
+</LI>
+<LI>Detailed classification of monument form.
+</LI>
+</OL>
+
+<P>
+The following is a listing of the <SMALL>FORM</SMALL><A NAME="2144"></A> table and is then followed by
+definitions of some of the terms.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Cramp1"></A><A NAME="699"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 10:</STRONG>
+Cramp shaft forms</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=\textwidth]{Cramp1n.eps}$
+ -->
+<IMG
+ WIDTH="546" HEIGHT="711" ALIGN="BOTTOM" BORDER="0"
+ SRC="img17.gif"
+ ALT="\includegraphics[width=\textwidth]{Cramp1n.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Cramp2"></A><A NAME="704"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 11:</STRONG>
+Cramp arm and terminal forms</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=\textwidth]{Cramp2n.eps}$
+ -->
+<IMG
+ WIDTH="529" HEIGHT="663" ALIGN="BOTTOM" BORDER="0"
+ SRC="img18.gif"
+ ALT="\includegraphics[width=\textwidth]{Cramp2n.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="Cramp3"></A><A NAME="709"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 12:</STRONG>
+Cramp ring forms</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=\textwidth]{Cramp3n.eps}$
+ -->
+<IMG
+ WIDTH="484" HEIGHT="633" ALIGN="BOTTOM" BORDER="0"
+ SRC="img19.gif"
+ ALT="\includegraphics[width=\textwidth]{Cramp3n.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT"><TT>Mon_form</TT></TD>
+<TD ALIGN="LEFT"><TT>Gen_form</TT></TD>
+<TD ALIGN="LEFT"><TT>Med_form</TT></TD>
+<TD ALIGN="LEFT"><TT>Detail_form</TT></TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">arcar</SPAN></TH>
+<TD ALIGN="LEFT">architectural element</TD>
+<TD ALIGN="LEFT">arch</TD>
+<TD ALIGN="LEFT">arch</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">arcbs</SPAN></TH>
+<TD ALIGN="LEFT">architectural element</TD>
+<TD ALIGN="LEFT">building stone</TD>
+<TD ALIGN="LEFT">building stone</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">arcli</SPAN></TH>
+<TD ALIGN="LEFT">architectural element</TD>
+<TD ALIGN="LEFT">lintel</TD>
+<TD ALIGN="LEFT">lintel</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">arcot</SPAN></TH>
+<TD ALIGN="LEFT">architectural element</TD>
+<TD ALIGN="LEFT">other</TD>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">arcpa</SPAN></TH>
+<TD ALIGN="LEFT">architectural element</TD>
+<TD ALIGN="LEFT">panel</TD>
+<TD ALIGN="LEFT">panel</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">block</SPAN></TH>
+<TD ALIGN="LEFT">block</TD>
+<TD ALIGN="LEFT">block</TD>
+<TD ALIGN="LEFT">block</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">colum</SPAN></TH>
+<TD ALIGN="LEFT">column</TD>
+<TD ALIGN="LEFT">column</TD>
+<TD ALIGN="LEFT">column</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">eccal</SPAN></TH>
+<TD ALIGN="LEFT">ecclesiastical furniture</TD>
+<TD ALIGN="LEFT">altar</TD>
+<TD ALIGN="LEFT">altar</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">eccfn</SPAN></TH>
+<TD ALIGN="LEFT">ecclesiastical furniture</TD>
+<TD ALIGN="LEFT">font</TD>
+<TD ALIGN="LEFT">font</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">eccot</SPAN></TH>
+<TD ALIGN="LEFT">ecclesiastical furniture</TD>
+<TD ALIGN="LEFT">other</TD>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fcbas</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">cross-base</TD>
+<TD ALIGN="LEFT">cross-base</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fcsA</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">cross-shaft</TD>
+<TD ALIGN="LEFT">Cramp 1a</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fcsA</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">cross-shaft</TD>
+<TD ALIGN="LEFT">Cramp 1b</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fccA1a</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">complete</TD>
+<TD ALIGN="LEFT">Cramp sh. A, head 1a</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fccB6e2</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">complete</TD>
+<TD ALIGN="LEFT">Cramp sh. B, head 6e, r2</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fccB8e5</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">complete</TD>
+<TD ALIGN="LEFT">Cramp sh. B, head 8e, r5</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fch1a</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">cross-head</TD>
+<TD ALIGN="LEFT">Cramp head 1a</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fscuc</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">otherwise unclassified</TD>
+<TD ALIGN="LEFT">otherwise unclassified</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fccgw</SPAN></TH>
+<TD ALIGN="LEFT">free-standing cross</TD>
+<TD ALIGN="LEFT">complete</TD>
+<TD ALIGN="LEFT">Glams.
+`wheel headed' type</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">fragy</SPAN></TH>
+<TD ALIGN="LEFT">fragment</TD>
+<TD ALIGN="LEFT">fragment</TD>
+<TD ALIGN="LEFT">fragment</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">nboul</SPAN></TH>
+<TD ALIGN="LEFT">natural</TD>
+<TD ALIGN="LEFT">boulder</TD>
+<TD ALIGN="LEFT">boulder</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">ncave</SPAN></TH>
+<TD ALIGN="LEFT">natural</TD>
+<TD ALIGN="LEFT">cave</TD>
+<TD ALIGN="LEFT">cave</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">nrock</SPAN></TH>
+<TD ALIGN="LEFT">natural</TD>
+<TD ALIGN="LEFT">rock outcrop</TD>
+<TD ALIGN="LEFT">rock outcrop</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">pillc</SPAN></TH>
+<TD ALIGN="LEFT">pillar</TD>
+<TD ALIGN="LEFT">slab (flat)</TD>
+<TD ALIGN="LEFT">cross-marked</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">pillp</SPAN></TH>
+<TD ALIGN="LEFT">pillar</TD>
+<TD ALIGN="LEFT">slab (flat)</TD>
+<TD ALIGN="LEFT">plain</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">pilsc</SPAN></TH>
+<TD ALIGN="LEFT">pillar</TD>
+<TD ALIGN="LEFT">stone (squarish)</TD>
+<TD ALIGN="LEFT">cross-marked</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">pilsp</SPAN></TH>
+<TD ALIGN="LEFT">pillar</TD>
+<TD ALIGN="LEFT">stone (squarish)</TD>
+<TD ALIGN="LEFT">plain</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">recmo</SPAN></TH>
+<TD ALIGN="LEFT">recumbent monument</TD>
+<TD ALIGN="LEFT">recumbent monument</TD>
+<TD ALIGN="LEFT">recumbent monument</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">rpmeg</SPAN></TH>
+<TD ALIGN="LEFT">re-used</TD>
+<TD ALIGN="LEFT">prehistoric</TD>
+<TD ALIGN="LEFT">megalith</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">rpout</SPAN></TH>
+<TD ALIGN="LEFT">re-used</TD>
+<TD ALIGN="LEFT">prehistoric</TD>
+<TD ALIGN="LEFT">carved
+rock outcrop</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">rralt</SPAN></TH>
+<TD ALIGN="LEFT">re-used</TD>
+<TD ALIGN="LEFT">Roman</TD>
+<TD ALIGN="LEFT">altar</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">rrarc</SPAN></TH>
+<TD ALIGN="LEFT">re-used</TD>
+<TD ALIGN="LEFT">Roman</TD>
+<TD ALIGN="LEFT">architectural fragment</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">rrmil</SPAN></TH>
+<TD ALIGN="LEFT">re-used</TD>
+<TD ALIGN="LEFT">Roman</TD>
+<TD ALIGN="LEFT">milestone</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">rroth</SPAN></TH>
+<TD ALIGN="LEFT">re-used</TD>
+<TD ALIGN="LEFT">Roman</TD>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">sarco</SPAN></TH>
+<TD ALIGN="LEFT">sarcophagus</TD>
+<TD ALIGN="LEFT">sarcophagus</TD>
+<TD ALIGN="LEFT">sarcophagus</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">slbbd</SPAN></TH>
+<TD ALIGN="LEFT">worked slab</TD>
+<TD ALIGN="LEFT">body-slab</TD>
+<TD ALIGN="LEFT">body-slab</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">slbcr</SPAN></TH>
+<TD ALIGN="LEFT">worked slab</TD>
+<TD ALIGN="LEFT">cross-slab</TD>
+<TD ALIGN="LEFT">cross-slab</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">slbns</SPAN></TH>
+<TD ALIGN="LEFT">worked slab</TD>
+<TD ALIGN="LEFT">name-slab</TD>
+<TD ALIGN="LEFT">name-slab</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">slbot</SPAN></TH>
+<TD ALIGN="LEFT">worked-slab</TD>
+<TD ALIGN="LEFT">other</TD>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+<TR><TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+</TABLE>
+
+<P>
+This list of terms is <SPAN  CLASS="textit">not</SPAN> complete as not all the possible forms of
+cross, cross shaft and base taken from Cramp's Cramp:1984 typology
+were entered as necessary.  Figures <A HREF="node3.html#Cramp1">10</A>-<A HREF="node3.html#Cramp3">12</A>
+show Cramps classification.  The codes are created as follows
+
+<OL>
+<LI>First three letters are <SPAN  CLASS="textbf">fcc</SPAN> (free-standing cross, complete),
+<SPAN  CLASS="textbf">fcs</SPAN> (free-standing cross, cross-shaft) or
+<SPAN  CLASS="textbf">fch</SPAN> (free-standing cross, cross-head).
+</LI>
+<LI>Append shaft type (<SPAN  CLASS="textbf">A</SPAN> or <SPAN  CLASS="textbf">B</SPAN>) if appropriate.
+</LI>
+<LI>Append head-type from Cramp's table (see figure
+<A HREF="node3.html#Cramp2">11</A>), 6e.
+</LI>
+<LI>Append number for ring-type (see figure <A HREF="node3.html#Cramp3">12</A>), 
+5.
+</LI>
+</OL>
+
+<P>
+Additionally, there is a separate category for `Glamorganshire
+disk' or `wheel headed' crosses (<SPAN  CLASS="textbf">fccgw</SPAN>).
+
+<P>
+The following provides additional definitions of some of the terms encountered in the
+above table.
+<DL>
+<DT><STRONG>reused</STRONG></DT>
+<DD>
+<DL>
+<DT><STRONG>prehistoric</STRONG></DT>
+<DD>
+
+<P>
+<DL>
+<DT><STRONG>megalith</STRONG></DT>
+<DD>A menhir, dolmen or component of
+                                   stone circle.
+</DD>
+<DT><STRONG>carved rock outcrop</STRONG></DT>
+<DD>A cup-marked surface or similar.
+</DD>
+</DL>
+</DD>
+</DL>
+</DD>
+<DT><STRONG>natural</STRONG></DT>
+<DD>
+
+<P>
+<DL>
+<DT><STRONG>rock outcrop</STRONG></DT>
+<DD>As carved rock outcrop above but no earlier carving.
+</DD>
+<DT><STRONG>boulder</STRONG></DT>
+<DD>Boulder--differs from an outcrop in not being attached to
+ground, but not tall and thin like a pillar, and is unshaped.
+</DD>
+</DL>
+</DD>
+<DT><STRONG>architectural element</STRONG></DT>
+<DD>
+
+<P>
+<DL>
+<DT><STRONG>building stone</STRONG></DT>
+<DD>undifferentiated wall block
+</DD>
+<DT><STRONG>lintel</STRONG></DT>
+<DD>of a door or window
+</DD>
+<DT><STRONG>panel</STRONG></DT>
+<DD>a flat slab designed to be set into the wall of a building,
+dedication slab, frieze
+</DD>
+<DT><STRONG>arch</STRONG></DT>
+<DD>(component)
+</DD>
+<DT><STRONG>other</STRONG></DT>
+<DD>
+</DD>
+</DL>
+</DD>
+<DT><STRONG>burial monument</STRONG></DT>
+<DD>
+<DL>
+<DT><STRONG>sarcophagus</STRONG></DT>
+<DD>hollow burial monument, with or without lid
+</DD>
+<DT><STRONG>recumbent</STRONG></DT>
+<DD>a thick body cover, not a flat slab but carved on
+vertical sides as well as top
+</DD>
+</DL>
+</DD>
+<DT><STRONG>pillar-stone</STRONG></DT>
+<DD>tall and thin, squarish or round cross-section, unworked
+or lightly worked
+<DL>
+<DT><STRONG>cross-marked</STRONG></DT>
+<DD>with cross
+</DD>
+<DT><STRONG>plain</STRONG></DT>
+<DD>no carving other than text
+</DD>
+</DL>
+</DD>
+<DT><STRONG>pillar-slab</STRONG></DT>
+<DD>tall and thin, flat face, rectangular cross-section,
+unworked or lightly worked
+<DL>
+<DT><STRONG>cross-marked</STRONG></DT>
+<DD>with cross
+</DD>
+<DT><STRONG>plain</STRONG></DT>
+<DD>no carving other than text
+</DD>
+</DL>
+</DD>
+<DT><STRONG>column</STRONG></DT>
+<DD>tall and thin, squarish or round cross-section, fully worked.
+</DD>
+<DT><STRONG>block</STRONG></DT>
+<DD>thick squarish lump of worked stone not otherwise differentiated
+of which the function is not clear, not a fragment since substantially
+intact, not building stone since carved on more than one surface.
+</DD>
+<DT><STRONG>worked slab</STRONG></DT>
+<DD>thin, rectangular or square and substantially worked
+<DL>
+<DT><STRONG>name-slab</STRONG></DT>
+<DD>these would usually be small -- less than <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img20.gif"
+ ALT="$4'$"></SPAN> long, are
+more likely to be squarish than elongated, tend to be recumbent -- carved on
+one side only, and be carved with little ornament beyond a simple cross, the
+name predominates in the over all design (also known as a `pillow stone' but
+this term avoided (a) to avoid predetermining function and (b) as this term
+is strongly associated with Northumbria, to use it might imply influence)
+</DD>
+<DT><STRONG>body-slab</STRONG></DT>
+<DD>like the above but larger, usually elongated, usually  <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img21.gif"
+ ALT="$5'$"></SPAN>
+or <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.gif"
+ ALT="$6'$"></SPAN> long and <SPAN CLASS="MATH"><IMG
+ WIDTH="12" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img23.gif"
+ ALT="$2$"></SPAN>-<SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img24.gif"
+ ALT="$3'$"></SPAN> wide; cross often more substantial and
+predominates. The difference between these and recumbent monuments is that
+body-slabs are thin and quasi-two dimensional, and are not decorated on the
+vertical faces.
+</DD>
+<DT><STRONG>cross-slab</STRONG></DT>
+<DD>upright, usually carved on at least two sides, usually
+having a cross dominating but often with geometric or figural carving
+</DD>
+<DT><STRONG>other</STRONG></DT>
+<DD>uprights without cross
+</DD>
+</DL>
+</DD>
+<DT><STRONG>fragment</STRONG></DT>
+<DD>indeterminate -- too small to identify
+</DD>
+</DL>
+
+<P>
+
+<H2><A NAME="SECTION00336000000000000000"></A><A NAME="2155"></A><A NAME="altsnametable"></A>
+<BR>
+The <SMALL>ALTSNAME</SMALL> table
+</H2>
+
+<P>
+Alternative name for stone.  A stone may have more than one.
+
+<P>
+For example, local traditional name for stone or any other name under which
+the stone has appeared in print; the Newton Stone, referred to in
+earliest accounts as `Pitmachie stone', and also the `Shevock stone'
+after nearby places.  The Camp Ogham stone known locally as `Faisi's grave'.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2158"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2161"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Alt_sname</TT><A NAME="2164"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;Site code
+</LI>
+<LI>&#167;Stone number
+</LI>
+<LI>&#167;The alternative name
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00337000000000000000"></A><A NAME="2167"></A><A NAME="folkloretable"></A>
+<BR>
+The <SMALL>FOLKLORE</SMALL> table
+</H2>
+
+<P>
+Folklore associated with stone (disregard things pertaining to site only).
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">$ 1</TD>
+<TD ALIGN="LEFT">Site</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">$  2</TD>
+<TD ALIGN="LEFT">Stone</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">3</TD>
+<TD ALIGN="LEFT">Folklore</TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<P>
+
+<OL>
+<LI>The site  code.
+</LI>
+<LI>The stone number.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Notes concerning any traditional beliefs or practices pertaining
+to the stone.
+</LI>
+</OL>
+
+<P>
+Since only a small minority of stones will have associated folklore it is
+noted in a separate table.
+
+<P>
+
+<H2><A NAME="SECTION00338000000000000000"></A><A NAME="2171"></A><A NAME="inscrosstable"></A>
+<BR>
+The <SMALL>INSCROSS</SMALL> table
+</H2>
+This table records the form of the inscribed crosses which may occur on a
+stone.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT">Site</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT">Stone</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT">Cross</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT">Shape</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT">Substance</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT">Arms</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT">Terminals</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT">Crossing</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">9</TD>
+<TD ALIGN="LEFT">Frame</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">10</TD>
+<TD ALIGN="LEFT">Ring</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">11</TD>
+<TD ALIGN="LEFT">Base</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">12</TD>
+<TD ALIGN="LEFT">Interior</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">13</TD>
+<TD ALIGN="LEFT">Chi_rho_hook</TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">14</TD>
+<TD ALIGN="LEFT">Other_embellishment</TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The cross number--a stone can have more than one cross.
+</LI>
+<LI>Shape: <SPAN  CLASS="textbf">equal-armed</SPAN>,   <SPAN  CLASS="textbf">latin</SPAN>,
+<SPAN  CLASS="textbf">arcs</SPAN>, <SPAN  CLASS="textbf">tau</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Substance:    <SPAN  CLASS="textbf">linear</SPAN>, <SPAN  CLASS="textbf">outline</SPAN>,
+<SPAN  CLASS="textbf">interlace</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Arms: <SPAN  CLASS="textbf">straight</SPAN>, <SPAN  CLASS="textbf">tapering</SPAN>, <SPAN  CLASS="textbf">expanded</SPAN>,
+<SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Terminals: <SPAN  CLASS="textbf">plain</SPAN>, <SPAN  CLASS="textbf">curved</SPAN>, <SPAN  CLASS="textbf">round</SPAN>, <SPAN  CLASS="textbf">half-round</SPAN>,
+<SPAN  CLASS="textbf">bifid</SPAN>, <SPAN  CLASS="textbf">expanded</SPAN>, <SPAN  CLASS="textbf">crosslet</SPAN>,
+<SPAN  CLASS="textbf">other</SPAN>, <SPAN  CLASS="textbf">mixed</SPAN>,
+<SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>, <SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Crossing: <SPAN  CLASS="textbf">plain</SPAN>, <SPAN  CLASS="textbf">square hollow</SPAN>, <SPAN  CLASS="textbf">round hollow</SPAN>,
+<SPAN  CLASS="textbf">curved</SPAN>, <SPAN  CLASS="textbf">circular</SPAN>, <SPAN  CLASS="textbf">square</SPAN>,
+<SPAN  CLASS="textbf">lozenge</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Ring:   <SPAN  CLASS="textbf">none</SPAN>, <SPAN  CLASS="textbf">inner curved</SPAN>, <SPAN  CLASS="textbf">outer curved</SPAN>,
+ <SPAN  CLASS="textbf">billet</SPAN>, <SPAN  CLASS="textbf">angular</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Base:   Any of the terminal types, plus <SPAN  CLASS="textbf">angular</SPAN> and
+<SPAN  CLASS="textbf">tenon</SPAN>.
+</LI>
+<LI>Interior:  <SPAN  CLASS="textbf">plain</SPAN>, <SPAN  CLASS="textbf">decorated</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Frame: <SPAN  CLASS="textbf">none</SPAN>, <SPAN  CLASS="textbf">circular</SPAN>, <SPAN  CLASS="textbf">angular</SPAN>,
+<SPAN  CLASS="textbf">cruciform</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>, <SPAN  CLASS="textbf">ind</SPAN>,
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+<LI>Chi-Rho Hook:  logical field, yes/no.
+</LI>
+<LI>Other structural embellishment: logical field, yes/no.
+</LI>
+</OL>
+
+<P>
+Some of the terms used above are now further defined.
+<DL>
+<DT><STRONG>Substance</STRONG></DT>
+<DD>
+<DL>
+<DT><STRONG>interlace</STRONG></DT>
+<DD>constructed out of interlace, not an outline cross
+decorated with interlace.
+</DD>
+</DL>
+</DD>
+<DT><STRONG>Base</STRONG></DT>
+<DD>
+<DL>
+<DT><STRONG>tenon</STRONG></DT>
+<DD>some kind of point
+</DD>
+</DL>
+</DD>
+<DT><STRONG>Chi-Rho Hook</STRONG></DT>
+<DD>proper chi-rho monograms are not crosses, this covers only crosses with a
+little `hook' on the upper arm.
+</DD>
+<DT><STRONG>Other embellishment</STRONG></DT>
+<DD>some other structural aspect of the cross, 
+indentations in stem, scrolls or billets attached to stem -- anything on the
+surrounding background will be covered in the <SMALL>DECORATN</SMALL><A NAME="2174"></A> table.
+</DD>
+</DL>
+
+<P>
+Some types of cross inevitably have default entries in other
+fields.  For example, a linear cross must have <SPAN  CLASS="textbf">n/a</SPAN> for
+interior.
+
+<P>
+Figure <A HREF="node3.html#crosses">13</A> shows the meanings of the various terms in
+diagramatic form.
+
+<P>
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="crosses"></A><A NAME="1526"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 13:</STRONG>
+Guide to inscribed cross forms</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+</DIV><!-- MATH
+ $\includegraphics[width=\textwidth]{crosses.eps}$
+ -->
+<IMG
+ WIDTH="555" HEIGHT="747" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.gif"
+ ALT="\includegraphics[width=\textwidth]{crosses.eps}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+
+<H2><A NAME="SECTION00339000000000000000"></A><A NAME="2177"></A><A NAME="2180"></A><A NAME="decorX"></A>
+<BR>
+The <SMALL>DECORATN</SMALL> and <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL> 
+tables
+</H2>
+
+<P>
+As any one stone many have more than one type of decorative element, and any
+one decorative element can occur on more than one stone, we have a
+many-to-many<A NAME="911"></A> relationship which has to be
+resolved by the use of the third linking table. The <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL><A NAME="2183"></A> table
+lists the possible decorative elements in a codified form, and the
+<SMALL>DECORATN</SMALL><A NAME="2186"></A> table acts as a linking table between the <SMALL>STONE</SMALL><A NAME="2189"></A> 
+table and the <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL><A NAME="2192"></A> table. The <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL><A NAME="2195"></A> table is a
+look-up table similar to <SMALL>SITE</SMALL>_<SMALL>TYP</SMALL><A NAME="2198"></A>.
+
+<P>
+The <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL><A NAME="2201"></A> table has the following structure.
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Type</TT><A NAME="2204"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">6</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Description</TT><A NAME="2207"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">35</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+The entries in this look-up table are listed below.
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT"><TT>Type</TT><A NAME="2210"></A></TD>
+<TD ALIGN="LEFT"><TT>Description</TT><A NAME="2213"></A></TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">animal</SPAN></TH>
+<TD ALIGN="LEFT">animal</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">band</SPAN></TH>
+<TD ALIGN="LEFT">band</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">beadg</SPAN></TH>
+<TD ALIGN="LEFT">beading</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">boss</SPAN></TH>
+<TD ALIGN="LEFT">boss</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">chirho</SPAN></TH>
+<TD ALIGN="LEFT">chi-rho</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">figure</SPAN></TH>
+<TD ALIGN="LEFT">figural</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">frame</SPAN></TH>
+<TD ALIGN="LEFT">frame</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">geoinr</SPAN></TH>
+<TD ALIGN="LEFT">geometric ribbon interlace</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">geoinz</SPAN></TH>
+<TD ALIGN="LEFT">geometric zoomorphic interlace</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">geokey</SPAN></TH>
+<TD ALIGN="LEFT">geometric key pattern</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">geooth</SPAN></TH>
+<TD ALIGN="LEFT">geometric other</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">geospl</SPAN></TH>
+<TD ALIGN="LEFT">geometric spiral</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">inc</SPAN></TH>
+<TD ALIGN="LEFT">incomplete data</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">ind</SPAN></TH>
+<TD ALIGN="LEFT">indeterminate</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">other</SPAN></TH>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<P>
+The structure of the linking table <SMALL>DECORATN</SMALL><A NAME="2217"></A> is as follows.
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2220"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2223"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Decor_code</TT><A NAME="2226"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">6</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The decoration code which is limited to one of the entries in the
+<TT>type</TT><A NAME="2229"></A> field of the <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL><A NAME="2232"></A> table.
+</LI>
+</OL>
+
+<P>
+As can be seen, any one stone can have many entries in this table, as can any
+one decoration type. From this we can retrieve either all the elements on a
+stone, or all stones which employ that element.
+
+<P>
+
+<H1><A NAME="SECTION00340000000000000000"></A><A NAME="2235"></A>
+<BR>
+The <SMALL>INSCRIP</SMALL> and related tables
+</H1>
+
+<P>
+Tables considered in this section are: <SMALL>INSCRIP</SMALL><A NAME="2238"></A>, <SMALL>NAMES</SMALL><A NAME="2241"></A>,
+<SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL><A NAME="2244"></A>, <SMALL>SPECIAL</SMALL><A NAME="2247"></A>,  and <SMALL>DATE</SMALL><A NAME="2250"></A>.
+Related look-up tables not discussed in detail are
+<SMALL>DAMAGE</SMALL><A NAME="2253"></A>, <SMALL>ORIENTAT</SMALL><A NAME="2256"></A>, <SMALL>POSIT1</SMALL><A NAME="2259"></A>,
+<SMALL>POSIT2</SMALL><A NAME="2262"></A>, <SMALL>POSIT3</SMALL><A NAME="2265"></A>, <SMALL>POSIT4</SMALL><A NAME="2268"></A>,
+<SMALL>GENDER</SMALL><A NAME="2271"></A> and <SMALL>LANGUAGE</SMALL><A NAME="2274"></A>.
+
+<P>
+
+<H2><A NAME="SECTION00341000000000000000"></A><A NAME="2277"></A><A NAME="inscriptable"></A>
+<BR>
+The <SMALL>INSCRIP</SMALL> table
+</H2>
+
+<P>
+This table is the primary table for recording details of the inscriptions
+<SPAN  CLASS="textit">other</SPAN> than the text itself which is recorded in the <SMALL>READING</SMALL><A NAME="2280"></A> 
+and <SMALL>TRANSLAT</SMALL><A NAME="2283"></A> tables. A stone may have more than one inscription.
+The definition of a `separate inscription' is a subjective decision and must
+be based on common sense, if one obviously post-dates another, if they
+are in manifestly different `hands', different scripts, on different faces of
+the stone, relate to different fields of ornament 
+
+<P>
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+<TD ALIGN="LEFT">&nbsp;</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2289"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2292"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Inscription</TT><A NAME="2295"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Doubtful</TT><A NAME="2298"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>Incomplete</TT><A NAME="2301"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>Condition</TT><A NAME="2304"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">12</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">7</TD>
+<TD ALIGN="LEFT"><TT>Legibility</TT><A NAME="2307"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT"><TT>Secondary</TT><A NAME="2310"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">9</TD>
+<TD ALIGN="LEFT"><TT>Orientation</TT><A NAME="2313"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">4</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">10</TD>
+<TD ALIGN="LEFT"><TT>No_lines</TT><A NAME="2316"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">11</TD>
+<TD ALIGN="LEFT"><TT>Position1</TT><A NAME="2319"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">12</TD>
+<TD ALIGN="LEFT"><TT>Position2</TT><A NAME="2322"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">6</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">13</TD>
+<TD ALIGN="LEFT"><TT>Position3</TT><A NAME="2325"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">20</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">14</TD>
+<TD ALIGN="LEFT"><TT>Position4</TT><A NAME="2328"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">20</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">15</TD>
+<TD ALIGN="LEFT"><TT>Position</TT><A NAME="2331"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">16</TD>
+<TD ALIGN="LEFT"><TT>Incision</TT><A NAME="2334"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">17</TD>
+<TD ALIGN="LEFT"><TT>Technique</TT><A NAME="2337"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">18</TD>
+<TD ALIGN="LEFT"><TT>Names</TT><A NAME="2340"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">19</TD>
+<TD ALIGN="LEFT"><TT>Language</TT><A NAME="2343"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">20</TD>
+<TD ALIGN="LEFT"><TT>Ling_notes</TT><A NAME="2346"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">21</TD>
+<TD ALIGN="LEFT"><TT>Carve_err</TT><A NAME="2349"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">1</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">22</TD>
+<TD ALIGN="LEFT"><TT>Script</TT><A NAME="2352"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">23</TD>
+<TD ALIGN="LEFT"><TT>Letter_height_m</TT><A NAME="2355"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">24</TD>
+<TD ALIGN="LEFT"><TT>Paleo_notes</TT><A NAME="2358"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;Number assigned by CISP to act as primary key in conjunction
+with the site and stone fields. Number to be assigned `within' a stone, not
+sequentially.
+</LI>
+<LI>Is there some reason to doubt whether or not the inscription should be
+included? (the marks are indistinct or fragmentary and might not be a
+genuine inscription; a description of a lost stone is vague; an inscription
+may be a fake, or may be modern). <SPAN  CLASS="textbf">N.B.</SPAN> If a stone can be definitely
+excluded it should be, this is only if doubts remain. Logical yes/no field.
+</LI>
+<LI>Is there any reason to think that the  inscription is incomplete? Logical yes/no field.
+</LI>
+<LI>What is the state of preservation? Allowed entries: <SPAN  CLASS="textbf">good</SPAN>,
+<SPAN  CLASS="textbf">some</SPAN>-damage, <SPAN  CLASS="textbf">poor</SPAN>, <SPAN  CLASS="textbf">n/a</SPAN>. Values stored
+in the <SMALL>DAMAGE</SMALL><A NAME="2361"></A> table.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Notes on the legibility of the text.
+</LI>
+<LI>Is the inscription obviously secondary?  This can either be
+the second, later inscription on a stone, or where a stone has
+been used for an inscription secondarily to its function, a
+graffito.  Logical yes/no field.
+</LI>
+<LI>Orientation of text relative to vertical or long axis of stone (as
+stone originally stood, or, in the case of stone inverted and re-used, as it
+stood to bear this text).
+The allowed entries (stored in the <SMALL>ORIENTAT</SMALL><A NAME="2364"></A> table) are:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">circ</SPAN></TH>
+<TD ALIGN="LEFT">circular</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">horz</SPAN></TH>
+<TD ALIGN="LEFT">horizontal</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">inc</SPAN></TH>
+<TD ALIGN="LEFT">incomplete entry</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">ind</SPAN></TH>
+<TD ALIGN="LEFT">indeterminate</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">mix</SPAN></TH>
+<TD ALIGN="LEFT">mixed directions</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">othr</SPAN></TH>
+<TD ALIGN="LEFT">other</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">verd</SPAN></TH>
+<TD ALIGN="LEFT">vertical down</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">vind</SPAN></TH>
+<TD ALIGN="LEFT">vertical indeterminate</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">vruu</SPAN></TH>
+<TD ALIGN="LEFT">vertical up up</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">vua</SPAN></TH>
+<TD ALIGN="LEFT">vertical  up along</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">vuad</SPAN></TH>
+<TD ALIGN="LEFT">vertical up along down</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">vup</SPAN></TH>
+<TD ALIGN="LEFT">vertical up</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><SPAN  CLASS="textbf">vupd</SPAN></TH>
+<TD ALIGN="LEFT">vertical up down</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+Some entries are only applicable to Ogham inscriptions, 
+<SPAN  CLASS="textbf">vuad</SPAN>.
+</LI>
+<LI>Number of lines of text. A continuous line of text which turns corners
+is 1 line.
+</LI>
+<LI>Position 1, text<A NAME="posits"></A> relative to compass points: applies only
+to stones in landscape or churchyard settings which are not clearly secondary, 
+pillar-stones, pillar-slabs, cross-slabs, free-standing crosses, recumbents.
+Allowed values stored in look-up table <SMALL>POSIT1</SMALL><A NAME="2367"></A>.
+
+<UL>
+<LI>For upright monuments -- which face or arris is inscribed? If text
+extends over more than one, list the face/arris on which text begins.
+</LI>
+<LI>For recumbents -- in which direction does the top of the slab
+point?
+</LI>
+</UL>
+Allowed entries: <SPAN  CLASS="textbf">N S E W NE NW SE SW many all n/a ind inc</SPAN> which
+are stored in look-up table <SMALL>POSIT1</SMALL><A NAME="2370"></A>.
+</LI>
+<LI>Position 2, text relative to monument:
+
+<UL>
+<LI>cross-slabs -- <SPAN  CLASS="textbf">broad</SPAN>, <SPAN  CLASS="textbf">narrow</SPAN>, <SPAN  CLASS="textbf">both</SPAN> (broad
+and narrow)
+</LI>
+<LI>free-standing crosses -- <SPAN  CLASS="textbf">head</SPAN>, <SPAN  CLASS="textbf">shaft</SPAN>, <SPAN  CLASS="textbf">base</SPAN>,
+<SPAN  CLASS="textbf">more</SPAN> (than one)
+</LI>
+<LI>pillars --  <SPAN  CLASS="textbf">arris</SPAN>
+</LI>
+<LI>others -- <SPAN  CLASS="textbf">top</SPAN>, <SPAN  CLASS="textbf">other</SPAN>, <SPAN  CLASS="textbf">n/a</SPAN>,
+<SPAN  CLASS="textbf">ind</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>
+</LI>
+</UL>
+Allowed values stored in look-up table <SMALL>POSIT2</SMALL><A NAME="2373"></A>.
+</LI>
+<LI>Position 4, text relative to inscribed cross, if applicable:
+<SPAN  CLASS="textbf">above cross</SPAN>;
+<SPAN  CLASS="textbf">below cross</SPAN>;
+<SPAN  CLASS="textbf">beside cross</SPAN>;
+<SPAN  CLASS="textbf">inc</SPAN>;
+<SPAN  CLASS="textbf">ind</SPAN>;
+<SPAN  CLASS="textbf">mixed</SPAN>;
+<SPAN  CLASS="textbf">n/a</SPAN>;
+<SPAN  CLASS="textbf">on cross</SPAN>;
+<SPAN  CLASS="textbf">within quadrants</SPAN>.
+Allowed values stored in table <SMALL>POSIT3</SMALL><A NAME="2376"></A>.
+</LI>
+<LI>Position 4, text relative to carving other than inscribed crosses.
+Allowed values stored in
+look-up table <SMALL>POSIT4</SMALL><A NAME="2379"></A>.  These are:
+<SPAN  CLASS="textbf">inc</SPAN> (incomplete data);
+<SPAN  CLASS="textbf">ind</SPAN> (indeterminate);
+<SPAN  CLASS="textbf">moulding</SPAN> (on a raised band or moulding);
+<SPAN  CLASS="textbf">other</SPAN> (all other possibilities);
+<SPAN  CLASS="textbf">panel</SPAN> (enclosed on all sides by a panel);
+<SPAN  CLASS="textbf">quadrant</SPAN> (within quadrant(s) of a cross);
+<SPAN  CLASS="textbf">separated</SPAN> (divided from other ornament by lines);
+<SPAN  CLASS="textbf">undecorated</SPAN> (undecorated);
+<SPAN  CLASS="textbf">undivided</SPAN> (in same field as other ornament).
+</LI>
+<LI>Incision -- type of cut, pocked, cut .  The
+controlled vocabulary of this field is yet to be determined.
+</LI>
+<LI>Technique -- memo field for the technique of letter carving
+noting, in particular, differences of opinion.
+</LI>
+<LI>Number of individuals named (<SPAN  CLASS="textit">X</SPAN> son of <SPAN  CLASS="textbf">Y</SPAN> is one
+person, not two).
+</LI>
+<LI>Language of text other than personal-, place-, or ethnic-names. Allowed
+terms are stored in the look-up <SMALL>LANGUAGE</SMALL><A NAME="2382"></A> and include:
+<SPAN  CLASS="textbf">AS</SPAN>    (Anglo-Saxon),
+<SPAN  CLASS="textbf">biblic</SPAN> (Biblical),
+<SPAN  CLASS="textbf">briton</SPAN> (Brittonic),
+<SPAN  CLASS="textbf">gaul</SPAN>  (Gaulish),
+<SPAN  CLASS="textbf">goidel</SPAN> (Goidelic),
+<SPAN  CLASS="textbf">greek</SPAN> (Greek),
+<SPAN  CLASS="textbf">inc</SPAN>   (incomplete data),
+<SPAN  CLASS="textbf">ind</SPAN>   (indeterminate),
+<SPAN  CLASS="textbf">latcel</SPAN> (Latinised Celtic),
+<SPAN  CLASS="textbf">latin</SPAN> (Latin),
+<SPAN  CLASS="textbf">mixed</SPAN> (Celtic and Latin),
+<SPAN  CLASS="textbf">n/a</SPAN>   (not applicable),
+<SPAN  CLASS="textbf">name</SPAN>  (inscription consists solely of a name),
+<SPAN  CLASS="textbf">norse</SPAN> (Norse),
+<SPAN  CLASS="textbf">r-celt</SPAN> (Romano-Celtic),
+<SPAN  CLASS="textbf">unknwn</SPAN> (unknown).
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Linguistic notes. Although, logically, these pertain to `readings'
+rather than `inscriptions', for practical reasons they are placed
+here. `Linguistic' is loosely interpreted as any notes to do with
+the meaning of the inscription.  See also the memo field in the
+<SMALL>NAMES</SMALL><A NAME="2385"></A> table, and the linguistic indexing system.
+</LI>
+<LI>Has the carver made an error in carving? (<SPAN  CLASS="textbf">N.B.</SPAN> does not
+include textual `errors'): <SPAN  CLASS="textbf">y</SPAN>es, <SPAN  CLASS="textbf">n</SPAN>o <SPAN  CLASS="textbf">c</SPAN>orrected (
+self-corrected), <SPAN  CLASS="textbf">i</SPAN>nc.
+</LI>
+<LI>Kind of script used: <SPAN  CLASS="textbf">rcaps</SPAN> (predominantly Roman capitals),
+<SPAN  CLASS="textbf">rbook</SPAN> (predominantly Roman book-hand), <SPAN  CLASS="textbf">ogham</SPAN> (no-stem, 
+`non-scholastic'), <SPAN  CLASS="textbf">oghms</SPAN> (Ogham with-stem, `scholastic'),
+<SPAN  CLASS="textbf">runes</SPAN>, <SPAN  CLASS="textbf">greek</SPAN>.
+</LI>
+<LI>Maximum letter-height at surface of incision in mm.
+
+<UL>
+<LI>Roman alphabet -- largest letter
+</LI>
+<LI>ogham -- largest H/B stroke
+</LI>
+</UL>
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Palaeographic notes: any points of interest concerning form of
+script used. This field is loosely interpreted and can be used for
+notes regarding the reading of the inscription too.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00342000000000000000"></A><A NAME="2388"></A><A NAME="namestable"></A>
+<BR>
+The <SMALL>NAMES</SMALL> table
+</H2>
+Information concerning names in inscriptions.  There can be more
+than one name in an inscription, each receives one row of data.
+Compound names receive multiple rows too, Fred FILI Bert would
+have an entry for Fred and Bert.  If authorities disagree on the
+reading of the name,  a row can be input for each version of the
+name.  Some mark-up as for the transcription of inscriptions is
+allowed, for example the use of square brackets (<code>[ ]</code>) or
+indications of missing text (<code>[--</code>).
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2391"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2394"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Inscription</TT><A NAME="2397"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT"><TT>Name_id</TT><A NAME="2400"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>Name</TT><A NAME="2403"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>Language</TT><A NAME="2406"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>Gender</TT><A NAME="2409"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">1</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT"><TT>Person_id</TT><A NAME="2412"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">9</TD>
+<TD ALIGN="LEFT"><TT>Name_notes</TT><A NAME="2415"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The site  code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+<LI>&#167;A sequential number to act as part of the primary key.
+This number has no meaning beyond being an identifier.
+</LI>
+<LI>Text of name (as it appears on stone).
+</LI>
+<LI>Language of name--as for <TT>language</TT><A NAME="2418"></A> in the <SMALL>INSCRIP</SMALL><A NAME="2421"></A> 
+table (also uses look-up table <SMALL>LANGUAGE</SMALL><A NAME="2424"></A>).
+</LI>
+<LI>Gender of name: <SPAN  CLASS="textbf">m</SPAN>ale, <SPAN  CLASS="textbf">f</SPAN>emale, <SPAN  CLASS="textbf">e</SPAN>ither,
+<SPAN  CLASS="textbf">u</SPAN>nknown, <SPAN  CLASS="textbf">n</SPAN>/a, <SPAN  CLASS="textbf">i</SPAN>nc. Uses look-up table <SMALL>GENDER</SMALL><A NAME="2427"></A>.
+</LI>
+<LI>Known: can the person be identified from historical sources? Logical
+yes/no field. This is reserved for compelling identifications only.
+</LI>
+<LI><IMG
+ WIDTH="8" HEIGHT="26" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="\dag">Any historical or linguistic notes on the name.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00343000000000000000"></A><A NAME="2430"></A><A NAME="datetable"></A>
+<BR>
+The <SMALL>DATE</SMALL> table
+</H2>
+
+<P>
+A published opinion on the date of an inscription. An inscription may have
+more than one of these.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2433"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2436"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Inscription</TT><A NAME="2439"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT"><TT>Date_id</TT><A NAME="2442"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>Authority</TT><A NAME="2445"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>Date_from</TT><A NAME="2448"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>Date_to</TT><A NAME="2451"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">8</TD>
+<TD ALIGN="LEFT"><TT>Date_notes</TT><A NAME="2454"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+<LI>&#167;A number assigned by CISP.
+</LI>
+<LI>Source of date (links to <TT>bib_ref</TT><A NAME="2457"></A> field of the <SMALL>BIBLIOG</SMALL><A NAME="2460"></A> table.
+</LI>
+<LI>Start of date range.
+</LI>
+<LI>End of date range.
+</LI>
+<LI>Notes concerning the date, usually a quotation from the
+authority concerned.
+</LI>
+</OL>
+
+<P>
+Many of the dates are `conventional' and are entered in the following manner:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="LEFT">Phrase</TD>
+<TD ALIGN="LEFT">Date from</TD>
+<TD ALIGN="LEFT">Date to</TD>
+</TR>
+<TR><TD ALIGN="LEFT">6th century</TD>
+<TD ALIGN="LEFT">500</TD>
+<TD ALIGN="LEFT">599</TD>
+</TR>
+<TR><TD ALIGN="LEFT">6th to 7th centuries</TD>
+<TD ALIGN="LEFT">500</TD>
+<TD ALIGN="LEFT">699</TD>
+</TR>
+<TR><TD ALIGN="LEFT">mid 6th to mid 7th centuries</TD>
+<TD ALIGN="LEFT">550</TD>
+<TD ALIGN="LEFT">650</TD>
+</TR>
+<TR><TD ALIGN="LEFT">late 6th to early 8th centuries</TD>
+<TD ALIGN="LEFT">566</TD>
+<TD ALIGN="LEFT">733</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+This conventional phrases will eventually be stored in a look-up table to
+enable easier extraction of inscriptions of certain dates. More precisely
+dated inscriptions, those that mention a specific person, will use those
+dates.
+
+<P>
+
+<H2><A NAME="SECTION00344000000000000000"></A><A NAME="2463"></A><A NAME="2466"></A><A NAME="specialtables"></A>
+<BR>
+The <SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL> and <SMALL>SPECIAL</SMALL> tables
+</H2>
+
+<P>
+The structure and use of these two tables is similar to those for carved
+decoration discussed in section <A HREF="node3.html#decorX">11.9</A> on page <A HREF="node3.html#decorX"><IMG  ALIGN="BOTTOM" BORDER="1" ALT="[*]" SRC="crossref.gif"></A>.
+
+<P>
+These tables enable the tagging of distinctive letter-forms and other
+palaeographical features. As an inscription may have more than one special
+character, and a special character can be found in more than one inscription,
+this is a many-to-many relationship<A NAME="1176"></A> which
+is resolved through the use of a linking table.<A NAME="1177"></A> In
+this case, table <SMALL>SPECIAL</SMALL><A NAME="2469"></A> is the linking table and <SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL><A NAME="2472"></A> 
+is the list of special characters. The latter can also been seen as a look-up
+table.
+
+<P>
+The structure of the <SMALL>SPECIAL</SMALL><A NAME="2475"></A> table is:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2478"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2481"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Inscription</TT><A NAME="2484"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT"><TT>Spec_char</TT><A NAME="2487"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+<LI>&#167;The special character code which links to the <SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL><A NAME="2490"></A> 
+table.
+</LI>
+</OL>
+
+<P>
+The structure of the <SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL><A NAME="2493"></A> table is:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Spec_char</TT><A NAME="2496"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Character</TT><A NAME="2499"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The character code and primary key.
+</LI>
+<LI>Explanation or full name.
+</LI>
+</OL>
+
+<P>
+As data entry progresses it will become clear which characters need to be
+flagged. The following are examples only
+
+<UL>
+<LI>roman predominantly capitals
+
+<UL>
+<LI>horizontal-I
+</LI>
+<LI>angle-bar-A
+</LI>
+<LI>retrograde-S
+</LI>
+<LI>retrograde-N
+</LI>
+</UL>
+</LI>
+<LI>roman predominantly bookhand
+
+<UL>
+<LI>punctuation
+</LI>
+<LI>initial cross
+</LI>
+<LI>dividing cross
+</LI>
+<LI>suspension mark
+</LI>
+</UL>
+</LI>
+<LI>ogham
+
+<UL>
+<LI>the various supplementary letters
+</LI>
+<LI>bound letters
+</LI>
+<LI>word-division
+</LI>
+<LI>directional indicator
+</LI>
+</UL>
+</LI>
+</UL>
+
+<P>
+These tables will eventually be expanded into a palaeographic
+indexing system.
+
+<P>
+
+<H1><A NAME="SECTION00350000000000000000"></A><A NAME="2502"></A><A NAME="readingtable"></A>
+<BR>
+The <SMALL>READING</SMALL> table
+</H1>
+
+<P>
+The only other table directly related to <SMALL>READING</SMALL><A NAME="2505"></A> is the linking
+table <SMALL>READ</SMALL>_<SMALL>PUB</SMALL><A NAME="2508"></A> which will be discussed in section <A HREF="node3.html#biblio">15</A>.
+
+<P>
+This table contains published readings of text (or CISP reading if visited).
+An inscription may have many of these.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2511"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2514"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Inscription</TT><A NAME="2517"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT"><TT>Reading</TT><A NAME="2520"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>By_whom</TT><A NAME="2523"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">20</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>When</TT><A NAME="2526"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>Text</TT><A NAME="2529"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+<LI>&#167;The reading number assigned by <SMALL>CISP</SMALL>. All four fields
+<SPAN  CLASS="textit">together</SPAN> act as the primary key.
+</LI>
+<LI>Name of authority in full,  Macalister, R. A. S.
+</LI>
+<LI>Date of this reading noted, because the authority may give different
+readings at different times and the latest is not always the best, if it
+is many years since the stone was actually seen and the reading has been
+`tidied'; stone may have deteriorated physically over time, .
+If not date for reading given, date of publication used.  If
+multiple visits cited, date of last visit.
+</LI>
+<LI>Text of reading, transliteration of inscription--see below.
+</LI>
+</OL>
+
+<P>
+
+<H3><A NAME="SECTION00350100000000000000"></A><A NAME="translit"></A>
+<BR>
+Transliteration of inscriptions
+</H3>
+
+<P>
+Obviously, established conventions should be followed wherever possible,
+however:
+
+<OL>
+<LI>Although there is substantial convergence among the various systems
+there are numerous difference in detail.
+</LI>
+<LI>Existing systems draw heavily on typographical features which are
+unavailable to us in the database (subscript dots) or are likely to prove
+too cumbersome to achieve (italics).
+</LI>
+<LI>Existing systems use new lines of printed text to reflect layout of
+inscribed
+text whereas we must input ours as one continuous string of data.
+</LI>
+</OL>
+As a result, therefore, some innovation is unavoidable.
+
+<P>
+As we see it, the main drawbacks for our purposes with existing systems are
+that they distinguish between too many levels of uncertainty, and that they
+represent transliteration and expansion of abbreviations at a single stage.
+By separating out these last two functions we
+need display less information at each stage.
+
+<P>
+As there are unrestricted notes on completeness and legibility of the text in
+other fields, what is needed is a simple, comprehensive and accurate
+transcription of what is actually on the stone. Abbreviations are expanded
+(and lacuna supplied) in a separate table.
+
+<P>
+In what follows CISP innovations are marked with a #
+
+<P>
+
+<H3><A NAME="SECTION00350200000000000000">
+All inscriptions</A>
+</H3>
+
+<P>
+The prevailing convention is to transcribe as upper-case, regardless of
+whether or not the originals are capitals (runic inscriptions are
+conventionally transcribed as lower case).
+
+<P>
+<DL COMPACT>
+<DT></DT>
+<DD>A space in the transliteration represents a deliberate space in the
+inscription (except either side of a <TT>|</TT>).
+</DD>
+<DT><TT>|</TT></DT>
+<DD>End of line.
+</DD>
+<DT><TT>||</TT></DT>
+<DD>Text interrupted by a zone of ornament.
+</DD>
+<DT><TT>|||</TT></DT>
+<DD># Text turns corner (not indicated as such in other
+systems).
+</DD>
+<DT>[ ]</DT>
+<DD># Material contained in square brackets [] is defective or difficult
+to read (damaged or missing) and supplied by the reader.
+</DD>
+<DT>{ }</DT>
+<DD># Material in curly brackets {} is clear on stone but is in some
+way unusual (an inverted letter) or, though legible, is difficult to
+transliterate because the value is unknown or disputed (one of the more
+unusual of the supplementary Ogham letters)
+</DD>
+<DT></DT>
+<DD>Defective letters which can be restored with certainty --
+Cramp:1984 and Okasha:1993 put these in square brackets.
+<SPAN  CLASS="textit">RIB</SPAN> does not indicate them
+if certain claiming that illustration shows clearly. <SMALL>CISP</SMALL> will follow
+<SPAN  CLASS="textit">RIB</SPAN> and only mark if a letter is certain, or uncertain.
+</DD>
+<DT></DT>
+<DD>Doubtful letters -- Okasha:1993 and Cramp:1984
+indicate the preferred restoration of these with italics
+within square brackets -- [<SPAN  CLASS="textit">AB</SPAN>], <SPAN  CLASS="textit">RIB</SPAN> uses a subscript dot.
+Neither of these options is available to us typographically. If we are not
+indicating the restoration of certain letters, then we use
+[AB].
+<P><P>
+<BR>
+
+<P>
+</DD>
+<DT></DT>
+<DD># If there are two possible options then these can be indicated by
+[<code>^</code>], <code>A[B^C]D</code> represents <code>ABD</code> or <code>ACD</code>,
+<code>V[W^XY]Z</code> represents <code>VWZ</code> or <code>VXYZ</code>. The preferred option
+going first. This convention is intended primarily for use with Ogham
+inscriptions where there is often more than one
+option. In the interests of clarity only one alternative will be listed. If
+there is more doubt than this the character will be transcribed as
+`illegible'.
+
+<P>
+</DD>
+<DT>...</DT>
+<DD>Illegible (number of letters known): follow Okasha/Corpus --
+<code>[..]</code> where one dot represents one letter.
+</DD>
+<DT>- -</DT>
+<DD>Illegible (number of letters unknown): follow Okasha/Corpus --
+<code>[--]</code>
+</DD>
+<DT></DT>
+<DD>Lacuna of unknown length at beginning or end of a line: <SPAN  CLASS="textit">RIB</SPAN>,
+Okasha and Corpus all use different conventions. # <SMALL>CISP</SMALL> will use <code>--]</code>
+and <code>[--</code> which is consistent with above convention.
+</DD>
+<DT><TT>/</TT></DT>
+<DD>Conjoined or ligatured letters, &#198;: follow Okasha/Corpus and use
+<code>A/E</code>
+</DD>
+<DT><TT>:</TT></DT>
+<DD>Punctuation of any sort.
+</DD>
+<DT><TT>+</TT></DT>
+<DD>Textual crosses in the body of the inscription (as
+punctuation, not decoration).
+</DD>
+<DT>&#95;</DT>
+<DD># Suspension marks. The tilde will follow each letter.
+</DD>
+<DT><SPAN CLASS="MATH"><IMG
+ WIDTH="29" HEIGHT="29" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.gif"
+ ALT="$&lt;&gt;$"></SPAN></DT>
+<DD># Character inserted by carver <code>&lt;AB&gt;</code>
+</DD>
+<DT><TT>{}</TT></DT>
+<DD># Special characters, inverted characters,
+compendia (per, pro), otherwise anomolous characters (described in full in
+palaeographic notes field); <code>{A}</code> a special form of A (angle-bar A,
+an inverted A, ), <code>{I}</code>, <code>{P}</code>
+</DD>
+<DT><TT>{*}</TT></DT>
+<DD>Character legible but either not identifiable, or not
+transcribable, <SPAN CLASS="MATH"><IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img27.gif"
+ ALT="$\Omega$"></SPAN>
+</DD>
+<DT></DT>
+<DD># V for pointed character, U for rounded or square-bottomed
+character,
+regardless of whether consonantal or vocalic. <SPAN  CLASS="textit">RIB</SPAN> distinguishes in a
+similar way (though their material is different).
+</DD>
+</DL>
+
+<P>
+
+<H3><A NAME="SECTION00350300000000000000">
+Ogham</A>
+</H3>
+
+<P>
+All of the above conventions which are relevant apply.
+The following transliteration scheme is used:
+<DL COMPACT>
+<DT></DT>
+<DD>BLVSN
+</DD>
+<DT></DT>
+<DD>HDTCQ
+</DD>
+<DT></DT>
+<DD>MGGwStR (Gw not Ng, St not Z -- N.B. these are extremely rare
+epigraphically)
+</DD>
+<DT></DT>
+<DD>AOUEI
+</DD>
+<DT></DT>
+<DD>X represents first forfid (supplementary character -- reasonably
+common)
+</DD>
+<DT></DT>
+<DD># If a value for a rare forfid is generally agreed, then transcribe
+as a special form of the letter, angle-vowel A = <code>{A}</code> 
+</DD>
+<DT></DT>
+<DD># If a carved letter can be ascribed to a group but not specified
+more closely then use <code>!</code>, <code>[B!]</code> represents a B or a
+subsequent member the B-group, <code>[T!]</code> represents T, C or Q. .
+</DD>
+</DL>
+
+<P>
+
+<H1><A NAME="SECTION00360000000000000000"></A><A NAME="2535"></A><A NAME="translattable"></A>
+<BR>
+The <SMALL>TRANSLAT</SMALL> table
+</H1>
+
+<P>
+This table records the expansion and interpretation of each reading.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Site</TT><A NAME="2538"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT"><TT>Stone</TT><A NAME="2541"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT"><TT>Inscription</TT><A NAME="2544"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT"><TT>Reading</TT><A NAME="2547"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;5</TD>
+<TD ALIGN="LEFT"><TT>Expand_id</TT><A NAME="2550"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT"><TT>Expansion</TT><A NAME="2553"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT"><TT>Translation</TT><A NAME="2556"></A></TD>
+<TD ALIGN="LEFT">memo</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+<LI>&#167;The reading number.
+</LI>
+<LI>&#167;The expansion number, assigned by <SMALL>CISP</SMALL>. All five fields
+<SPAN  CLASS="textit">together</SPAN> act as the primary key.
+</LI>
+<LI>Expanded text of inscription (expanding contractions, suspensions or
+other abbreviations) Both this and the following field can use elements of
+the transliteration scheme from above where appropriate, in particular [ ]
+to represent uncertain letters and <code>--</code> or ... to
+represent missing letters or parts of the inscription.
+</LI>
+<LI>Translation/interpretation of above. Personal names are followed by
+<code>(PN)</code>.  If no translation given in the published source, use
+<SPAN  CLASS="textbf">n/a</SPAN>.
+</LI>
+</OL>
+
+<P>
+
+<H1><A NAME="SECTION00370000000000000000"></A><A NAME="biblio"></A>
+<BR>
+The bibliography subsystem
+</H1>
+
+<P>
+This section contains the primary <SMALL>BIBLIOG</SMALL><A NAME="2560"></A> table, and a number of
+linking tables: <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL><A NAME="2563"></A>, <SMALL>STON</SMALL>_<SMALL>PUB</SMALL><A NAME="2566"></A>, <SMALL>INSC</SMALL>_<SMALL>PUB</SMALL><A NAME="2569"></A>,
+<SMALL>READ</SMALL>_<SMALL>PUB</SMALL><A NAME="2572"></A>, <SMALL>CORPORA</SMALL><A NAME="2575"></A> and <SMALL>IMG</SMALL>_<SMALL>PUB</SMALL><A NAME="2578"></A>. Logically, there
+could also be a <SMALL>TRAN</SMALL>_<SMALL>PUB</SMALL><A NAME="2581"></A> to link table <SMALL>TRANSLAT</SMALL><A NAME="2584"></A> to
+<SMALL>BIBLIOG</SMALL><A NAME="2587"></A> but in practice the entries would be identical to
+<SMALL>READ</SMALL>_<SMALL>PUB</SMALL><A NAME="2590"></A>.
+
+<P>
+
+<H2><A NAME="SECTION00371000000000000000"></A><A NAME="2593"></A><A NAME="bibliogtable"></A>
+<BR>
+The <SMALL>BIBLIOG</SMALL> table
+</H2>
+
+<P>
+Full bibliographic references in a modified `Chicago A' style will be stored.
+This table contains all bibliographic references.
+As a general principle  only `useful items' will be cited in
+bibliographies:
+
+<UL>
+<LI>include first mention
+</LI>
+<LI>include references to standard corpora or by major authorities (
+Macalister, Rhys)
+</LI>
+<LI>include any item containing original information or substantive
+discussion
+</LI>
+<LI>include references with a good illustration
+</LI>
+<LI>exclude derivative or otherwise secondary discussion
+</LI>
+<LI>exlude mere mentions unless they come under one of the
+above headings
+</LI>
+</UL>
+
+<P>
+Unpublished `official' documentation, OS record cards in NMRs are to be
+cited where information is easily available.
+
+<P>
+The structure of the table is as follows:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Bib_ref</TT><A NAME="2596"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Reference</TT><A NAME="2599"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">255</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Date</TT><A NAME="2602"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>Verified</TT><A NAME="2605"></A></TD>
+<TD ALIGN="LEFT">logical</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT"><TT>CISP_notes</TT><A NAME="2608"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<OL>
+<LI>&#167;A primary key (code). This will be constructed in a manner
+similar to author-date reference systems, name+year. Examples:
+<DL COMPACT>
+<DT>--</DT>
+<DD>Lockyear 1996 -- <TT>Lockyear/1996</TT>
+</DD>
+<DT>--</DT>
+<DD>Reece 1987a, 1987b -- <TT>Reece/1987a</TT> <SPAN  CLASS="textit">and</SPAN>
+<TT>Reece/1987b</TT> , two separate records.
+</DD>
+<DT>--</DT>
+<DD>Lockyear and Wilcock 1985 -- <TT>Lockyear/Wilcock/1985</TT>
+</DD>
+<DT>--</DT>
+<DD>Lockyear, Ponting and Poenaru Bordea 1997 --
+<TT>Lockyear/etal/1997</TT>.
+</DD>
+</DL>
+</LI>
+<LI>Full bibliographic reference (see examples below).
+</LI>
+<LI>Date of publication (this information, contained in the above field
+also, is duplicated here to permit searching by date, all post CIIC refs.
+to a particular stone).
+</LI>
+<LI>Has the reference been checked by <SMALL>CISP</SMALL>?  Logical yes/no field.
+</LI>
+<LI>For project use only to help in the checking process,
+locating references, .
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00372000000000000000"></A><A NAME="bibsamps"></A>
+<BR>
+Sample bibliographic entries
+</H2>
+There follow some example references in the modified form of `Chicago A' in
+the form that they will be entered into the <TT>ref</TT><A NAME="2612"></A> field of table
+<SMALL>BIBLIOG</SMALL><A NAME="2615"></A>.
+
+<P>
+<BLOCKQUOTE>
+<SPAN  CLASS="textbf">Book:</SPAN> <TT>
+Thomas, C. (1993) _And Shall These Mute Stones Speak?_ Cardiff:
+University of Wales Press.</TT>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><SPAN  CLASS="textbf">Article:</SPAN><TT>
+Westwood, J. O. (1855) `Notices of several Early Inscribed Stones recently found in
+various parts of Wales', _Archaeologia Cambrensis_ 3rd series, 1,
+4-10.</TT>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><SPAN  CLASS="textbf">Article in volume:</SPAN><TT>
+Craig, D. (1991) `Pre-Norman sculpture in Galloway: some territorial
+implications', _in_  R. D. Oram and G. P. Stell (eds) _Galloway
+Land and Lordship_, 45-62.  Edinburgh: Scottish Society for
+Northern Studies.</TT>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><SPAN  CLASS="textbf">Two authors:</SPAN><TT>
+Dark, K. R. and S. P. Dark (1996) `New Archaeological and
+Palynological...</TT>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><SPAN  CLASS="textbf">Three or more authors:</SPAN><TT>
+Daire, M.-Y., A. Villard, S. Hinguant and E. Le Goff (1996) `Les steles
+de l'age du fer a decors geometriques...</TT>
+</BLOCKQUOTE>
+<P>
+<BLOCKQUOTE><SPAN  CLASS="textbf">Editors:</SPAN> Use (ed.) for singular, (eds) for plural.
+
+</BLOCKQUOTE>
+
+<P>
+
+<H2><A NAME="SECTION00373000000000000000"></A><A NAME="2618"></A><A NAME="site_pubtable"></A>
+<BR>
+The <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL> table
+</H2>
+This table provides the link between a site, and the bibliographic
+information. This linking table also contains extra information regarding the
+connection between the two, specific pages and value.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT">Site</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT">Bib_ref</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT">Pages</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">40</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT">Photo</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5</TD>
+<TD ALIGN="LEFT">Drawing</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT">Map</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">7</TD>
+<TD ALIGN="LEFT">value</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">25</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code which links to the <SMALL>SITE</SMALL><A NAME="2621"></A> table.
+</LI>
+<LI>&#167;The bibliographic reference code which links to the <SMALL>BIBLIOG</SMALL><A NAME="2624"></A> 
+table.
+</LI>
+<LI>Relevant pages, figure and table references.
+</LI>
+<LI>Is there a photograph?  Allowed entries <SPAN  CLASS="textbf">yes</SPAN>,
+<SPAN  CLASS="textbf">no</SPAN>, <SPAN  CLASS="textbf">inc</SPAN>.
+</LI>
+<LI>Is there a drawing.  Entries as for photo.
+</LI>
+<LI>Is there a map? Entries as for photo.
+</LI>
+<LI>Value of the reference--by definition all references cited are
+non-trivial. All references are described with one of the following terms
+which are stored in the look-up table <SMALL>PUB</SMALL>_<SMALL>VALS</SMALL><A NAME="2627"></A>:
+<DL>
+<DT><STRONG>cdisc</STRONG></DT>
+<DD>concise discussion (the most common entry)
+</DD>
+<DT><STRONG>illus</STRONG></DT>
+<DD>illustration of use only
+</DD>
+<DT><STRONG>inc</STRONG></DT>
+<DD>incomplete data
+</DD>
+<DT><STRONG>list</STRONG></DT>
+<DD>listing (of stones, inscriptions, or other people's readings)
+</DD>
+<DT><STRONG>minor</STRONG></DT>
+<DD>minor reference
+</DD>
+<DT><STRONG>other</STRONG></DT>
+<DD>other reference
+</DD>
+<DT><STRONG>read</STRONG></DT>
+<DD>reading only (for <SMALL>READ</SMALL>_<SMALL>PUB</SMALL><A NAME="2630"></A> table only)
+</DD>
+<DT><STRONG>sdisc</STRONG></DT>
+<DD>substantial discussion
+</DD>
+</DL>
+<SPAN  CLASS="textbf">N.B.</SPAN> The value of a given reference is relative to this
+specific site. a single reference could be a substantial discussion of
+one site <SPAN  CLASS="textit">but</SPAN> contain only a minor reference to another site. The
+bibliography will be as comprehensive as possible and we would aim to give
+all substantial discussions and first mentions, but minor references and
+illustration only references will be included on an <SPAN  CLASS="textit">ad hoc</SPAN> basis.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00374000000000000000"></A><A NAME="2633"></A><A NAME="2636"></A><A NAME="2639"></A><A NAME="otherpubtables"></A>
+<BR>
+The <SMALL>STON</SMALL>_<SMALL>PUB</SMALL>, <SMALL>INSC</SMALL>_<SMALL>PUB</SMALL>, and
+<SMALL>READ</SMALL>_<SMALL>PUB</SMALL> tables
+</H2>
+
+<P>
+These tables are identical to the <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL><A NAME="2642"></A> table discussed in the
+previous section with the exception of additional key fields providing the
+link to the primary tables, the <SMALL>STON</SMALL>_<SMALL>PUB</SMALL><A NAME="2645"></A> table has a
+<TT>stone</TT><A NAME="2648"></A> field which, in conjunction with the <TT>site</TT><A NAME="2651"></A> field,
+provide the link to the <SMALL>STONE</SMALL><A NAME="2654"></A> table; the <SMALL>INSC</SMALL>_<SMALL>PUB</SMALL><A NAME="2657"></A> table
+has <TT>stone</TT><A NAME="2660"></A> and <TT>inscription</TT><A NAME="2663"></A> fields, and so on. The
+<SMALL>INSC</SMALL>_<SMALL>PUB</SMALL><A NAME="2666"></A> table only has <TT>photo</TT><A NAME="2669"></A> and
+<TT>drawing</TT><A NAME="2672"></A> illustration fields; the <SMALL>READ</SMALL>_<SMALL>PUB</SMALL><A NAME="2675"></A> table
+has no illustration fields.
+
+<P>
+The conventions for <TT>value</TT><A NAME="2678"></A> and <TT>cisp_notes</TT><A NAME="2681"></A> fields are as for
+the <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL><A NAME="2684"></A> table.
+
+<P>
+
+<H2><A NAME="SECTION00375000000000000000"></A><A NAME="2687"></A><A NAME="corporatable"></A>
+<BR>
+The <SMALL>CORPORA</SMALL> table
+</H2>
+
+<P>
+This is a special version of the linking table between the <SMALL>INSCRIP</SMALL><A NAME="2690"></A> 
+table and the <SMALL>BIBLIOG</SMALL><A NAME="2693"></A> table allowing retrieval of inscriptions via
+standard corpus references CIIC, Nash-Williams, Okasha, Thomas <SPAN  CLASS="textit">Mute
+Stones</SPAN>, Kermode, and others as appropriate.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT">Bib_ref</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT">Corp_no</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT">Site</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT">Stone</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;5</TD>
+<TD ALIGN="LEFT">Inscription</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The bibliographic reference  code.
+</LI>
+<LI>Designation in corpus.
+</LI>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00376000000000000000"></A><A NAME="2696"></A><A NAME="namepubtable"></A>
+<BR>
+The <SMALL>NAME</SMALL>_<SMALL>BIB</SMALL> table
+</H2>
+
+<P>
+This provides bibliographic references for names stored in the <SMALL>NAME</SMALL><A NAME="2699"></A> 
+table.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT">Site</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">5</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;2</TD>
+<TD ALIGN="LEFT">Stone</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;3</TD>
+<TD ALIGN="LEFT">Inscription</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;4</TD>
+<TD ALIGN="LEFT">Name_id</TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;5</TD>
+<TD ALIGN="LEFT">Bib_ref</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">6</TD>
+<TD ALIGN="LEFT">Pages</TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">30</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;The site code.
+</LI>
+<LI>&#167;The stone number.
+</LI>
+<LI>&#167;The inscription number.
+</LI>
+<LI>&#167;The name number.
+</LI>
+<LI>&#167;The bibliographic reference code.
+</LI>
+<LI>Relevant pages.
+</LI>
+</OL>
+
+<P>
+
+<H1><A NAME="SECTION00380000000000000000"></A><A NAME="imagesys"></A>
+<BR>
+The image subsystem
+</H1>
+
+<P>
+The <SMALL>IMAGE</SMALL><A NAME="2702"></A> table will contained scanned images of sites, stone and
+inscriptions.
+
+<P>
+The image table has the following structure:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">Field</TD>
+<TD ALIGN="LEFT">Field Name</TD>
+<TD ALIGN="LEFT">Type</TD>
+<TD ALIGN="LEFT">Length</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">&#167;1</TD>
+<TD ALIGN="LEFT"><TT>Image_no</TT><A NAME="2705"></A></TD>
+<TD ALIGN="LEFT">numeric</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2</TD>
+<TD ALIGN="LEFT"><TT>Type</TT><A NAME="2708"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">3</TD>
+<TD ALIGN="LEFT"><TT>Label</TT><A NAME="2711"></A></TD>
+<TD ALIGN="LEFT">alphanumeric</TD>
+<TD ALIGN="LEFT">60</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">4</TD>
+<TD ALIGN="LEFT"><TT>image</TT><A NAME="2714"></A></TD>
+<TD ALIGN="LEFT">graphic</TD>
+<TD ALIGN="LEFT">-</TD>
+</TR>
+</TABLE>
+</DIV>
+<BR>
+
+<P>
+
+<OL>
+<LI>&#167;Sequential reference number.
+</LI>
+<LI>Type of image: <SPAN  CLASS="textbf">b/w</SPAN> (photograph) <SPAN  CLASS="textbf">colour</SPAN> (photograph),
+<SPAN  CLASS="textbf">drawing</SPAN>, <SPAN  CLASS="textbf">rubbing</SPAN>, <SPAN  CLASS="textbf">squeeze</SPAN>, <SPAN  CLASS="textbf">other</SPAN>.
+</LI>
+<LI>Label (`View of site from SW', `inscribed panel with letters
+chalked in', `cast in National Museums of Scotland').
+</LI>
+<LI>The image itself.
+</LI>
+</OL>
+
+<P>
+This table can be linked to other primary tables via linking tables as in
+other cases above.
+
+<P>
+
+<H1><A NAME="SECTION00390000000000000000">
+The linguistic indexing system</A>
+</H1>
+
+<P>
+This system replaces the `formula' fields/tables of the earlier
+version of the database.
+
+<P>
+The system consists of two tables.  The first, the
+<SMALL>WORDINDX</SMALL><A NAME="2717"></A> table ........  COMPLETE
+
+<P>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html154"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<A NAME="tex2html148"
+  HREF="MANUAL4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.gif"></A> 
+<A NAME="tex2html142"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.gif"></A> 
+<A NAME="tex2html150"
+  HREF="MANUAL4.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.gif"></A> 
+<A NAME="tex2html152"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html155"
+  HREF="node4.html">Glossary</A>
+<B> Up:</B> <A NAME="tex2html149"
+  HREF="MANUAL4.html">The Celtic Inscribed Stones</A>
+<B> Previous:</B> <A NAME="tex2html143"
+  HREF="node2.html">The CISP database</A>
+ &nbsp <B>  <A NAME="tex2html151"
+  HREF="MANUAL4.html">Contents</A></B> 
+ &nbsp <B>  <A NAME="tex2html153"
+  HREF="node8.html">Index</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Mike Gahan
+2000-10-18
+</ADDRESS>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</HTML>

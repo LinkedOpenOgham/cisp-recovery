@@ -1,0 +1,284 @@
+This is TeX, Version 3.14159 (Web2C 7.3) (format=latex 1999.6.2)  18 OCT 2000 17:57
+**./images.tex
+(./images.tex
+LaTeX2e <1998/12/01> patch level 1
+Babel <v3.6q> and hyphenation patterns for english, french, german, ngerman, du
+mylang, nohyphenation, loaded.
+
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/base/article.cls
+Document Class: article 1999/01/07 v1.4a Standard LaTeX document class
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/base/size10.clo
+File: size10.clo 1999/01/07 v1.4a Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/base/ifthen.sty
+Package: ifthen 1999/01/07 v1.1a Standard LaTeX ifthen package (DPC)
+) (/nfs/fs-k/UM0069/Uccaa11/ccaamrg/cispman/otherabr.sty (/nfs/rcs/solv25/usr/l
+ocal/rlib/TeX-Live4/texmf/tex/latex/tools/xspace.sty
+Package: xspace 1997/10/13 v1.06 Space after command names (DPC)
+))
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 1999/02/16 v1.0l Standard LaTeX Graphics (DPC,SPQR)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/texlive/graphics.cf
+g)
+Package graphics Info: Driver file: dvips.def on input line 80.
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (/home/ccaabaa/lib/tex/macros/times.sty
+Package: times 1995/08/16 5.2 Times PSNFSS2e package
+) (/nfs/fs-k/UM0069/Uccaa11/ccaamrg/cispman/morelist.sty) (/nfs/rcs/solv25/usr/
+local/rlib/TeX-Live4/texmf/tex/latex/ntgclass/a4.sty
+Package: a4 1999/03/03 v1.2f A4 based page layout
+) (/nfs/fs-k/UM0069/Uccaa11/ccaamrg/cispman/chicago.sty
+Using Chicago Manual of Style bibliography: 31 August 1992
+\bibhang=\skip43
+\bibindent=\dimen105
+) (/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/float/float.sty
+Package: float 1995/03/29 v1.2c Float enhancements (AL)
+\c@float@type=\count87
+\float@box=\box26
+\@floatcapt=\box27
+) (/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/tools/longtable.sty
+Package: longtable 1998/05/13 v4.09 Multi-page Table package (DPC)
+\LTleft=\skip44
+\LTright=\skip45
+\LTpre=\skip46
+\LTpost=\skip47
+\LTchunksize=\count88
+\LTcapwidth=\dimen106
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count89
+\LT@rows=\count90
+\c@LT@tables=\count91
+\c@LT@chunks=\count92
+\LT@p@ftn=\toks15
+) (/home/ccaabaa/lib/tex/macros/makeidx.sty) (/nfs/rcs/solv25/usr/local/rlib/Te
+X-Live4/texmf/tex/latex/caption/caption.sty
+Package: caption 1995/04/05 v1.4b caption package (HS)
+Package: caption v1.4b <1995/04/05> (Harald Sommerfeldt)
+\captionmargin=\skip48
+\as@captionbox=\box32
+\as@captionwidth=\skip49
+         `float' package detected
+)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/subfigur/subfigure.st
+y
+Package: subfigure 1995/03/06 v2.0 subfigure package
+Package: subfigure 1995/03/06 v2.0
+\c@subfigure=\count93
+\c@lofdepth=\count94
+\c@subtable=\count95
+\c@lotdepth=\count96
+) (/nfs/fs-k/UM0069/Uccaa11/ccaamrg/cispman/moreindx.sty)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/rotating/rotating.sty
+Package: rotating 1997/09/26, v2.13 Rotation package
+\c@r@tfl@t=\count97
+\rot@float@box=\box33
+) (/nfs/fs-k/UM0069/Uccaa11/ccaamrg/cispman/showlabels.sty
+Package: showlabels 1999/07/22 v1.3c
+Package: `showlabels' v1.3c <1999/07/22>
+)
+\@indexfile=\write3
+\openout3 = `images.idx'.
+
+Writing index file images.idx
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/color.sty
+Package: color 1999/02/16 v1.0i Standard LaTeX Color (DPC)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/texlive/color.cfg)
+Package color Info: Driver file: dvips.def on input line 125.
+
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/base/inputenc.sty 
+beta test version
+Package: inputenc 1998/03/05 v0.97 Input encoding file (test version: still lia
+ble to change)
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/base/latin1.def
+File: latin1.def 1998/03/05 v0.97 Input encoding file (test version: still liab
+le to change)
+))
+\sizebox=\box34
+\lthtmlwrite=\write4
+(images.aux)
+\openout1 = `images.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 145.
+
+(/nfs/rcs/solv25/usr/local/rlib/TeX-Live4/texmf/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 1998/11/05 Fontinst v1.800 font definitions for OT1/ptm.
+)
+
+latex2htmlLength hsize=349.0pt
+
+latex2htmlLength vsize=713.0pt
+
+latex2htmlLength hoffset=0.0pt
+
+latex2htmlLength voffset=0.0pt
+
+latex2htmlLength topmargin=0.0pt
+
+latex2htmlLength topskip=0.00003pt
+
+latex2htmlLength headheight=0.0pt
+
+latex2htmlLength headsep=0.0pt
+
+latex2htmlLength parskip=0.0pt plus 1.0pt
+
+latex2htmlLength oddsidemargin=39.74872pt
+
+latex2htmlLength evensidemargin=39.74872pt
+
+
+! LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 \stepcounter{chapter}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 191.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 191.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 216.
+Adding sideways figure on  right hand page
+l2hSize :sidewaystable99:713.0pt::0.0pt::349.0pt.
+! Infinite glue shrinkage found on current page.
+\newpage ...k \@nobreakfalse \everypar {}\fi \par 
+                                                  \vfil \penalty -\@M 
+l.218 \lthtmlcheckvsize\clearpage
+                                 }
+The page about to be output contains some infinitely
+shrinkable glue, e.g., `\vss' or `\vskip 0pt minus 1fil'.
+Such glue doesn't belong there; but you can safely proceed,
+since the offensive shrinkability has been made finite.
+
+[1
+
+
+
+]
+
+! LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 \stepcounter{chapter}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 \stepcounter{chapter}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 \stepcounter{chapter}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 \stepcounter{chapter}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: No counter 'chapter' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.270 \stepcounter{chapter}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(images.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1361 strings out of 10904
+ 17539 string characters out of 71800
+ 66174 words of memory out of 263001
+ 4294 multiletter control sequences out of 10000+0
+ 5680 words of font info for 18 fonts, out of 200000 for 1000
+ 16 hyphenation exceptions out of 1000
+ 25i,12n,23p,206b,533s stack positions out of 300i,100n,500p,30000b,4000s
+
+Output written on images.dvi (1 page, 2240 bytes).

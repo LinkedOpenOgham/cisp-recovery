@@ -1,0 +1,447 @@
+
+<html>
+<head>
+<title>CISP - Search CISP Database</title>
+<base href="http://www.ucl.ac.uk/archaeology/cisp/database/search/">
+<link rel=stylesheet type="text/css" href="style.css">
+<script language="javascript" src="cats.js"></script>
+<script language="javascript" src="menumap.js"></script>
+<script language="javascript" type="text/javascript">
+
+C.newcat ("nullmenu");
+C.add ("---------------" , 0);
+
+var COLUMNS
+var ROWS
+var RANGES
+var TEXTS
+
+var FEL
+var NEWF
+
+var MAPC = new Cats();
+
+function setcat1(selid) {
+  var targ = FEL["f" + selid]
+  C.setopts ( targ , getval("t" + selid ) );
+  targ.selectedIndex=0;
+  setccols ( selid , "nullmenu") ;
+  setmapcats();
+}
+
+function setcat2(selid) {
+   setccols ( selid , getval ("f" + selid) );
+   setmapcats();
+}
+
+function setcat3(selid) {
+  var targ = FEL["rf" + selid]
+  C.setopts ( targ , getval("r" + selid ) );
+  targ.selectedIndex=0;
+  setcat4(selid);
+}
+  
+function setcat4(selid) {
+  var sh = 1;
+  FEL["rx" + selid].checked = 0;
+  FEL["rv" + selid].value = "";
+  if (FEL["rf" + selid].selectedIndex == 0) {sh = 0}
+  FEL["rsh" + selid].checked = sh;
+  setmapcats();
+}
+
+function getval ( nm ) {
+  var sel = FEL[nm];
+  var ind = sel.selectedIndex;
+  var cat = sel.options[ind].value;
+  if (cat == "0") cat = "nullmenu";
+  return cat;
+}
+
+function gettext ( nm ) {
+  var sel = FEL[nm];
+  var ind = sel.selectedIndex;
+  return sel.options[ind].text; 
+}
+
+function setccols ( selid , cat ) {
+  var i;
+  for (i = 0 ; i < COLUMNS ; ++i ) {
+    var targ = FEL["c" + selid + "_" + i];
+    if (C.setopts ( targ , cat ) == 0) {
+	C.setopts(targ,"nullmenu");
+ 	}
+    targ.selectedIndex = 0;
+    }
+  FEL["tx" + selid].checked = false;
+  setsht(selid);
+}
+
+function setsht (selid) {
+  var n = 0;
+  var i;
+  if (FEL["f" + selid].selectedIndex == 0) {
+    rt = false;
+    } else if (FEL["tx" + selid].checked) {
+    rt = true;
+    } else { 
+    for (i=0 ; i < COLUMNS ; ++i) {
+      if (FEL["c" + selid + "_" + i].selectedIndex != 0) ++n;
+      }
+    rt = (n != 1)
+    }
+  FEL["tsh" + selid].checked = rt;
+  setmapcats();
+}
+
+function setmapcats () {
+  var i;
+  var cat;
+  MAPC.newcat("M");
+  MAPC.add ( "Not Used" , 0 );
+  for (i=0 ; i < ROWS ; ++i) {
+   cat = getval ( "f" + i );
+   if (cat == "nullmenu") continue;
+   if (FEL["tsh" + i].checked == false) continue;
+   MAPC.add ( gettext ("f" + i) , cat );
+  }
+  for (i=0 ; i < RANGES ; ++i ) {
+   cat = getval ( "rf" + i );
+   if (cat == "nullmenu") continue;
+   if (FEL["rsh" + i].checked == false) continue;
+   MAPC.add ( gettext ( "rf" + i ) , cat );
+  }
+  for (i=1 ; i<3 ; ++i ) {
+   MAPC.setopts ( FEL["symcat_" + i] , "M" );
+  }
+}
+   
+   
+function loadcats(rows , cols , ranges , texts) {
+ var sel;
+ COLUMNS = cols;
+ ROWS = rows;
+ RANGES = ranges;
+ TEXTS = texts;
+ FEL = document.searchform.elements;
+ NEWF = document.newform.elements;
+ resetall();
+ setnewdefaults();
+ 
+}
+
+function resetall() {
+resetmult();
+resetrange();
+resettext();
+}
+
+function resetmult() {
+ var sel;
+ for (sel = 0 ; sel < ROWS ; ++sel) {
+  var s = FEL["t" + sel];
+  C.setopts ( s , "S_top");
+  s.selectedIndex=0;
+  setcat1(sel);
+ }
+ setmapcats();
+}
+
+function resetrange() {
+var sel;
+ for (sel = 0 ; sel < RANGES ; ++sel ) {
+  var s = FEL["r" + sel];
+  C.setopts ( s , "R_top" );
+  s.selectedIndex=0;
+  setcat3(sel);
+  }
+ setmapcats();
+}
+
+function resettext() {
+var sel;
+  for (sel=0 ; sel < TEXTS ; ++sel) {
+    var s = FEL["txt" + sel];
+    for (op=0 ; op < s.options.length ; ++op) {
+       s.options[op].selected = 0;
+       }
+    
+    FEL["txtv" + sel].value = "";
+    }
+}
+
+    
+function setnewdefaults() {
+NEWF["row"].value = ROWS;
+NEWF["col"].value = COLUMNS;
+NEWF["ranges"].value = RANGES;
+NEWF["texts"].value = TEXTS;
+}
+
+function valrange(selid) {
+  var f = FEL["rv" + selid];
+  if (!checkrange (f.value)) {
+    f.value = "ERR: " + f.value;
+    f.focus();
+  }
+}
+
+function checkrange (txt) {
+  var star = txt.split(",");
+  var i;
+  var pat = /^ *(([0-9.]+( *- *[0-9.]+)?)|([><] *[0-9.]+))? *$/;
+  for (i=0 ; i<star.length ; i++) {
+    if (!pat.test(star[i])) return false;
+    }
+  return true;
+}
+
+function nomaps () {
+return;
+alert('Sorry.. maps are not implemeted yet');
+FEL["selmap"].selectedIndex = 0;
+
+}
+
+</script>
+
+</head>
+<body class=searchform
+onload="loadcats(3,3,3,1);"
+>
+
+<center><h1>CISP Search Form</h1>
+<a href=advhelp.html target=manual class=man><b>HELP</b></a></center>
+
+This form is used to search the CISP database. If you need a bigger form, with
+more rows and columns for search terms, see the <a href="#newsearch">custom form</a>
+section.
+<div class=searchform>
+<form class=searchform name="searchform" method=POST target="searchres" 
+action=/cgi-bin/cisp/search/search1.cgi
+>
+
+<input type=hidden name="texts" value="1">
+<input type=hidden name="ranges" value="3">
+<input type=hidden name="row" value="3">
+<input type=hidden name="col" value="3">
+<p>
+<h2>Multiple Selection Searches</h2>
+<table border=0 cellspacing=0>
+<tr><th>Table<th>Field<th>SH<th>EX<th colspan=20>Selection Criteria
+
+<tr><td>
+<select name="t0"  onChange="setcat1(0);">
+<option>Select a category<option><option><option><option><option>
+</select>
+</td>
+<td>
+<select name="f0" onChange="setcat2(0);">
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td>
+<td><input type=checkbox name="tsh0" onClick="setmapcats();">
+</td>
+<td><input type=checkbox name="tx0" onClick="setsht(0);">
+</td>
+<td>
+<select name="c0_0" onChange="setsht(0)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<td>
+<select name="c0_1" onChange="setsht(0)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<td>
+<select name="c0_2" onChange="setsht(0)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<tr><td>
+<select name="t1"  onChange="setcat1(1);">
+<option>Select a category<option><option><option><option><option>
+</select>
+</td>
+<td>
+<select name="f1" onChange="setcat2(1);">
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td>
+<td><input type=checkbox name="tsh1" onClick="setmapcats();">
+</td>
+<td><input type=checkbox name="tx1" onClick="setsht(1);">
+</td>
+<td>
+<select name="c1_0" onChange="setsht(1)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<td>
+<select name="c1_1" onChange="setsht(1)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<td>
+<select name="c1_2" onChange="setsht(1)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<tr><td>
+<select name="t2"  onChange="setcat1(2);">
+<option>Select a category<option><option><option><option><option>
+</select>
+</td>
+<td>
+<select name="f2" onChange="setcat2(2);">
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td>
+<td><input type=checkbox name="tsh2" onClick="setmapcats();">
+</td>
+<td><input type=checkbox name="tx2" onClick="setsht(2);">
+</td>
+<td>
+<select name="c2_0" onChange="setsht(2)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<td>
+<select name="c2_1" onChange="setsht(2)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+<td>
+<select name="c2_2" onChange="setsht(2)";>
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td></tr></table>
+<input type=button value="Reset" onClick="resetmult();" align=right>
+<p>
+<h2>Range Searches</h2>
+<table border=0 cellspacing=0>
+<tr><th>Table<th>Field<th>SH<th>EX<th>Range Specification
+
+<tr><td>
+<select name="r0"  onChange="setcat3(0);">
+<option>Select a category<option><option><option><option><option>
+</select>
+</td>
+<td>
+<select name="rf0" onChange="setcat4(0);">
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td>
+<td><input type=checkbox name="rsh0" onClick="setmapcats()"></td>
+<td><input type=checkbox name="rx0"></td>
+<td><input type=text name=rv0 size=40 onBlur="valrange(0)";></td>
+<tr><td>
+<select name="r1"  onChange="setcat3(1);">
+<option>Select a category<option><option><option><option><option>
+</select>
+</td>
+<td>
+<select name="rf1" onChange="setcat4(1);">
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td>
+<td><input type=checkbox name="rsh1" onClick="setmapcats()"></td>
+<td><input type=checkbox name="rx1"></td>
+<td><input type=text name=rv1 size=40 onBlur="valrange(1)";></td>
+<tr><td>
+<select name="r2"  onChange="setcat3(2);">
+<option>Select a category<option><option><option><option><option>
+</select>
+</td>
+<td>
+<select name="rf2" onChange="setcat4(2);">
+<option value=0>---------------<option><option><option><option><option>
+</select>
+</td>
+<td><input type=checkbox name="rsh2" onClick="setmapcats()"></td>
+<td><input type=checkbox name="rx2"></td>
+<td><input type=text name=rv2 size=40 onBlur="valrange(2)";></td>
+</table>
+<input type=button value="Reset" onClick="resetrange();">
+<h2>Free Text Searches</h2>
+<table border=0 cellspacing=0>
+<tr><th>Categories<th>Search Words
+
+<tr><td>
+<select name="txt0" multiple size=4>
+<option>STONE
+<option>SITE
+<option>INSCRIP
+<option>READING
+</select>
+</td><td><textarea name=txtv0 cols=40 rows=4>
+</textarea>
+</table>
+<input type=button value="Reset" onClick="resettext();">
+<p>
+<input type=button value="Reset Whole Form" onClick="resetall();">
+<h2>Results Display</h2>
+
+
+<table border=0 cellspacing=30><tr>
+<td valign=top><h3>Output Format</h3>
+<table border=1 bgcolor=linen cellpadding=5>
+<tr><td><input type=radio name=opfmt value=table checked> Table</td>
+<tr><td><input type=radio name=opfmt value=csv> Download (CSV)</td>
+<tr><td><input type=radio name=opfmt value=sql> SQL</td>
+</table>
+</td>
+<td valign=top><h3>Mapping Options</h3>
+<table border=1 bgcolor=linen cellpadding=4>
+<tr><td><b>Map Region</b></td>
+<td>
+<select name=selmap onchange="nomaps();">
+<option value="NOMAP" selected>No Map
+<option value=BEST >Choose Best Map
+
+<option value=bigmap>Britain, Ireland, Brittany & Channel Islands
+<option value=brittany>Brittany & Channel Islands
+<option value=cork>Cork & Waterford
+<option value=dumnonia>Dumnonia
+<option value=ireland>Ireland
+<option value=nwales>North Wales
+<option value=orkshet>Orkney & Shetland
+<option value=scotland>Scotland
+<option value=swales>South Wales
+<option value=kerry>West Kerry
+</select>
+</td>
+<tr><th colspan=2>Symbol Mapping</th>
+<tr><td><b> Shape</b></td>
+<td><select name=symcat_1>
+<option value=0 selected>Not Used
+</select></td>
+<tr><td><b> Colour</b></td>
+<td><select name=symcat_2>
+<option value=0 selected>Not Used
+</select></td>
+</table>
+
+<tr><th colspan=2 halign=center>
+<input type=submit value="Query CISP Database"></th>
+  
+</table>
+
+</form>
+
+</div>
+
+<hr>
+<a name=newsearch></a>
+<center><h1 >Custom Search Form</h1></center>
+Specify how many rows and columns of each type of search you would like,
+then press the `New Search' button:
+<p>
+<form method=POST name=newform
+action=/cgi-bin/cisp/search/newsearchform.cgi
+>
+<ul><table>
+<tr><th align=right>Multiple Select Rows:<td><input type=text  name=row size=3>
+<th>Columns:<td><input type=text  name=col size=3>
+<tr><th align=right>Range Rows:<td><input type=text  name=ranges size=3>
+<tr><th align=right>Free Text Rows:<td><input type=text  name=texts size=3>
+<td colspan=2><input type=submit value="New Search Form">
+</table>
+</ul>
+</form>
+
+</html>
+

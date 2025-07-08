@@ -1,0 +1,83 @@
+<html><head><title>Frame Test></title>
+<link rel=stylesheet type="text/css" href="style.css">
+
+
+<script language=javascript>
+function getindex(ind)
+{
+if (ind == 0) return;
+setpage ("index/" + ind + ".html");
+document.forms[0].index.selectedIndex = 0;
+}
+
+function gosite() 
+{
+   site = parent.site;
+   if (site == 0 || site == null) return;
+   setpage ( "site/" + site + ".html" );
+}
+
+function nstone() 
+{
+gostone ( parent.st_n );
+}
+
+function lstone() 
+{
+gostone ( parent.st_l );
+}
+
+function gostone ( st ) 
+{ 
+if (st == 0 || st == null) return;
+setpage ("stone/" + parent.site + "_" + st + ".html");
+}
+
+function setpage ( loc ) 
+{
+parent.frames["text_display"].document.location = loc;
+}
+
+function searchpage()
+{
+window.open("search/index.html","search");
+}
+
+</script>
+
+
+</head>
+<body class=navbar>
+<form name=navform>
+<center>
+<table border=0 cellspacing=1><tr>
+<td><input type=button name=top value=Home onclick="setpage('home1.html')"></td>
+<td><span class=navbar>
+<select name=index onchange="getindex(options[selectedIndex].value)"  border=0px margin=0px class=navbar >
+ <option value=0 selected >------- Indexes -------
+ <option value=site_alpha>Site - Alphabetical
+ <option value=site_geog>Site - Geographical
+ <option value=sitecisp>Site - CISP code
+ <option value=stone>Stone - Common name
+ <option value=name_alpha>Name - Alphabetical
+ </select></span></td>
+<td><input type=button name=site value=Site onclick="gosite()"></td>
+<td><input type=button name=nstone value="Next Stone" onclick="self.nstone()"></td>
+<td><input type=button name=lstone value="Previous Stone" onclick="self.lstone()"></td>
+<td><input type=button name=search value="Search" onclick="self.searchpage()"></td>
+<td><input type=button name=email value="Email CISP" onclick="location='mailto:tcfacll@ucl.ac.uk'"></td>
+
+</table>
+</center>
+</form>
+<p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>

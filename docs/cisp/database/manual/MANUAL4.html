@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 99.2beta8 (1.43)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Celtic Inscribed Stones Project database: a guide</TITLE>
+<META NAME="description" CONTENT="The Celtic Inscribed Stones Project database: a guide">
+<META NAME="keywords" CONTENT="MANUAL4">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v99.2beta8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="MANUAL4.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html19"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_g.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.gif">  
+<A NAME="tex2html17"
+  HREF="node8.html">
+<IMG WIDTH="43" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="index" SRC="index.gif"></A> 
+<BR>
+<B> Next:</B> <A NAME="tex2html20"
+  HREF="node1.html">An introduction to databases</A>
+ &nbsp <B>  <A NAME="tex2html18"
+  HREF="node8.html">Index</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<P>
+
+<P>
+
+<H1 ALIGN="CENTER">The <SPAN  CLASS="textit">Celtic Inscribed Stones Project</SPAN> database: a guide</H1>
+<P ALIGN="CENTER"><STRONG>Kris Lockyear</STRONG></P>
+<P ALIGN="CENTER"><STRONG>Revised Draft: October 18, 2000</STRONG></P>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html21"
+  HREF="node1.html">An introduction to databases</A>
+<UL>
+<LI><A NAME="tex2html22"
+  HREF="node1.html#SECTION00110000000000000000">Introduction</A>
+<LI><A NAME="tex2html23"
+  HREF="node1.html#SECTION00120000000000000000">Database concepts</A>
+<UL>
+<LI><A NAME="tex2html24"
+  HREF="node1.html#SECTION00121000000000000000">Databases</A>
+<LI><A NAME="tex2html25"
+  HREF="node1.html#SECTION00122000000000000000">Specific purpose vs. resource databases</A>
+<LI><A NAME="tex2html26"
+  HREF="node1.html#SECTION00123000000000000000">Relational databases</A>
+<UL>
+<LI><A NAME="tex2html27"
+  HREF="node1.html#SECTION00123100000000000000">One-to-one relationships</A>
+<LI><A NAME="tex2html28"
+  HREF="node1.html#SECTION00123200000000000000">One-to-many relationships</A>
+<LI><A NAME="tex2html29"
+  HREF="node1.html#SECTION00123300000000000000">Many-to-many relationships</A>
+<LI><A NAME="tex2html30"
+  HREF="node1.html#SECTION00123400000000000000">Primary and foreign keys</A>
+<LI><A NAME="tex2html31"
+  HREF="node1.html#SECTION00123500000000000000">Data types and definition</A>
+<LI><A NAME="tex2html32"
+  HREF="node1.html#SECTION00123600000000000000">Look-up tables</A>
+<LI><A NAME="tex2html33"
+  HREF="node1.html#SECTION00123700000000000000">Database applications</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html34"
+  HREF="node1.html#SECTION00130000000000000000">Conclusions</A>
+</UL>
+<LI><A NAME="tex2html35"
+  HREF="node2.html">The <SMALL>CISP</SMALL> database</A>
+<UL>
+<LI><A NAME="tex2html36"
+  HREF="node2.html#SECTION00210000000000000000">Criteria for inclusion</A>
+<LI><A NAME="tex2html37"
+  HREF="node2.html#SECTION00220000000000000000">Doubtful inscriptions and lost stones</A>
+<LI><A NAME="tex2html38"
+  HREF="node2.html#SECTION00230000000000000000">The structure of the <SMALL>CISP</SMALL> database</A>
+<LI><A NAME="tex2html39"
+  HREF="node2.html#SECTION00240000000000000000">Data definition strategy</A>
+<LI><A NAME="tex2html40"
+  HREF="node2.html#SECTION00250000000000000000">Database implementation</A>
+<UL>
+<LI><A NAME="tex2html41"
+  HREF="node2.html#SECTION00251000000000000000">Hardware and software</A>
+<LI><A NAME="tex2html42"
+  HREF="node2.html#SECTION00252000000000000000">The data entry application</A>
+<LI><A NAME="tex2html43"
+  HREF="node2.html#SECTION00253000000000000000">Database dissemination</A>
+</UL>
+</UL>
+<LI><A NAME="tex2html44"
+  HREF="node3.html">A guide to the <SMALL>CISP</SMALL> database tables</A>
+<UL>
+<LI><A NAME="tex2html45"
+  HREF="node3.html#SECTION00310000000000000000">General guidelines</A>
+<LI><A NAME="tex2html46"
+  HREF="node3.html#SECTION00320000000000000000">The <SMALL>SITE</SMALL> and related tables</A>
+<UL>
+<LI><A NAME="tex2html47"
+  HREF="node3.html#SECTION00321000000000000000">The <SMALL>SITE</SMALL> table</A>
+<LI><A NAME="tex2html48"
+  HREF="node3.html#SECTION00322000000000000000">The <SMALL>SAINT</SMALL> table</A>
+<LI><A NAME="tex2html49"
+  HREF="node3.html#SECTION00323000000000000000">The <SMALL>REGION</SMALL> table</A>
+<LI><A NAME="tex2html50"
+  HREF="node3.html#SECTION00324000000000000000">The <SMALL>GRIDREF</SMALL> table</A>
+<LI><A NAME="tex2html51"
+  HREF="node3.html#SECTION00325000000000000000">The <SMALL>ALT</SMALL>_<SMALL>NAME</SMALL> table</A>
+<LI><A NAME="tex2html52"
+  HREF="node3.html#SECTION00326000000000000000">The <SMALL>SITE</SMALL>_<SMALL>TYP</SMALL> table</A>
+</UL>
+<LI><A NAME="tex2html53"
+  HREF="node3.html#SECTION00330000000000000000">The <SMALL>STONE</SMALL> and related tables</A>
+<UL>
+<LI><A NAME="tex2html54"
+  HREF="node3.html#SECTION00331000000000000000">The <SMALL>STONE</SMALL> table</A>
+<UL>
+<LI><A NAME="tex2html55"
+  HREF="node3.html#SECTION00331100000000000000">Measurements</A>
+</UL>
+<LI><A NAME="tex2html56"
+  HREF="node3.html#SECTION00332000000000000000">The <SMALL>LOST</SMALL> table</A>
+<LI><A NAME="tex2html57"
+  HREF="node3.html#SECTION00333000000000000000">The <SMALL>OTHERLOC</SMALL> table</A>
+<LI><A NAME="tex2html58"
+  HREF="node3.html#SECTION00334000000000000000">The <SMALL>MUSEUM</SMALL> table</A>
+<LI><A NAME="tex2html59"
+  HREF="node3.html#SECTION00335000000000000000">The <SMALL>FORM</SMALL> table</A>
+<LI><A NAME="tex2html60"
+  HREF="node3.html#SECTION00336000000000000000">The <SMALL>ALTSNAME</SMALL> table</A>
+<LI><A NAME="tex2html61"
+  HREF="node3.html#SECTION00337000000000000000">The <SMALL>FOLKLORE</SMALL> table</A>
+<LI><A NAME="tex2html62"
+  HREF="node3.html#SECTION00338000000000000000">The <SMALL>INSCROSS</SMALL> table</A>
+<LI><A NAME="tex2html63"
+  HREF="node3.html#SECTION00339000000000000000">The <SMALL>DECORATN</SMALL> and <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL>
+tables</A>
+</UL>
+<LI><A NAME="tex2html64"
+  HREF="node3.html#SECTION00340000000000000000">The <SMALL>INSCRIP</SMALL> and related tables</A>
+<UL>
+<LI><A NAME="tex2html65"
+  HREF="node3.html#SECTION00341000000000000000">The <SMALL>INSCRIP</SMALL> table</A>
+<LI><A NAME="tex2html66"
+  HREF="node3.html#SECTION00342000000000000000">The <SMALL>NAMES</SMALL> table</A>
+<LI><A NAME="tex2html67"
+  HREF="node3.html#SECTION00343000000000000000">The <SMALL>DATE</SMALL> table</A>
+<LI><A NAME="tex2html68"
+  HREF="node3.html#SECTION00344000000000000000">The <SMALL>SPEC</SMALL>_<SMALL>CHR</SMALL> and <SMALL>SPECIAL</SMALL> tables</A>
+</UL>
+<LI><A NAME="tex2html69"
+  HREF="node3.html#SECTION00350000000000000000">The <SMALL>READING</SMALL> table</A>
+<UL>
+<LI><A NAME="tex2html70"
+  HREF="node3.html#SECTION00350100000000000000">Transliteration of inscriptions</A>
+<LI><A NAME="tex2html71"
+  HREF="node3.html#SECTION00350200000000000000">All inscriptions</A>
+<LI><A NAME="tex2html72"
+  HREF="node3.html#SECTION00350300000000000000">Ogham</A>
+</UL>
+<LI><A NAME="tex2html73"
+  HREF="node3.html#SECTION00360000000000000000">The <SMALL>TRANSLAT</SMALL> table</A>
+<LI><A NAME="tex2html74"
+  HREF="node3.html#SECTION00370000000000000000">The bibliography subsystem</A>
+<UL>
+<LI><A NAME="tex2html75"
+  HREF="node3.html#SECTION00371000000000000000">The <SMALL>BIBLIOG</SMALL> table</A>
+<LI><A NAME="tex2html76"
+  HREF="node3.html#SECTION00372000000000000000">Sample bibliographic entries</A>
+<LI><A NAME="tex2html77"
+  HREF="node3.html#SECTION00373000000000000000">The <SMALL>SITE</SMALL>_<SMALL>PUB</SMALL> table</A>
+<LI><A NAME="tex2html78"
+  HREF="node3.html#SECTION00374000000000000000">The <SMALL>STON</SMALL>_<SMALL>PUB</SMALL>, <SMALL>INSC</SMALL>_<SMALL>PUB</SMALL>, and
+<SMALL>READ</SMALL>_<SMALL>PUB</SMALL> tables</A>
+<LI><A NAME="tex2html79"
+  HREF="node3.html#SECTION00375000000000000000">The <SMALL>CORPORA</SMALL> table</A>
+<LI><A NAME="tex2html80"
+  HREF="node3.html#SECTION00376000000000000000">The <SMALL>NAME</SMALL>_<SMALL>BIB</SMALL> table</A>
+</UL>
+<LI><A NAME="tex2html81"
+  HREF="node3.html#SECTION00380000000000000000">The image subsystem</A>
+<LI><A NAME="tex2html82"
+  HREF="node3.html#SECTION00390000000000000000">The linguistic indexing system</A>
+</UL>
+<LI><A NAME="tex2html83"
+  HREF="node4.html">Glossary</A>
+<LI><A NAME="tex2html84"
+  HREF="node5.html">Changes in the <SMALL>CISP</SMALL> database since original release of
+the manual</A>
+<UL>
+<LI><A NAME="tex2html85"
+  HREF="node5.html#SECTION00501000000000000000">Logical fields</A>
+<LI><A NAME="tex2html86"
+  HREF="node5.html#SECTION00502000000000000000">The <SMALL>SITE</SMALL>_<SMALL>TYP</SMALL> table</A>
+<LI><A NAME="tex2html87"
+  HREF="node5.html#SECTION00503000000000000000">The <SMALL>DECOR</SMALL>_<SMALL>CD</SMALL> table</A>
+<LI><A NAME="tex2html88"
+  HREF="node5.html#SECTION00504000000000000000">The archive subsystem</A>
+<LI><A NAME="tex2html89"
+  HREF="node5.html#SECTION00505000000000000000">Formulae and the linguistic index</A>
+</UL>
+<LI><A NAME="tex2html90"
+  HREF="node6.html">Future work</A>
+<LI><A NAME="tex2html91"
+  HREF="node7.html">Bibliography</A>
+<LI><A NAME="tex2html92"
+  HREF="node8.html">Index</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+Mike Gahan
+2000-10-18
+</ADDRESS>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11188334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</HTML>
