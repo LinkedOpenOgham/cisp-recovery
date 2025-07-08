@@ -1,18 +1,15 @@
+@import url(https://fonts.bunny.net/css?family=noto-sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);
+
 /* Style for manual link tags */
 
-A.man {color: darkgreen}
-A.man:active {color: green}
+A.man {
+  color: darkgreen;
+}
+A.man:active {
+  color: green;
+}
 
-/* BODY {background: lightblue} */
-
-BODY {background-image: url(../pergamino.jpg)}
-BODY.toplevel {background-image: url(pergamino.jpg)}
-
-BODY.navbar {background: brown; font-family: helvetica}
-BODY.navbar INPUT , BODY.navbar SPAN { 
-		background: tan; 
-		border: 0mm; 
-		padding: 0mm;
-		font-family: helvetica, sans-serif;
-		font-weight: bold
-		}
+BODY {
+  background-image: url(backgr.gif);
+  font-family: "Noto Sans", sans-serif;
+}
