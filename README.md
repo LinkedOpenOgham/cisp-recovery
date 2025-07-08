@@ -13,3 +13,4 @@ Three entities got w3id PIDs, examples are as follows:
 ## Search via Parameter
 
 * `[..]/cisp/database?id=24_187` ==> `KMKDR/3`
+* `[..]/cisp/database?cisp=clmac/1/1` ==> `CLMAC/1/1`
